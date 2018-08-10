@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "/Users/dieppa/Desarrollos/xCleanWay/xCleanWay.Data/xCleanWay.Data.csproj",
-    "projectName": "xCleanWay.Data",
-    "projectPath": "/Users/dieppa/Desarrollos/xCleanWay/xCleanWay.Data/xCleanWay.Data.csproj",
-    "outputPath": "/Users/dieppa/Desarrollos/xCleanWay/xCleanWay.Data/obj/",
+    "projectUniqueName": "/Users/dieppa/Desarrollos/xCleanWay/xCleanWay.Di/xCleanWay.Di.csproj",
+    "projectName": "xCleanWay.Di",
+    "projectPath": "/Users/dieppa/Desarrollos/xCleanWay/xCleanWay.Di/xCleanWay.Di.csproj",
+    "outputPath": "/Users/dieppa/Desarrollos/xCleanWay/xCleanWay.Di/obj/",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
       "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -31,6 +31,10 @@
           "target": "Package",
           "version": "[2.0.3, )",
           "autoReferenced": true
+        },
+        "Spring.Core": {
+          "target": "Package",
+          "version": "[2.0.1, )"
         }
       },
       "imports": [

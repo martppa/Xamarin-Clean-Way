@@ -119,6 +119,28 @@
         </e>
         <e p="xCleanWay.Data.csproj" t="IncludeRecursive" />
       </e>
+      <e p="xCleanWay.Di" t="IncludeRecursive">
+        <e p="BaseInjector.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Configuration" t="Include">
+          <e p="BaseConfiguration.xml" t="Include" />
+          <e p="FormsConfiguration.xml" t="Include" />
+        </e>
+        <e p="Factory" t="Include">
+          <e p="FormsInjectorFactory.cs" t="Include" />
+          <e p="InjectorFactory.cs" t="Include" />
+        </e>
+        <e p="FormsInjector.cs" t="Include" />
+        <e p="Injector.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netstandard2.0" t="Include">
+              <e p="xCleanWay.Di.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="xCleanWay.Di.csproj" t="IncludeRecursive" />
+      </e>
       <e p="xCleanWay.sln" t="IncludeFlat" />
       <e p="xCleanWay.Ui" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
