@@ -87,12 +87,23 @@
       <e p="xCleanWay.Core" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
         <e p="Class1.cs" t="Include" />
+        <e p="Interactors" t="Include">
+          <e p="CompletableUseCase.cs" t="Include" />
+          <e p="ObservableUseCase.cs" t="Include" />
+          <e p="UseCase.cs" t="Include" />
+        </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netstandard2.0" t="Include">
               <e p="xCleanWay.Core.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
+        </e>
+        <e p="Threading" t="Include">
+          <e p="IExecutionThread.cs" t="Include" />
+        </e>
+        <e p="Utils" t="Include">
+          <e p="None.cs" t="Include" />
         </e>
         <e p="xCleanWay.Core.csproj" t="IncludeRecursive" />
       </e>
