@@ -3,9 +3,6 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="..\xCleanWay.Core\xCleanWay.Core.csproj" />
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="ReactiveUI" Version="8.5.1" />
+    <ProjectReference Include="..\xCleanWay.Data\xCleanWay.Data.csproj" />
   </ItemGroup>
 </Project>

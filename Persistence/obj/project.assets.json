@@ -103,6 +103,19 @@
         "runtime": {
           "bin/placeholder/xCleanWay.Core.dll": {}
         }
+      },
+      "xCleanWay.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "xCleanWay.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/xCleanWay.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/xCleanWay.Data.dll": {}
+        }
       }
     }
   },
@@ -497,12 +510,17 @@
       "type": "project",
       "path": "../xCleanWay.Core/xCleanWay.Core.csproj",
       "msbuildProject": "../xCleanWay.Core/xCleanWay.Core.csproj"
+    },
+    "xCleanWay.Data/1.0.0": {
+      "type": "project",
+      "path": "../xCleanWay.Data/xCleanWay.Data.csproj",
+      "msbuildProject": "../xCleanWay.Data/xCleanWay.Data.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
       "NETStandard.Library >= 2.0.3",
-      "xCleanWay.Core >= 1.0.0"
+      "xCleanWay.Data >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -512,11 +530,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Data/xCleanWay.Data.csproj",
-      "projectName": "xCleanWay.Data",
-      "projectPath": "/Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Data/xCleanWay.Data.csproj",
+      "projectUniqueName": "/Users/dieppa/Desarrollos/Xamarin-Clean-Way/Persistence/Persistence.csproj",
+      "projectName": "Persistence",
+      "projectPath": "/Users/dieppa/Desarrollos/Xamarin-Clean-Way/Persistence/Persistence.csproj",
       "packagesPath": "/Users/dieppa/.nuget/packages/",
-      "outputPath": "/Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Data/obj/",
+      "outputPath": "/Users/dieppa/Desarrollos/Xamarin-Clean-Way/Persistence/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -533,8 +551,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "/Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Core/xCleanWay.Core.csproj": {
-              "projectPath": "/Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Core/xCleanWay.Core.csproj"
+            "/Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Data/xCleanWay.Data.csproj": {
+              "projectPath": "/Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Data/xCleanWay.Data.csproj"
             }
           }
         }

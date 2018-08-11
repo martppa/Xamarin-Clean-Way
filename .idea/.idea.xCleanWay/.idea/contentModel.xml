@@ -16,6 +16,34 @@
           <e p="proguard.txt" t="Include" />
         </e>
       </e>
+      <e p="Persistence" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netstandard2.0" t="Include">
+              <e p="Persistence.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Persistence.csproj" t="IncludeRecursive" />
+        <e p="Threading" t="Include">
+          <e p="PersistenceThread.cs" t="Include" />
+        </e>
+      </e>
+      <e p="Remote" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.1" t="Include">
+              <e p="Remote.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Remote.csproj" t="IncludeRecursive" />
+        <e p="Threading" t="Include">
+          <e p="RemoteThread.cs" t="Include" />
+        </e>
+      </e>
       <e p="xCleanWay/xCleanWay" t="IncludeRecursive">
         <e p="App.xaml" t="Include" />
         <e p="App.xaml.cs" t="Include" />
@@ -109,13 +137,15 @@
       </e>
       <e p="xCleanWay.Data" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
-        <e p="Class1.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netstandard2.0" t="Include">
               <e p="xCleanWay.Data.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
+        </e>
+        <e p="Threading" t="Include">
+          <e p="IDataThread.cs" t="Include" />
         </e>
         <e p="xCleanWay.Data.csproj" t="IncludeRecursive" />
       </e>
@@ -173,13 +203,15 @@
       <e p="xCleanWay.sln" t="IncludeFlat" />
       <e p="xCleanWay.Ui" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
-        <e p="Class1.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netstandard2.0" t="Include">
               <e p="xCleanWay.Ui.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
+        </e>
+        <e p="Threading" t="Include">
+          <e p="UiThread.cs" t="Include" />
         </e>
         <e p="xCleanWay.Ui.csproj" t="IncludeRecursive" />
       </e>

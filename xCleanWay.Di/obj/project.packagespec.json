@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "/Users/dieppa/Desarrollos/xCleanWay/xCleanWay.Di/xCleanWay.Di.csproj",
+    "projectUniqueName": "/Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Di/xCleanWay.Di.csproj",
     "projectName": "xCleanWay.Di",
-    "projectPath": "/Users/dieppa/Desarrollos/xCleanWay/xCleanWay.Di/xCleanWay.Di.csproj",
-    "outputPath": "/Users/dieppa/Desarrollos/xCleanWay/xCleanWay.Di/obj/",
+    "projectPath": "/Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Di/xCleanWay.Di.csproj",
+    "outputPath": "/Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Di/obj/",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
       "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
