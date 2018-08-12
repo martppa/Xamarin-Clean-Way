@@ -16,34 +16,6 @@
           <e p="proguard.txt" t="Include" />
         </e>
       </e>
-      <e p="Persistence" t="IncludeRecursive">
-        <e p="bin" t="ExcludeRecursive" />
-        <e p="obj" t="ExcludeRecursive">
-          <e p="Debug" t="Include">
-            <e p="netstandard2.0" t="Include">
-              <e p="Persistence.AssemblyInfo.cs" t="Include" />
-            </e>
-          </e>
-        </e>
-        <e p="Persistence.csproj" t="IncludeRecursive" />
-        <e p="Threading" t="Include">
-          <e p="PersistenceThread.cs" t="Include" />
-        </e>
-      </e>
-      <e p="Remote" t="IncludeRecursive">
-        <e p="bin" t="ExcludeRecursive" />
-        <e p="obj" t="ExcludeRecursive">
-          <e p="Debug" t="Include">
-            <e p="netcoreapp2.1" t="Include">
-              <e p="Remote.AssemblyInfo.cs" t="Include" />
-            </e>
-          </e>
-        </e>
-        <e p="Remote.csproj" t="IncludeRecursive" />
-        <e p="Threading" t="Include">
-          <e p="RemoteThread.cs" t="Include" />
-        </e>
-      </e>
       <e p="xCleanWay/xCleanWay" t="IncludeRecursive">
         <e p="App.xaml" t="Include" />
         <e p="App.xaml.cs" t="Include" />
@@ -120,12 +92,18 @@
           <e p="ObservableUseCase.cs" t="Include" />
           <e p="UseCase.cs" t="Include" />
         </e>
+        <e p="Models" t="Include">
+          <e p="Country.cs" t="Include" />
+        </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netstandard2.0" t="Include">
               <e p="xCleanWay.Core.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
+        </e>
+        <e p="Repositories" t="Include">
+          <e p="ICountryRepository.cs" t="Include" />
         </e>
         <e p="Threading" t="Include">
           <e p="IExecutionThread.cs" t="Include" />
@@ -137,12 +115,21 @@
       </e>
       <e p="xCleanWay.Data" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
+        <e p="Entities" t="Include">
+          <e p="CountryEntity.cs" t="Include" />
+          <e p="Mappers" t="Include">
+            <e p="CountryEntityMapper.cs" t="Include" />
+          </e>
+        </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netstandard2.0" t="Include">
               <e p="xCleanWay.Data.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
+        </e>
+        <e p="Repositories" t="Include">
+          <e p="CountryRepository.cs" t="Include" />
         </e>
         <e p="Threading" t="Include">
           <e p="IDataThread.cs" t="Include" />
@@ -199,6 +186,30 @@
         <e p="ViewController.cs" t="Include" />
         <e p="ViewController.designer.cs" t="Include" />
         <e p="xCleanWay.Mac.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="xCleanWay.Persistence" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Class1.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netstandard2.0" t="Include">
+              <e p="xCleanWay.Persistence.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="xCleanWay.Persistence.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="xCleanWay.Remote" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Class1.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netstandard2.0" t="Include">
+              <e p="xCleanWay.Remote.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="xCleanWay.Remote.csproj" t="IncludeRecursive" />
       </e>
       <e p="xCleanWay.sln" t="IncludeFlat" />
       <e p="xCleanWay.Ui" t="IncludeRecursive">
