@@ -186,7 +186,7 @@
       "projectName": "xCleanWay.Remote",
       "projectPath": "/Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Remote/xCleanWay.Remote.csproj",
       "packagesPath": "/Users/dieppa/.nuget/packages/",
-      "outputPath": "/Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Remote/obj/",
+      "outputPath": "/Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Remote/obj",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -217,7 +217,7 @@
           "NETStandard.Library": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "[2.0.3, )",
+            "version": "2.0.3",
             "autoReferenced": true
           }
         },

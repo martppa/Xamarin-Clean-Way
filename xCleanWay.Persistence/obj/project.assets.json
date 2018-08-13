@@ -186,7 +186,7 @@
       "projectName": "xCleanWay.Persistence",
       "projectPath": "/Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Persistence/xCleanWay.Persistence.csproj",
       "packagesPath": "/Users/dieppa/.nuget/packages/",
-      "outputPath": "/Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Persistence/obj/",
+      "outputPath": "/Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Persistence/obj",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -217,7 +217,7 @@
           "NETStandard.Library": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "[2.0.3, )",
+            "version": "2.0.3",
             "autoReferenced": true
           }
         },

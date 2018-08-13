@@ -130,6 +130,13 @@
         </e>
         <e p="Repositories" t="Include">
           <e p="CountryRepository.cs" t="Include" />
+          <e p="DataSource" t="Include">
+            <e p="Factory" t="Include">
+              <e p="ISimpleCountryDataSourceFactory.cs" t="Include" />
+              <e p="SimpleDataSourceFactory.cs" t="Include" />
+            </e>
+            <e p="ICountryDataSource.cs" t="Include" />
+          </e>
         </e>
         <e p="Threading" t="Include">
           <e p="IDataThread.cs" t="Include" />
