@@ -3,14 +3,12 @@
     public class CountryEntity
     {
         private string name;
-        private string alfa2Code;
-        private string alfa3Code;
+        private string isoCode;
 
-        public CountryEntity(string name, string alfa2Code, string alfa3Code)
+        public CountryEntity(string name, string isoCode)
         {
             this.name = name;
-            this.alfa2Code = alfa2Code;
-            this.alfa3Code = alfa3Code;
+            this.isoCode = isoCode;
         }
 
         public string Name
@@ -19,16 +17,10 @@
             set => name = value;
         }
 
-        public string Alfa2Code
+        public string IsoCode
         {
-            get => alfa2Code;
-            set => alfa2Code = value;
-        }
-
-        public string Alfa3Code
-        {
-            get => alfa3Code;
-            set => alfa3Code = value;
+            get => isoCode;
+            set => IsoCode = value;
         }
     }
 }

@@ -1,11 +1,10 @@
 ﻿using System;
-using System.Collections.ObjectModel;
 using System.Reactive.Linq;
 using xCleanWay.Core.Models;
 using xCleanWay.Core.Repositories;
+using System.Collections.ObjectModel;
 using xCleanWay.Data.Entities.Mappers;
-using xCleanWay.Data.Repositories.DataSource;
-using xCleanWay.Data.Repositories.DataSource.Factory;
+using xCleanWay.Data.Repositories.DataSources.Factory;
 
 namespace xCleanWay.Data.Repositories
 {
@@ -23,14 +22,14 @@ namespace xCleanWay.Data.Repositories
 
         public IObservable<Collection<Country>> GetCountries()
         {
-            var countryDataSource = simpleCountryDataSourceFactory.Build(SourceType.NETWORK);
+            var countryDataSource = simpleCountryDataSourceFactory.Build(DataSourceFrom.NETWORK);
             return countryDataSource.GetCountries()
                 .Select(country => countryEntityMapper.transform(country));
         }
 
         public IObservable<Country> getCountryByISOCode(string isoCode)
         {
-            var countryDataSource = simpleCountryDataSourceFactory.Build(SourceType.NETWORK);
+            var countryDataSource = simpleCountryDataSourceFactory.Build(DataSourceFrom.NETWORK);
             return countryDataSource.getCountryByISOCode(isoCode)
                 .Select(country => countryEntityMapper.transform(country));
         }

@@ -1,4 +1,4 @@
-﻿namespace xCleanWay.Data.Repositories.DataSource.Factory
+﻿namespace xCleanWay.Data.Repositories.DataSources.Factory
 {
     public class SimpleDataSourceFactory : ISimpleCountryDataSourceFactory
     {
@@ -12,15 +12,15 @@
             this.diskCountryDataSource = diskCountryDataSource;
         }
         
-        public ICountryDataSource Build(SourceType sourceType)
+        public ICountryDataSource Build(DataSourceFrom dataSourceFrom)
         {
-            switch (sourceType)
+            switch (dataSourceFrom)
             {
                 default:
-                case SourceType.NETWORK:
+                case DataSourceFrom.NETWORK:
                     return networkCountryDataSource;
                 
-                case SourceType.DISK:
+                case DataSourceFrom.DISK:
                     return diskCountryDataSource;
             }
         }

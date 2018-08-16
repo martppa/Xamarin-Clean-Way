@@ -2,7 +2,7 @@
 using System.Collections.ObjectModel;
 using xCleanWay.Data.Entities;
 
-namespace xCleanWay.Data.Repositories.DataSource
+namespace xCleanWay.Data.Repositories.DataSources
 {
     public interface ICountryDataSource
     {

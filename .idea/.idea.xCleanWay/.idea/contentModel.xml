@@ -86,7 +86,6 @@
       </e>
       <e p="xCleanWay.Core" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
-        <e p="Class1.cs" t="Include" />
         <e p="Interactors" t="Include">
           <e p="CompletableUseCase.cs" t="Include" />
           <e p="ObservableUseCase.cs" t="Include" />
@@ -120,6 +119,7 @@
           <e p="Mappers" t="Include">
             <e p="CountryEntityMapper.cs" t="Include" />
           </e>
+          <e p="SettingsEntity.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
@@ -130,12 +130,21 @@
         </e>
         <e p="Repositories" t="Include">
           <e p="CountryRepository.cs" t="Include" />
-          <e p="DataSource" t="Include">
+          <e p="DataSources" t="Include">
             <e p="Factory" t="Include">
+              <e p="DataSourceFrom.cs" t="Include" />
               <e p="ISimpleCountryDataSourceFactory.cs" t="Include" />
               <e p="SimpleDataSourceFactory.cs" t="Include" />
             </e>
             <e p="ICountryDataSource.cs" t="Include" />
+          </e>
+          <e p="DataStores" t="Include">
+            <e p="Factory" t="Include">
+              <e p="DataStoreFrom.cs" t="Include" />
+              <e p="ISimpleSettingsDataStoreFactory.cs" t="Include" />
+              <e p="SimpleDataStoreFactory.cs" t="Include" />
+            </e>
+            <e p="ISettingsDataStore.cs" t="Include" />
           </e>
         </e>
         <e p="Threading" t="Include">
@@ -196,7 +205,12 @@
       </e>
       <e p="xCleanWay.Persistence" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
-        <e p="Class1.cs" t="Include" />
+        <e p="DataStores" t="Include">
+          <e p="SettingsDiskDataStore.cs" t="Include" />
+        </e>
+        <e p="DIsk" t="Include">
+          <e p="ISettingsProvider.cs" t="Include" />
+        </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netstandard2.0" t="Include">
@@ -204,17 +218,46 @@
             </e>
           </e>
         </e>
+        <e p="RawModels" t="Include">
+          <e p="Mappers" t="Include">
+            <e p="RawSettingsMapper.cs" t="Include" />
+          </e>
+          <e p="RawSettings.cs" t="Include" />
+        </e>
         <e p="xCleanWay.Persistence.csproj" t="IncludeRecursive" />
       </e>
       <e p="xCleanWay.Remote" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
-        <e p="Class1.cs" t="Include" />
+        <e p="DataSources" t="Include">
+          <e p="CountryNetworkDataSource.cs" t="Include" />
+        </e>
+        <e p="NEt" t="Include">
+          <e p="CountryProviderFactory.cs" t="Include" />
+          <e p="ICountryProvider.cs" t="Include" />
+          <e p="Rest" t="Include">
+            <e p="Factory" t="Include">
+              <e p="RestCountryProviderFactory.cs" t="Include" />
+            </e>
+            <e p="IRestCountryAPI.cs" t="Include" />
+            <e p="RestCountryProvider.cs" t="Include" />
+            <e p="RestSharp" t="Include">
+              <e p="RestSharpAPIBase.cs" t="Include" />
+              <e p="RestSharpCountryAPI.cs" t="Include" />
+            </e>
+          </e>
+        </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netstandard2.0" t="Include">
               <e p="xCleanWay.Remote.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
+        </e>
+        <e p="RawModels" t="Include">
+          <e p="Mappers" t="Include">
+            <e p="RawCountryMapper.cs" t="Include" />
+          </e>
+          <e p="RawCountry.cs" t="Include" />
         </e>
         <e p="xCleanWay.Remote.csproj" t="IncludeRecursive" />
       </e>

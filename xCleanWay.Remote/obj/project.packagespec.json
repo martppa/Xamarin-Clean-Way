@@ -14,7 +14,11 @@
     ],
     "frameworks": {
       "netstandard2.0": {
-        "projectReferences": {}
+        "projectReferences": {
+          "/Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Data/xCleanWay.Data.csproj": {
+            "projectPath": "/Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Data/xCleanWay.Data.csproj"
+          }
+        }
       }
     },
     "warningProperties": {
