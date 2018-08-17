@@ -16,7 +16,7 @@ namespace xCleanWay.Remote.DataSources
         public CountryNetworkDataSource(RawCountryMapper rawCountryMapper)
         {
             countryProvider = CountryProviderFactory
-                .Create(CountryProviderFactory.NetworkAPI.REST).Build();
+                .Create(NetworkAPI.REST).Build();
             this.rawCountryMapper = rawCountryMapper;
         }
         

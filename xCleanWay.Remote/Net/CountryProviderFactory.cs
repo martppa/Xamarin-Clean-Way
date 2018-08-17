@@ -10,15 +10,10 @@ namespace xCleanWay.Remote.Net
             {
                 default:
                 case NetworkAPI.REST:
-                    return new RestCountryProviderFactory();
+                    return new CountryRestProviderFactory();
             }
         }
 
         public abstract ICountryProvider Build();
-
-        public enum NetworkAPI
-        {
-            REST
-        }
     }
 }

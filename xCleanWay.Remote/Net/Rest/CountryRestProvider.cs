@@ -5,23 +5,23 @@ using xCleanWay.Remote.RawModels;
 
 namespace xCleanWay.Remote.Net.Rest
 {
-    public class RestCountryProvider : ICountryProvider
+    public class CountryRestProvider : ICountryProvider
     {
-        private readonly IRestCountryApi restCountryApi;
+        private readonly ICountryRestApi _countryRestApi;
 
-        public RestCountryProvider()
+        public CountryRestProvider()
         {
-            restCountryApi = new RestSharpCountryApi();
+            _countryRestApi = new CountryRestSharpApi();
         }
         
         public IObservable<Collection<RawCountry>> GetCountries()
         {
-            return restCountryApi.GetCountries();
+            return _countryRestApi.GetCountries();
         }
 
         public IObservable<RawCountry> getCountryByISOCode(string isoCode)
         {
-            return restCountryApi.getCountryByISOCode(isoCode);
+            return _countryRestApi.GetCountryByISOCode(isoCode);
         }
     }
 }

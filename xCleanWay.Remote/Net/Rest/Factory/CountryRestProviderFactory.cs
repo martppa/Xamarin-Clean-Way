@@ -1,10 +1,10 @@
 ﻿namespace xCleanWay.Remote.Net.Rest.Factory
 {
-    public class RestCountryProviderFactory : CountryProviderFactory
+    public class CountryRestProviderFactory : CountryProviderFactory
     {
         public override ICountryProvider Build()
         {
-            return new RestCountryProvider();
+            return new CountryRestProvider();
         }
     }
 }

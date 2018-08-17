@@ -4,14 +4,14 @@ using xCleanWay.Remote.RawModels;
 
 namespace xCleanWay.Remote.Net.Rest.RestSharp
 {
-    public class RestSharpCountryApi : RestSharpApiBase, IRestCountryApi
+    public class CountryRestSharpApi : RestSharpApiBase, ICountryRestApi
     {
         public IObservable<Collection<RawCountry>> GetCountries()
         {
             throw new NotImplementedException();
         }
 
-        public IObservable<RawCountry> getCountryByISOCode(string isoCode)
+        public IObservable<RawCountry> GetCountryByISOCode(string isoCode)
         {
             throw new NotImplementedException();
         }

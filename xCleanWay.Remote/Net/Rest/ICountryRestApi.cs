@@ -4,9 +4,9 @@ using xCleanWay.Remote.RawModels;
 
 namespace xCleanWay.Remote.Net.Rest
 {
-    public interface IRestCountryApi
+    public interface ICountryRestApi
     {
         IObservable<Collection<RawCountry>> GetCountries();
-        IObservable<RawCountry> getCountryByISOCode(string isoCode);
+        IObservable<RawCountry> GetCountryByISOCode(string isoCode);
     }
 }

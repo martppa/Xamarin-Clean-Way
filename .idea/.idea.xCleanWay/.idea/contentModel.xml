@@ -210,6 +210,20 @@
         </e>
         <e p="DIsk" t="Include">
           <e p="ISettingsProvider.cs" t="Include" />
+          <e p="Serialization" t="Include">
+            <e p="Binary" t="Include">
+              <e p="Factory" t="Include">
+                <e p="SettingsBinarySerializationProviderFactory.cs" t="Include" />
+              </e>
+              <e p="SettingsBinarySerializationProvider.cs" t="Include" />
+              <e p="SystemSerialization" t="Include">
+                <e p="SettingsSystemBinarySerializer.cs" t="Include" />
+              </e>
+            </e>
+            <e p="ISettingsSerializer.cs" t="Include" />
+            <e p="SerializationType.cs" t="Include" />
+            <e p="SettingsSerializationProviderFactory.cs" t="Include" />
+          </e>
         </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
@@ -234,15 +248,16 @@
         <e p="NEt" t="Include">
           <e p="CountryProviderFactory.cs" t="Include" />
           <e p="ICountryProvider.cs" t="Include" />
+          <e p="NertworkAPI.cs" t="Include" />
           <e p="Rest" t="Include">
+            <e p="CountryRestProvider.cs" t="Include" />
             <e p="Factory" t="Include">
-              <e p="RestCountryProviderFactory.cs" t="Include" />
+              <e p="CountryRestProviderFactory.cs" t="Include" />
             </e>
-            <e p="IRestCountryAPI.cs" t="Include" />
-            <e p="RestCountryProvider.cs" t="Include" />
+            <e p="ICountryRestApi.cs" t="Include" />
             <e p="RestSharp" t="Include">
+              <e p="CountryRestSharpApi.cs" t="Include" />
               <e p="RestSharpAPIBase.cs" t="Include" />
-              <e p="RestSharpCountryAPI.cs" t="Include" />
             </e>
           </e>
         </e>

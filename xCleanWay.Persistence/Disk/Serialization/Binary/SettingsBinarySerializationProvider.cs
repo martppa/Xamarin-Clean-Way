@@ -1,10 +1,9 @@
 ﻿using System;
 using xCleanWay.Data.Entities;
-using xCleanWay.Data.Repositories.DataStores;
 
-namespace xCleanWay.Persistence.DataStores
+namespace xCleanWay.Persistence.Disk.Serialization.Binary
 {
-    public class SettingsDiskDataStore : ISettingsDataStore
+    public class SettingsBinarySerializationProvider : ISettingsProvider
     {
         public IObservable<SettingsEntity> GetSettings()
         {
