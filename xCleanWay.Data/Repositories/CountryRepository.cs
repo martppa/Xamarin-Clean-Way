@@ -22,14 +22,14 @@ namespace xCleanWay.Data.Repositories
 
         public IObservable<Collection<Country>> GetCountries()
         {
-            var countryDataSource = simpleCountryDataSourceFactory.Build(DataSourceFrom.NETWORK);
+            var countryDataSource = simpleCountryDataSourceFactory.Build(DataSourceType.NETWORK);
             return countryDataSource.GetCountries()
                 .Select(country => countryEntityMapper.transform(country));
         }
 
         public IObservable<Country> getCountryByISOCode(string isoCode)
         {
-            var countryDataSource = simpleCountryDataSourceFactory.Build(DataSourceFrom.NETWORK);
+            var countryDataSource = simpleCountryDataSourceFactory.Build(DataSourceType.NETWORK);
             return countryDataSource.getCountryByISOCode(isoCode)
                 .Select(country => countryEntityMapper.transform(country));
         }

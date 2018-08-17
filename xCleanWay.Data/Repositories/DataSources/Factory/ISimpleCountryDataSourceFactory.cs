@@ -2,6 +2,6 @@
 {
     public interface ISimpleCountryDataSourceFactory
     {
-        ICountryDataSource Build(DataSourceFrom dataSourceFrom);
+        ICountryDataSource Build(DataSourceType dataSourceType);
     }
 }

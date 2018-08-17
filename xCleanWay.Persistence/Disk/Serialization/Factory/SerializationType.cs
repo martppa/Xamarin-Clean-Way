@@ -1,4 +1,4 @@
-﻿namespace xCleanWay.Persistence.Disk.Serialization
+﻿namespace xCleanWay.Persistence.Disk.Serialization.Factory
 {
     public enum SerializationType
     {

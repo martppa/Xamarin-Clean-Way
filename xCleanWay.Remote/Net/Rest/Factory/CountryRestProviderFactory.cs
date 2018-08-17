@@ -1,4 +1,6 @@
-﻿namespace xCleanWay.Remote.Net.Rest.Factory
+﻿using xCleanWay.Remote.Net.Factory;
+
+namespace xCleanWay.Remote.Net.Rest.Factory
 {
     public class CountryRestProviderFactory : CountryProviderFactory
     {

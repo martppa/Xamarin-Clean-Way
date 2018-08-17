@@ -1,6 +1,6 @@
 ﻿namespace xCleanWay.Data.Repositories.DataSources.Factory
 {
-    public enum DataSourceFrom
+    public enum DataSourceType
     {
         NETWORK,
         DISK

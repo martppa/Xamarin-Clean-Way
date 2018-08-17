@@ -12,15 +12,15 @@
             this.diskCountryDataSource = diskCountryDataSource;
         }
         
-        public ICountryDataSource Build(DataSourceFrom dataSourceFrom)
+        public ICountryDataSource Build(DataSourceType dataSourceType)
         {
-            switch (dataSourceFrom)
+            switch (dataSourceType)
             {
                 default:
-                case DataSourceFrom.NETWORK:
+                case DataSourceType.NETWORK:
                     return networkCountryDataSource;
                 
-                case DataSourceFrom.DISK:
+                case DataSourceType.DISK:
                     return diskCountryDataSource;
             }
         }

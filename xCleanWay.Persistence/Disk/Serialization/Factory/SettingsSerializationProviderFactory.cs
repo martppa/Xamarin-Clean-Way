@@ -1,6 +1,6 @@
 ﻿using xCleanWay.Persistence.Disk.Serialization.Binary.Factory;
 
-namespace xCleanWay.Persistence.Disk.Serialization
+namespace xCleanWay.Persistence.Disk.Serialization.Factory
 {
     public abstract class SettingsSerializationProviderFactory
     {

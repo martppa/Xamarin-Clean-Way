@@ -1,4 +1,6 @@
-﻿namespace xCleanWay.Persistence.Disk.Serialization.Binary.Factory
+﻿using xCleanWay.Persistence.Disk.Serialization.Factory;
+
+namespace xCleanWay.Persistence.Disk.Serialization.Binary.Factory
 {
     public class SettingsBinarySerializationProviderFactory : SettingsSerializationProviderFactory
     {

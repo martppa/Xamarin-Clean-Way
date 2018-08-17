@@ -4,6 +4,7 @@ using System.Reactive.Linq;
 using xCleanWay.Data.Entities;
 using xCleanWay.Data.Repositories.DataSources;
 using xCleanWay.Remote.Net;
+using xCleanWay.Remote.Net.Factory;
 using xCleanWay.Remote.RawModels.Mappers;
 
 namespace xCleanWay.Remote.DataSources

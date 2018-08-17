@@ -132,7 +132,7 @@
           <e p="CountryRepository.cs" t="Include" />
           <e p="DataSources" t="Include">
             <e p="Factory" t="Include">
-              <e p="DataSourceFrom.cs" t="Include" />
+              <e p="DataSourceType.cs" t="Include" />
               <e p="ISimpleCountryDataSourceFactory.cs" t="Include" />
               <e p="SimpleDataSourceFactory.cs" t="Include" />
             </e>
@@ -220,9 +220,11 @@
                 <e p="SettingsSystemBinarySerializer.cs" t="Include" />
               </e>
             </e>
+            <e p="Factory" t="Include">
+              <e p="SerializationType.cs" t="Include" />
+              <e p="SettingsSerializationProviderFactory.cs" t="Include" />
+            </e>
             <e p="ISettingsSerializer.cs" t="Include" />
-            <e p="SerializationType.cs" t="Include" />
-            <e p="SettingsSerializationProviderFactory.cs" t="Include" />
           </e>
         </e>
         <e p="obj" t="ExcludeRecursive">
@@ -246,9 +248,11 @@
           <e p="CountryNetworkDataSource.cs" t="Include" />
         </e>
         <e p="NEt" t="Include">
-          <e p="CountryProviderFactory.cs" t="Include" />
+          <e p="Factory" t="Include">
+            <e p="CountryProviderFactory.cs" t="Include" />
+            <e p="NertworkAPI.cs" t="Include" />
+          </e>
           <e p="ICountryProvider.cs" t="Include" />
-          <e p="NertworkAPI.cs" t="Include" />
           <e p="Rest" t="Include">
             <e p="CountryRestProvider.cs" t="Include" />
             <e p="Factory" t="Include">

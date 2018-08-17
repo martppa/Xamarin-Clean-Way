@@ -1,6 +1,6 @@
 ﻿using xCleanWay.Remote.Net.Rest.Factory;
 
-namespace xCleanWay.Remote.Net
+namespace xCleanWay.Remote.Net.Factory
 {
     public abstract class CountryProviderFactory
     {
