@@ -131,12 +131,13 @@
         <e p="Repositories" t="Include">
           <e p="CountryRepository.cs" t="Include" />
           <e p="DataSources" t="Include">
-            <e p="Factory" t="Include">
-              <e p="DataSourceType.cs" t="Include" />
-              <e p="ISimpleCountryDataSourceFactory.cs" t="Include" />
-              <e p="SimpleDataSourceFactory.cs" t="Include" />
-            </e>
             <e p="ICountryDataSource.cs" t="Include" />
+            <e p="Suppliers" t="Include">
+              <e p="Country" t="Include">
+                <e p="CountryDataSourceSupplier.cs" t="Include" />
+                <e p="ICountryDataSourcesSupplier.cs" t="Include" />
+              </e>
+            </e>
           </e>
           <e p="DataStores" t="Include">
             <e p="Factory" t="Include">
