@@ -88,14 +88,22 @@
         <e p="bin" t="ExcludeRecursive" />
         <e p="Interactors" t="Include">
           <e p="CompletableUseCase.cs" t="Include" />
-          <e p="GetCountries" t="Include">
-            <e p="GetCountries.cs" t="Include" />
+          <e p="Country" t="Include">
+            <e p="GetCountries" t="Include">
+              <e p="GetCountries.cs" t="Include" />
+            </e>
           </e>
           <e p="ObservableUseCase.cs" t="Include" />
+          <e p="Settings" t="Include">
+            <e p="GetSettings" t="Include">
+              <e p="GetSettings.cs" t="Include" />
+            </e>
+          </e>
           <e p="UseCase.cs" t="Include" />
         </e>
         <e p="Models" t="Include">
           <e p="Country.cs" t="Include" />
+          <e p="Settings.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
@@ -106,6 +114,7 @@
         </e>
         <e p="Repositories" t="Include">
           <e p="ICountryRepository.cs" t="Include" />
+          <e p="ISettingsRepository.cs" t="Include" />
         </e>
         <e p="Threading" t="Include">
           <e p="IExecutionThread.cs" t="Include" />
@@ -121,6 +130,7 @@
           <e p="CountryEntity.cs" t="Include" />
           <e p="Mappers" t="Include">
             <e p="CountryEntityMapper.cs" t="Include" />
+            <e p="SettingsEntityMapper.cs" t="Include" />
           </e>
           <e p="SettingsEntity.cs" t="Include" />
         </e>
@@ -298,12 +308,17 @@
             <e p="ICountryListPresenter.cs" t="Include" />
           </e>
           <e p="IPresenter.cs" t="Include" />
+          <e p="Settings" t="Include">
+            <e p="ISettingsPresenter.cs" t="Include" />
+            <e p="SettingsPresenter.cs" t="Include" />
+          </e>
         </e>
         <e p="Threading" t="Include">
           <e p="UiThread.cs" t="Include" />
         </e>
         <e p="Views" t="Include">
           <e p="ICountryListView.cs" t="Include" />
+          <e p="ISettingsView.cs" t="Include" />
           <e p="IView.cs" t="Include" />
         </e>
         <e p="xCleanWay.Ui.csproj" t="IncludeRecursive" />

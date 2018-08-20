@@ -1,13 +1,12 @@
 ﻿using System;
 using System.Collections.ObjectModel;
-using xCleanWay.Core.Models;
 using xCleanWay.Core.Repositories;
 using xCleanWay.Core.Threading;
 using xCleanWay.Core.Utils;
 
-namespace xCleanWay.Core.Interactors.GetCountries
+namespace xCleanWay.Core.Interactors.Country.GetCountries
 {
-    public class GetCountries : ObservableUseCase<Collection<Country>, None>
+    public class GetCountries : ObservableUseCase<Collection<Models.Country>, None>
     {
         private readonly ICountryRepository countryRepository;
         
@@ -17,7 +16,7 @@ namespace xCleanWay.Core.Interactors.GetCountries
             this.countryRepository = countryRepository;
         }
 
-        protected override IObservable<Collection<Country>> BuildUseCaseObservable(None parameters)
+        protected override IObservable<Collection<Models.Country>> BuildUseCaseObservable(None parameters)
         {
             return countryRepository.GetCountries();
         }
