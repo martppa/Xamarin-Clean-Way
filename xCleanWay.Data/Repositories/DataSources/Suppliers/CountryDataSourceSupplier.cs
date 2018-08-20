@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace xCleanWay.Data.Repositories.DataSources.Suppliers.Country
+namespace xCleanWay.Data.Repositories.DataSources.Suppliers
 {
     public class CountryDataSourceSupplier : ICountryDataSourcesSupplier
     {

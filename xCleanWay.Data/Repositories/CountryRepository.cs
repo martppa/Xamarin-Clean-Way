@@ -5,7 +5,7 @@ using xCleanWay.Core.Repositories;
 using System.Collections.ObjectModel;
 using xCleanWay.Data.Entities.Mappers;
 using xCleanWay.Data.Repositories.DataSources;
-using xCleanWay.Data.Repositories.DataSources.Suppliers.Country;
+using xCleanWay.Data.Repositories.DataSources.Suppliers;
 
 namespace xCleanWay.Data.Repositories
 {

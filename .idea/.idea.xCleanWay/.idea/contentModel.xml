@@ -132,11 +132,15 @@
           <e p="CountryRepository.cs" t="Include" />
           <e p="DataSources" t="Include">
             <e p="ICountryDataSource.cs" t="Include" />
+            <e p="Network" t="Include">
+              <e p="CountryNetworkDataSource.cs" t="Include" />
+            </e>
+            <e p="Providers" t="Include">
+              <e p="ICountryProvider.cs" t="Include" />
+            </e>
             <e p="Suppliers" t="Include">
-              <e p="Country" t="Include">
-                <e p="CountryDataSourceSupplier.cs" t="Include" />
-                <e p="ICountryDataSourcesSupplier.cs" t="Include" />
-              </e>
+              <e p="CountryDataSourceSupplier.cs" t="Include" />
+              <e p="ICountryDataSourcesSupplier.cs" t="Include" />
             </e>
           </e>
           <e p="DataStores" t="Include">
@@ -245,31 +249,29 @@
       </e>
       <e p="xCleanWay.Remote" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
-        <e p="DataSources" t="Include">
-          <e p="CountryNetworkDataSource.cs" t="Include" />
-        </e>
-        <e p="NEt" t="Include">
-          <e p="Factory" t="Include">
-            <e p="CountryProviderFactory.cs" t="Include" />
-            <e p="NertworkAPI.cs" t="Include" />
-          </e>
-          <e p="ICountryProvider.cs" t="Include" />
-          <e p="Rest" t="Include">
-            <e p="CountryRestProvider.cs" t="Include" />
-            <e p="Factory" t="Include">
-              <e p="CountryRestProviderFactory.cs" t="Include" />
-            </e>
-            <e p="ICountryRestApi.cs" t="Include" />
-            <e p="RestSharp" t="Include">
-              <e p="CountryRestSharpApi.cs" t="Include" />
-              <e p="RestSharpAPIBase.cs" t="Include" />
-            </e>
-          </e>
-        </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netstandard2.0" t="Include">
               <e p="xCleanWay.Remote.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Providers" t="Include">
+          <e p="Rest" t="Include">
+            <e p="CountryRestProvider.cs" t="Include" />
+            <e p="ICountryRestApi.cs" t="Include" />
+            <e p="IResponseAdapter.cs" t="Include" />
+            <e p="Response" t="Include">
+              <e p="RestResponseAdapter.cs" t="Include" />
+            </e>
+            <e p="RestSharp" t="Include">
+              <e p="CountryRestSharpApi.cs" t="Include" />
+              <e p="GroupKt" t="Include">
+                <e p="CountryGroupKtRestSharpApi.cs" t="Include" />
+                <e p="GroupKtResponseAdapter.cs" t="Include" />
+                <e p="GroupKtRestResponse.cs" t="Include" />
+              </e>
+              <e p="RestSharpAPIBase.cs" t="Include" />
             </e>
           </e>
         </e>

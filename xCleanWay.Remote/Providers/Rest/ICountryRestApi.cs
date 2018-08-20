@@ -6,7 +6,7 @@ namespace xCleanWay.Remote.Net.Rest
 {
     public interface ICountryRestApi
     {
-        IObservable<Collection<RawCountry>> GetCountries();
-        IObservable<RawCountry> GetCountryByISOCode(string isoCode);
+        Collection<RawCountry> GetCountries();
+        RawCountry GetCountryByISOCode(string isoCode);
     }
 }
