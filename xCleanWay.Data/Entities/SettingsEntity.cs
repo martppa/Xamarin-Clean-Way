@@ -2,15 +2,15 @@
 {
     public class SettingsEntity
     {
-        private int countryCacheInMillis;
+        private long countryCacheInMillis;
         
-        public SettingsEntity(int countryCacheInMillis)
+        public SettingsEntity(long countryCacheInMillis)
         {
             this.countryCacheInMillis = countryCacheInMillis;
         }
 
 
-        public int CountryCacheInMillis
+        public long CountryCacheInMillis
         {
             get => countryCacheInMillis;
             set => countryCacheInMillis = value;

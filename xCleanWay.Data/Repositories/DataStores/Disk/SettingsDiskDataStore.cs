@@ -1,8 +1,7 @@
 ﻿using System;
 using xCleanWay.Data.Entities;
-using xCleanWay.Data.Repositories.DataStores;
 
-namespace xCleanWay.Persistence.DataStores
+namespace xCleanWay.Data.Repositories.DataStores.Disk
 {
     public class SettingsDiskDataStore : ISettingsDataStore
     {

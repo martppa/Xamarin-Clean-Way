@@ -7,7 +7,7 @@ namespace xCleanWay.Persistence.RawModels
     {
         private static int DEFAULT_CACHE_LIFETIME_IN_MILLIS = 60000;
         
-        private int countryCacheInMillis;
+        private long countryCacheInMillis;
         
         private RawSettings()
         {
@@ -24,7 +24,7 @@ namespace xCleanWay.Persistence.RawModels
             this.countryCacheInMillis = countryCacheInMillis;
         }
 
-        public int CountryCacheInMillis
+        public long CountryCacheInMillis
         {
             get => countryCacheInMillis;
             set => countryCacheInMillis = value;

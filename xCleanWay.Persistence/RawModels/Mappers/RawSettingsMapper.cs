@@ -5,12 +5,12 @@ namespace xCleanWay.Persistence.RawModels.Mappers
 {
     public class RawSettingsMapper
     {
-        public SettingsEntity transform(RawSettings rawSettings)
+        public SettingsEntity Transform(RawSettings rawSettings)
         {
             return new SettingsEntity(rawSettings.CountryCacheInMillis);
         }
 
-        public Collection<SettingsEntity> transform(Collection<RawSettings> rawSettingses)
+        public Collection<SettingsEntity> Transform(Collection<RawSettings> rawSettingses)
         {
             var settingsEntities = new Collection<SettingsEntity>();
             foreach (var rawSettings in rawSettingses)
