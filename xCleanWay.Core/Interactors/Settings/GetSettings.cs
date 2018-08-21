@@ -3,7 +3,7 @@ using xCleanWay.Core.Repositories;
 using xCleanWay.Core.Threading;
 using xCleanWay.Core.Utils;
 
-namespace xCleanWay.Core.Interactors.Settings.GetSettings
+namespace xCleanWay.Core.Interactors.Settings
 {
     public class GetSettings : ObservableUseCase<Models.Settings, None>
     {

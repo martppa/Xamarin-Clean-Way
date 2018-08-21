@@ -95,9 +95,8 @@
           </e>
           <e p="ObservableUseCase.cs" t="Include" />
           <e p="Settings" t="Include">
-            <e p="GetSettings" t="Include">
-              <e p="GetSettings.cs" t="Include" />
-            </e>
+            <e p="GetSettings.cs" t="Include" />
+            <e p="SetCountryCacheLifeTime.cs" t="Include" />
           </e>
           <e p="UseCase.cs" t="Include" />
         </e>

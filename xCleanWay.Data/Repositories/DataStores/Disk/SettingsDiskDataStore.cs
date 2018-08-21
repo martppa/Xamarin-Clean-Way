@@ -1,4 +1,5 @@
 ﻿using System;
+using xCleanWay.Core.Utils;
 using xCleanWay.Data.Entities;
 
 namespace xCleanWay.Data.Repositories.DataStores.Disk
@@ -10,7 +11,7 @@ namespace xCleanWay.Data.Repositories.DataStores.Disk
             throw new NotImplementedException();
         }
 
-        public IObservable<object> SetCacheLifeTimeInMillis()
+        public IObservable<None> SetCacheLifeTimeInMillis()
         {
             throw new NotImplementedException();
         }
