@@ -7,17 +7,17 @@
             switch (config)
             {
                 default:
-                case InjectorConfiguration.FORMS_INJECTOR_CONFIG:
-                    return new FormsInjectorFactory();
+                case InjectorConfiguration.GTK_INJECTOR_CONFIG:
+                    return new GtkInjectorFactory();
                     break;
             }
         }
 
-        public abstract Injector build();
+        public abstract Injector Build();
         
         public enum InjectorConfiguration
         {
-            FORMS_INJECTOR_CONFIG
+            GTK_INJECTOR_CONFIG
         }
     }
 }
