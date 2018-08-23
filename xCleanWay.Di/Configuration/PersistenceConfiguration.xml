@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<objects xmlns="http://www.springframework.net"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.springframework.net http://www.springframework.net/schema/objects/spring-objects-1.1.xsd">
+
+    <object name="SettingsSerializer" type="xCleanWay.Persistence.Disk.Serialization.Binary.SettingsBinarySerializer, Persistence"/>
+    <object name="SettingsProvider" type="xCleanWay.Persistence.Providers.SettingsDiskProvider, Persistence">
+        <constructor-arg ref="SettingsSerializer" index="0"/>
+    </object>
+
+</objects>

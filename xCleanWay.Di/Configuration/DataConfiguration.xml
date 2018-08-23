@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<objects xmlns="http://www.springframework.net"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.springframework.net http://www.springframework.net/schema/objects/spring-objects-1.1.xsd">
+
+    <object name="DataThread" type="xCleanWay.Data.Threading.DataThread, Data" singleton="false"/>
+    
+    <object name="CountryDataSource" type="xCleanWay.Remote.DataSources.CountryNetworkDataSource, Data">
+        <constructor-arg ref="CountryNetworkProvider" index="0"/>
+    </object>
+
+    <object name="CountryDataSourceSupplier" type="xCleanWay.Data.Repositories.DataSources.Suppliers.CountryDataSource.Supplier, Data">
+        <constructor-arg ref="CountryDataSource" index="0"/>
+    </object>
+    
+    <object name="CountryEntityMapper" type="xCleanWay.Data.Entities.Mappers.CountryEntityMapper"/>
+    
+    <object name="CountryRepository" type="xCleanWay.Data.Repositories.CountryRepository, Data" >
+        <constructor-arg ref="CountryDataSourceSupplier" index="0"/>
+        <constructor-arg ref="CountryEntityMapper" index="1"/>
+    </object>
+
+</objects>

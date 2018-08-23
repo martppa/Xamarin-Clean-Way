@@ -4,7 +4,7 @@ using xCleanWay.Core.Repositories;
 using xCleanWay.Core.Threading;
 using xCleanWay.Core.Utils;
 
-namespace xCleanWay.Core.Interactors.Country.GetCountries
+namespace xCleanWay.Core.Interactors.Country.Countries
 {
     public class GetCountries : ObservableUseCase<Collection<Models.Country>, None>
     {

@@ -3,6 +3,8 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://www.springframework.net http://www.springframework.net/schema/objects/spring-objects-1.1.xsd">
 
-    <import resource="BaseConfiguration.xml"/>
+    <import resource="RemoteConfiguration.xml"/>
+    <import resource="PersistenceConfiguration.xml"/>
+    <import resource="BusinessConfiguration.xml"/>
 
 </objects>

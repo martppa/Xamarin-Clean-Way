@@ -89,7 +89,7 @@
         <e p="Interactors" t="Include">
           <e p="CompletableUseCase.cs" t="Include" />
           <e p="Country" t="Include">
-            <e p="GetCountries" t="Include">
+            <e p="Countries" t="Include">
               <e p="GetCountries.cs" t="Include" />
             </e>
           </e>
@@ -168,7 +168,7 @@
           </e>
         </e>
         <e p="Threading" t="Include">
-          <e p="IDataThread.cs" t="Include" />
+          <e p="DataThread.cs" t="Include" />
         </e>
         <e p="xCleanWay.Data.csproj" t="IncludeRecursive" />
       </e>
@@ -176,8 +176,13 @@
         <e p="BaseInjector.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="Configuration" t="Include">
-          <e p="BaseConfiguration.xml" t="Include" />
+          <e p="BusinessConfiguration.xml" t="Include" />
+          <e p="CoreConfiguration.xml" t="Include" />
+          <e p="DataConfiguration.xml" t="Include" />
           <e p="GtkConfiguration.xml" t="Include" />
+          <e p="PersistenceConfiguration.xml" t="Include" />
+          <e p="RemoteConfiguration.xml" t="Include" />
+          <e p="UiConfiguration.xml" t="Include" />
         </e>
         <e p="Factory" t="Include">
           <e p="GtkInjectorFactory.cs" t="Include" />

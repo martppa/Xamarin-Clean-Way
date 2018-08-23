@@ -1,4 +1,4 @@
-﻿using xCleanWay.Core.Interactors.Country.GetCountries;
+﻿using xCleanWay.Core.Interactors.Country.Countries;
 using xCleanWay.Ui.Models.Mapper;
 using xCleanWay.Ui.Views;
 

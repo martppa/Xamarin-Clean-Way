@@ -12,9 +12,10 @@ namespace xCleanWay.Remote.Providers.Rest
         private readonly ICountryRestApi countryRestApi;
         private readonly RawCountryMapper rawCountryMapper;
 
-        public CountryRestProvider(ICountryRestApi countryRestApi)
+        public CountryRestProvider(ICountryRestApi countryRestApi, RawCountryMapper rawCountryMapper)
         {
             this.countryRestApi = countryRestApi;
+            this.rawCountryMapper = rawCountryMapper;
         }
         
         public Collection<CountryEntity> GetCountries()
