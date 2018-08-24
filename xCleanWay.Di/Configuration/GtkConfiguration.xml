@@ -6,5 +6,9 @@
     <import resource="RemoteConfiguration.xml"/>
     <import resource="PersistenceConfiguration.xml"/>
     <import resource="BusinessConfiguration.xml"/>
+    
+    <object name="AppMainWindow" type="xCleanWay.GtkForms.AppWindows, xCleanWay.GtkForms">
+        <constructor-arg index="0" ref="CountryListPresenter"/>
+    </object>
 
 </objects>

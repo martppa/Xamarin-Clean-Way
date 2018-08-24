@@ -9,7 +9,6 @@
                 default:
                 case InjectorConfiguration.GTK_INJECTOR_CONFIG:
                     return new GtkInjectorFactory();
-                    break;
             }
         }
 
