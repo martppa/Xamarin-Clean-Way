@@ -9,7 +9,7 @@ namespace xCleanWay.GtkForms
 {
     public partial class AppMainWindow : Gtk.Window, ICountryListView
     {
-        private ICountryListPresenter presenter;
+        private readonly ICountryListPresenter presenter;
 
         public AppMainWindow(ICountryListPresenter presenter)
             : base(Gtk.WindowType.Toplevel)

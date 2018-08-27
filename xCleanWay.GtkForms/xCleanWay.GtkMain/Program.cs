@@ -6,41 +6,41 @@ using xCleanWay.GtkForms;
 
 namespace xCleanWay.GtkMain
 {
-    class GtkApp
+    public class GtkApp
     {
         private static GtkApp gtkApp;
 
         private Injector injector;
-        private AppMainWindow appMainWindow;
+        private readonly AppMainWindow appMainWindow;
         
         public static void Main(string[] args)
         {
-            gtkApp = new GtkApp();
+            gtkApp = new GtkApp(args);
             gtkApp.Start();
         }
 
-        private GtkApp()
+        private GtkApp(string[] args)
         {
-            injector = buildInjector();
+            injector = BuildInjector();
             injector.Inject(out appMainWindow);
         }
 
-        private Injector buildInjector()
+        private Injector BuildInjector()
         {
             return InjectorFactory
                 .Create(InjectorFactory.InjectorConfiguration.GTK_INJECTOR_CONFIG).Build();
         }
 
-        private void ShowMainWindow()
-        {
-            appMainWindow.Show();
-        }
-
-        public void Start()
+        private void Start()
         {
             Application.Init();
             ShowMainWindow();
             Application.Run();
+        }
+        
+        private void ShowMainWindow()
+        {
+            appMainWindow.Show();
         }
     }
 }

@@ -5,4 +5,16 @@
   <ItemGroup>
     <PackageReference Include="Spring.Core" Version="2.0.1" />
   </ItemGroup>
+  <ItemGroup>
+    <None Remove="Configuration\BusinessConfiguration.xml" />
+    <EmbeddedResource Include="Configuration\BusinessConfiguration.xml" />
+    <None Remove="Configuration\CoreConfiguration.xml" />
+    <EmbeddedResource Include="Configuration\CoreConfiguration.xml" />
+    <None Remove="Configuration\DataConfiguration.xml" />
+    <EmbeddedResource Include="Configuration\DataConfiguration.xml" />
+    <None Remove="Configuration\GtkConfiguration.xml" />
+    <EmbeddedResource Include="Configuration\GtkConfiguration.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
 </Project>
