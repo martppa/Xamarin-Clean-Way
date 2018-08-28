@@ -2,12 +2,14 @@
 <objects xmlns="http://www.springframework.net"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://www.springframework.net http://www.springframework.net/schema/objects/spring-objects-1.1.xsd">
-
-    <object id="CountryRestApi" type="xCleanWay.Remote.Providers.Rest.RestSharp.GroupKt.CountryGroupKtRestSharpApi, xCleanWay.Remote"/>
+         
     <object id="RawCountryMapper" type="xCleanWay.Remote.RawModels.Mappers.RawCountryMapper, xCleanWay.Remote"/>
+    <object id="CountryRestApi" type="xCleanWay.Remote.Providers.Rest.RestSharp.GroupKt.CountryGroupKtRestApi, xCleanWay.Remote">
+        <constructor-arg index="0" ref="RestFramework"/>
+        <constructor-arg index="1" ref="RawCountryMapper"/>
+    </object>
     <object id="CountryNetworkProvider" type="xCleanWay.Remote.Providers.Rest.CountryRestProvider, xCleanWay.Remote">
         <constructor-arg ref="CountryRestApi" index="0"/>
         <constructor-arg ref="RawCountryMapper" index="1"/>
     </object>
-    
 </objects>
