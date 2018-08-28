@@ -3,9 +3,9 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://www.springframework.net http://www.springframework.net/schema/objects/spring-objects-1.1.xsd">
 
-    <object name="CountryRestApi" type="xCleanWay.Remote.Providers.Rest.RestSharp.CountryRestSharpApi, Remote"/>
-    <object name="RawCountryMapper" type="xCleanWay.Remote.RawModels.Mappers.RawCountryMapper, Remote"/>
-    <object name="CountryNetworkProvider" type="xCleanWay.Remote.Providers.Rest.CountryRestProvider, Remote">
+    <object id="CountryRestApi" type="xCleanWay.Remote.Providers.Rest.RestSharp.GroupKt.CountryGroupKtRestSharpApi, xCleanWay.Remote"/>
+    <object id="RawCountryMapper" type="xCleanWay.Remote.RawModels.Mappers.RawCountryMapper, xCleanWay.Remote"/>
+    <object id="CountryNetworkProvider" type="xCleanWay.Remote.Providers.Rest.CountryRestProvider, xCleanWay.Remote">
         <constructor-arg ref="CountryRestApi" index="0"/>
         <constructor-arg ref="RawCountryMapper" index="1"/>
     </object>

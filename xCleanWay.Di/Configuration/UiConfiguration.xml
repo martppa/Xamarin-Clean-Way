@@ -3,11 +3,11 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://www.springframework.net http://www.springframework.net/schema/objects/spring-objects-1.1.xsd">
 
-    <object name="UiThread" type="xCleanWay.Ui.Threading.UiThread, Ui" singleton="true"/>  
+    <object id="UiThread" type="xCleanWay.Ui.Threading.UiThread, xCleanWay.Ui" singleton="true"/>  
     
-    <object name="CountryModelMapper" type="xCleanWay.Ui.Models.Mapper.CountryModelMapper"/>
+    <object id="CountryModelMapper" type="xCleanWay.Ui.Models.Mapper.CountryModelMapper xCleanWay.Ui"/>
     
-    <object name="CountryListPresenter" type="xCleanWay.Ui.Presenters.Country.CountryListPresenter" singleton="true">
+    <object id="CountryListPresenter" type="xCleanWay.Ui.Presenters.Country.CountryListPresenter, xCleanWay.Ui" singleton="true">
         <constructor-arg index="0" ref="GetCountries"/>
         <constructor-arg index="1" ref="CountryModelMapper"/>
     </object>

@@ -1,4 +1,4 @@
-﻿namespace xCleanWay.Remote.Providers.Rest.RestSharp.GroupKt
+﻿namespace xCleanWay.Remote.Providers.Rest.Hosts.GroupKt
 {
     public class GroupKtResponseAdapter<Content> : IResponseAdapter<Content>
     {

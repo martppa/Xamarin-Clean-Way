@@ -13,8 +13,12 @@
     <None Remove="Configuration\DataConfiguration.xml" />
     <EmbeddedResource Include="Configuration\DataConfiguration.xml" />
     <None Remove="Configuration\GtkConfiguration.xml" />
-    <EmbeddedResource Include="Configuration\GtkConfiguration.xml">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration\GtkConfiguration.xml" />
+    <None Remove="Configuration\UiConfiguration.xml" />
+    <EmbeddedResource Include="Configuration\UiConfiguration.xml" />
+    <None Remove="Configuration\RemoteConfiguration.xml" />
+    <EmbeddedResource Include="Configuration\RemoteConfiguration.xml" />
+    <None Remove="Configuration\PersistenceConfiguration.xml" />
+    <EmbeddedResource Include="Configuration\PersistenceConfiguration.xml" />
   </ItemGroup>
 </Project>

@@ -1,5 +1,4 @@
-﻿using System;
-using Gtk;
+﻿using Gtk;
 using xCleanWay.Di;
 using xCleanWay.Di.Factory;
 using xCleanWay.GtkForms;

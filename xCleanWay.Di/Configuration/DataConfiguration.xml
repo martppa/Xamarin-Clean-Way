@@ -3,19 +3,19 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://www.springframework.net http://www.springframework.net/schema/objects/spring-objects-1.1.xsd">
 
-    <object name="DataThread" type="xCleanWay.Data.Threading.DataThread, Data" singleton="false"/>
+    <object id="DataThread" type="xCleanWay.Data.Threading.DataThread, Data" singleton="false"/>
     
-    <object name="CountryDataSource" type="xCleanWay.Remote.DataSources.CountryNetworkDataSource, Data">
+    <object id="CountryDataSource" type="xCleanWay.Remote.DataSources.CountryNetworkDataSource, xCleanWay.Data">
         <constructor-arg ref="CountryNetworkProvider" index="0"/>
     </object>
 
-    <object name="CountryDataSourceSupplier" type="xCleanWay.Data.Repositories.DataSources.Suppliers.CountryDataSource.Supplier, Data">
+    <object id="CountryDataSourceSupplier" type="xCleanWay.Data.Repositories.DataSources.Suppliers.CountryDataSource.Supplier, xCleanWay.Data">
         <constructor-arg ref="CountryDataSource" index="0"/>
     </object>
     
-    <object name="CountryEntityMapper" type="xCleanWay.Data.Entities.Mappers.CountryEntityMapper"/>
+    <object id="CountryEntityMapper" type="xCleanWay.Data.Entities.Mappers.CountryEntityMapper, xCleanWay.Data"/>
     
-    <object name="CountryRepository" type="xCleanWay.Data.Repositories.CountryRepository, Data" >
+    <object id="CountryRepository" type="xCleanWay.Data.Repositories.CountryRepository, Data" >
         <constructor-arg ref="CountryDataSourceSupplier" index="0"/>
         <constructor-arg ref="CountryEntityMapper" index="1"/>
     </object>

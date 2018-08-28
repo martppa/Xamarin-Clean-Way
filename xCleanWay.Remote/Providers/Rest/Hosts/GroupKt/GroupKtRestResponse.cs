@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace xCleanWay.Remote.Providers.Rest.RestSharp.GroupKt
+﻿namespace xCleanWay.Remote.Providers.Rest.Hosts.GroupKt
 {
     public class GroupKtRestResponse<C>
     {
