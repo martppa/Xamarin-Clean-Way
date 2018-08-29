@@ -1,8 +1,8 @@
-﻿using xCleanWay.Core.Interactors.Country.Countries;
+﻿using xCleanWay.Core.Interactors.Country;
 using xCleanWay.Ui.Models.Mapper;
 using xCleanWay.Ui.Views;
 
-namespace xCleanWay.Ui.Presenters
+namespace xCleanWay.Ui.Presenters.Country
 {
     public class CountryListPresenter : ICountryListPresenter
     {

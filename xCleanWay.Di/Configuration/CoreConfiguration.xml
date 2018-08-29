@@ -3,7 +3,7 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://www.springframework.net http://www.springframework.net/schema/objects/spring-objects-1.1.xsd">    
     
-    <object id="GetCountries" type="xCleanWay.Core.Interactors.Country.Countries.GetCountries, xCleanWay.Core">
+    <object id="GetCountries" type="xCleanWay.Core.Interactors.Country.GetCountries, xCleanWay.Core">
         <constructor-arg index="0" ref="UiThread"/>
         <constructor-arg index="1" ref="DataThread"/>
         <constructor-arg index="2" ref="CountryRepository"/>

@@ -1,11 +1,10 @@
 ﻿using System.Collections.Generic;
 using RestSharp;
 using xCleanWay.Remote.Providers.Rest;
-using xCleanWay.Remote.Providers.Rest.Country;
 
-namespace xCleanWay.GtkData.Remote.RestSharp.Country
+namespace xCleanWay.GtkData.Remote.RestSharp
 {
-    public class RestSharpSharpFramework : IRestFramework
+    public class RestSharpFramework : IRestFramework
     {
         public T ExecuteGet<T>(string baseUrl, string route, Dictionary<string, string> parameters) where T : new()
         {

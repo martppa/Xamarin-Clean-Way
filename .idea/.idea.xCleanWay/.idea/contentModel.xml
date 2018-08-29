@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
+    <e p="/7ac5a975" t="IncludeRecursive" />
+    <e p="/app" t="IncludeRecursive" />
     <e p="$PROJECT_DIR$" t="IncludeFlat">
       <e p="Business" t="Include" />
       <e p="Desktop" t="Include">
@@ -98,9 +100,7 @@
         <e p="Interactors" t="Include">
           <e p="CompletableUseCase.cs" t="Include" />
           <e p="Country" t="Include">
-            <e p="Countries" t="Include">
-              <e p="GetCountries.cs" t="Include" />
-            </e>
+            <e p="GetCountries.cs" t="Include" />
           </e>
           <e p="ObservableUseCase.cs" t="Include" />
           <e p="Settings" t="Include">
@@ -382,6 +382,8 @@
         <e p="xCleanWay.Ui.csproj" t="IncludeRecursive" />
       </e>
     </e>
-    <e p="$USER_HOME$/Library/Caches/Rider2018.1/resharper-host/local/Transient/ReSharperHost/v12/SolutionCaches/_xCleanWay.1775246424.00" t="ExcludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2018.2/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2018.2/resharper-host/local/Transient/ReSharperHost/v182/SolutionCaches/_xCleanWay.1775246424.00" t="ExcludeRecursive" />
+    <e p="$APPLICATION_CONFIG_DIR$/extensions" t="IncludeRecursive" />
   </component>
 </project>

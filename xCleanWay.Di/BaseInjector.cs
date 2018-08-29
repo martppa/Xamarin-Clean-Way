@@ -14,8 +14,7 @@ namespace xCleanWay.Di
 
         private IApplicationContext CreateApplicationContext(string injectorConfigPath)
         {
-            var applicationContext = new XmlApplicationContext(injectorConfigPath);
-            return applicationContext;
+            return new XmlApplicationContext(injectorConfigPath);
         }
 
         public void Inject<T>(out T t)

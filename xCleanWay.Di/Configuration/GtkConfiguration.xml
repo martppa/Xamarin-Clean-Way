@@ -6,6 +6,7 @@
     <import resource="BusinessConfiguration.xml"/>
     
     <object id="RestFramework" type="xCleanWay.GtkData.Remote.RestSharp.RestSharpFramework, xCleanWay.GtkData"/>
+    <object id="SettingsSerializer" type="xCleanWay.GtkData.Persistence.Serialization.Binary.SettingsBinarySerializer, xCleanWay.GtkData"/>
     <object id="AppMainWindow" type="xCleanWay.GtkForms.AppMainWindow, xCleanWay.GtkForms">
         <constructor-arg index="0" ref="CountryListPresenter"/>
     </object>

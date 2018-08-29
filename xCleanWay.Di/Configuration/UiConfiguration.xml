@@ -5,7 +5,7 @@
 
     <object id="UiThread" type="xCleanWay.Ui.Threading.UiThread, xCleanWay.Ui" singleton="true"/>  
     
-    <object id="CountryModelMapper" type="xCleanWay.Ui.Models.Mapper.CountryModelMapper xCleanWay.Ui"/>
+    <object id="CountryModelMapper" type="xCleanWay.Ui.Models.Mapper.CountryModelMapper, xCleanWay.Ui"/>
     
     <object id="CountryListPresenter" type="xCleanWay.Ui.Presenters.Country.CountryListPresenter, xCleanWay.Ui" singleton="true">
         <constructor-arg index="0" ref="GetCountries"/>

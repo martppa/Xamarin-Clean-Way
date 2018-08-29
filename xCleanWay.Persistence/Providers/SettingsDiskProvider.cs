@@ -8,8 +8,8 @@ namespace xCleanWay.Persistence.Providers
 {
     public class SettingsDiskProvider : ISettingsProvider
     {
-        private RawSettingsMapper rawSettingsMapper;
-        private ISettingsSerializer settingsSerializer;
+        private readonly RawSettingsMapper rawSettingsMapper;
+        private readonly ISettingsSerializer settingsSerializer;
 
         public SettingsDiskProvider(ISettingsSerializer settingsSerializer, RawSettingsMapper rawSettingsMapper)
         {
