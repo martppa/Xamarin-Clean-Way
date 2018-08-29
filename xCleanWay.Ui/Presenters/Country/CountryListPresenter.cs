@@ -41,7 +41,7 @@ namespace xCleanWay.Ui.Presenters.Country
             view = countryListView;
         }
 
-        public void requestCountries()
+        public void RequestCountries()
         {
             getCountries.Execute(
                 onNext: countries => { view.RenderCountries(countryModelMapper.Transform(countries)); },

@@ -4,7 +4,7 @@ namespace xCleanWay.Ui.Presenters
 {
     public interface ICountryListPresenter : IPresenter
     {
-        void requestCountries();
+        void RequestCountries();
         void SetView(ICountryListView countryListView);
     }
 }

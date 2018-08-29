@@ -17,11 +17,18 @@ namespace xCleanWay.GtkForms
             Build();
             this.presenter = presenter;
             InitPresenter();
+            RequestCountries();
         }
 
         private void InitPresenter()
         {
+            presenter.SetView(this);
             presenter.Init();
+        }
+
+        private void RequestCountries()
+        {
+            presenter.RequestCountries();
         }
 
         protected void OnDeleteEvent(object sender, DeleteEventArgs a)
