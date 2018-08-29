@@ -12,7 +12,8 @@ namespace xCleanWay.GtkMain
 
         private Injector injector;
         private readonly AppMainWindow appMainWindow;
-        
+
+        [STAThread]
         public static void Main(string[] args)
         {
             gtkApp = new GtkApp(args);

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xCleanWay", "xCleanWay\xCleanWay\xCleanWay.csproj", "{80B1D0D5-FE68-4D35-B245-570E4697505C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xCleanWay.MobileForms", "xCleanWay\xCleanWay\xCleanWay.MobileForms.csproj", "{80B1D0D5-FE68-4D35-B245-570E4697505C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xCleanWay.Droid", "xCleanWay\xCleanWay.Droid\xCleanWay.Droid.csproj", "{7375BB0D-5AF6-413A-9BF3-EC511A9C00D8}"
 EndProject

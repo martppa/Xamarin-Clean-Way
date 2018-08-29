@@ -105,7 +105,7 @@
     </ProjectReference>
     <ProjectReference Include="..\xCleanWay\xCleanWay.csproj">
       <Project>{80B1D0D5-FE68-4D35-B245-570E4697505C}</Project>
-      <Name>xCleanWay</Name>
+      <Name>xCleanWay.MobileForms</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
