@@ -39,6 +39,10 @@
         "ReactiveUI": {
           "target": "Package",
           "version": "[8.5.1, )"
+        },
+        "System.Reactive": {
+          "target": "Package",
+          "version": "[4.1.0, )"
         }
       },
       "imports": [

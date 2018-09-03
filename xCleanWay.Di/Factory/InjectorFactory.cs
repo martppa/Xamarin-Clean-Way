@@ -16,7 +16,9 @@
         
         public enum InjectorConfiguration
         {
-            GTK_INJECTOR_CONFIG
+            GTK_INJECTOR_CONFIG,
+            MAC_INJECTOR_CONFIG,
+            ANDROID_INJECTOR_CONFIG,
         }
     }
 }

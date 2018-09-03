@@ -34,7 +34,7 @@
         },
         "System.Reactive": {
           "target": "Package",
-          "version": "[4.1.0-preview.330, )"
+          "version": "[4.1.0, )"
         }
       },
       "imports": [

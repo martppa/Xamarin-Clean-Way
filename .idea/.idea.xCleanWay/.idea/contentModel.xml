@@ -1,49 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="/7ac5a975" t="IncludeRecursive" />
-    <e p="/app" t="IncludeRecursive" />
     <e p="$PROJECT_DIR$" t="IncludeFlat">
       <e p="Business" t="Include" />
       <e p="Desktop" t="Include">
         <e p="Gtk" t="Include" />
         <e p="MacOS" t="Include" />
       </e>
-      <e p="packages" t="ExcludeRecursive">
-        <e p="Xamarin.Android.Support.Animated.Vector.Drawable.25.4.0.2/proguard" t="Include">
-          <e p="proguard.txt" t="Include" />
-        </e>
-        <e p="Xamarin.Android.Support.Core.UI.25.4.0.2/proguard" t="Include">
-          <e p="proguard.txt" t="Include" />
-        </e>
-        <e p="Xamarin.Android.Support.Design.25.4.0.2/proguard" t="Include">
-          <e p="proguard.txt" t="Include" />
-        </e>
-        <e p="Xamarin.Android.Support.v7.RecyclerView.25.4.0.2/proguard" t="Include">
-          <e p="proguard.txt" t="Include" />
-        </e>
-      </e>
+      <e p="packages" t="ExcludeRecursive" />
       <e p="Phone" t="Include">
         <e p="android" t="Include" />
         <e p="iOS" t="Include" />
       </e>
-      <e p="xCleanWay/xCleanWay" t="IncludeRecursive">
-        <e p="App.xaml" t="Include" />
-        <e p="App.xaml.cs" t="Include" />
-        <e p="bin" t="ExcludeRecursive" />
-        <e p="obj" t="ExcludeRecursive" />
-        <e p="packages.config" t="Include" />
-        <e p="Properties" t="Include">
-          <e p="AssemblyInfo.cs" t="Include" />
-        </e>
-        <e p="xCleanWay.MobileForms.csproj" t="IncludeRecursive" />
-        <e p="xCleanWayPage.xaml" t="Include" />
-        <e p="xCleanWayPage.xaml.cs" t="Include" />
-      </e>
-      <e p="xCleanWay/xCleanWay.Droid" t="IncludeRecursive">
-        <e p="Assets" t="Include">
-          <e p="AboutAssets.txt" t="Include" />
-        </e>
+      <e p="xCleanWay.Android" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
         <e p="MainActivity.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive" />
@@ -53,47 +22,18 @@
           <e p="AssemblyInfo.cs" t="Include" />
         </e>
         <e p="Resources" t="Include">
-          <e p="AboutResources.txt" t="Include" />
           <e p="drawable" t="Include">
-            <e p="icon.png" t="Include" />
-          </e>
-          <e p="drawable-hdpi" t="Include">
-            <e p="icon.png" t="Include" />
-          </e>
-          <e p="drawable-xhdpi" t="Include">
-            <e p="icon.png" t="Include" />
-          </e>
-          <e p="drawable-xxhdpi" t="Include">
-            <e p="icon.png" t="Include" />
+            <e p="Icon.png" t="Include" />
           </e>
           <e p="layout" t="Include">
-            <e p="Tabbar.axml" t="Include" />
-            <e p="Toolbar.axml" t="Include" />
+            <e p="Main.axml" t="Include" />
           </e>
-          <e p="Resource.designer.cs" t="Include" />
+          <e p="Resource.Designer.cs" t="Include" />
           <e p="values" t="Include">
-            <e p="styles.xml" t="Include" />
+            <e p="Strings.xml" t="Include" />
           </e>
         </e>
-        <e p="xCleanWay.Droid.csproj" t="IncludeRecursive" />
-      </e>
-      <e p="xCleanWay/xCleanWay.iOS" t="IncludeRecursive">
-        <e p="AppDelegate.cs" t="Include" />
-        <e p="Assets.xcassets" t="Include">
-          <e p="AppIcon.appiconset" t="Include">
-            <e p="Contents.json" t="Include" />
-          </e>
-          <e p="Contents.json" t="Include" />
-        </e>
-        <e p="bin" t="ExcludeRecursive" />
-        <e p="Entitlements.plist" t="Include" />
-        <e p="Info.plist" t="Include" />
-        <e p="LaunchScreen.storyboard" t="Include" />
-        <e p="Main.cs" t="Include" />
-        <e p="obj" t="ExcludeRecursive" />
-        <e p="packages.config" t="Include" />
-        <e p="Resources" t="Include" />
-        <e p="xCleanWay.iOS.csproj" t="IncludeRecursive" />
+        <e p="xCleanWay.Android.csproj" t="IncludeRecursive" />
       </e>
       <e p="xCleanWay.Core" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
@@ -182,23 +122,29 @@
         <e p="xCleanWay.Data.csproj" t="IncludeRecursive" />
       </e>
       <e p="xCleanWay.Di" t="IncludeRecursive">
+        <e p="AndroidInjector.cs" t="Include" />
         <e p="BaseInjector.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="Configuration" t="Include">
+          <e p="AndroidConfiguration.xml" t="Include" />
           <e p="BusinessConfiguration.xml" t="Include" />
           <e p="CoreConfiguration.xml" t="Include" />
           <e p="DataConfiguration.xml" t="Include" />
           <e p="GtkConfiguration.xml" t="Include" />
+          <e p="MacConfiguration.xml" t="Include" />
           <e p="PersistenceConfiguration.xml" t="Include" />
           <e p="RemoteConfiguration.xml" t="Include" />
           <e p="UiConfiguration.xml" t="Include" />
         </e>
         <e p="Factory" t="Include">
+          <e p="AndroidInjectorFactory.cs" t="Include" />
           <e p="GtkInjectorFactory.cs" t="Include" />
           <e p="InjectorFactory.cs" t="Include" />
+          <e p="MacInjectorFactory.cs" t="Include" />
         </e>
         <e p="GtkInjector.cs" t="Include" />
         <e p="Injector.cs" t="Include" />
+        <e p="MacInjector.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netstandard2.0" t="Include">
@@ -253,6 +199,21 @@
         </e>
         <e p="xCleanWay.GtkMain.csproj" t="IncludeRecursive" />
       </e>
+      <e p="xCleanWay.iOS" t="IncludeRecursive">
+        <e p="AppDelegate.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Entitlements.plist" t="Include" />
+        <e p="Info.plist" t="Include" />
+        <e p="Main.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="Resources" t="Include">
+          <e p="LaunchScreen.xib" t="Include" />
+        </e>
+        <e p="xCleanWay.iOS.csproj" t="IncludeRecursive" />
+      </e>
       <e p="xCleanWay.Mac" t="IncludeRecursive">
         <e p="AppDelegate.cs" t="Include" />
         <e p="Assets.xcassets" t="Include">
@@ -277,6 +238,7 @@
         <e p="Main.cs" t="Include" />
         <e p="Main.storyboard" t="Include" />
         <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
         <e p="Resources" t="Include" />
         <e p="ViewController.cs" t="Include" />
         <e p="ViewController.designer.cs" t="Include" />

@@ -35,7 +35,7 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
-      "System.Reactive/4.1.0-preview.330": {
+      "System.Reactive/4.1.0": {
         "type": "package",
         "dependencies": {
           "System.Runtime.InteropServices.WindowsRuntime": "4.3.0",
@@ -95,7 +95,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "System.Reactive": "4.1.0-preview.330"
+          "System.Reactive": "4.1.0"
         },
         "compile": {
           "bin/placeholder/xCleanWay.Core.dll": {}
@@ -260,10 +260,10 @@
         "netstandard.library.nuspec"
       ]
     },
-    "System.Reactive/4.1.0-preview.330": {
-      "sha512": "dfxkUW8Uj316Xrqh763/8a3/Wmo2MNC+yal2RFNP8RakmQI1B97euvVjPBi6AS3i7okCqoK+Pmkp+2ZAp0g0Xg==",
+    "System.Reactive/4.1.0": {
+      "sha512": "HK7h2XA9PM5Znh9dBYM1wi7J7ZpnyJqKhol4xvoij9b0uifeY8iIrN8SU0bWftmVdUPR6D8kB6XH3uJBx/Clug==",
       "type": "package",
-      "path": "system.reactive/4.1.0-preview.330",
+      "path": "system.reactive/4.1.0",
       "files": [
         ".signature.p7s",
         "lib/net46/System.Reactive.dll",
@@ -276,7 +276,7 @@
         "lib/uap10.0/System.Reactive.dll",
         "lib/uap10.0/System.Reactive.pri",
         "lib/uap10.0/System.Reactive.xml",
-        "system.reactive.4.1.0-preview.330.nupkg.sha512",
+        "system.reactive.4.1.0.nupkg.sha512",
         "system.reactive.nuspec"
       ]
     },
@@ -502,6 +502,7 @@
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
       "NETStandard.Library >= 2.0.3",
+      "System.Reactive >= 4.1.0",
       "xCleanWay.Core >= 1.0.0"
     ]
   },
@@ -548,6 +549,10 @@
     "frameworks": {
       "netstandard2.0": {
         "dependencies": {
+          "System.Reactive": {
+            "target": "Package",
+            "version": "4.1.0"
+          },
           "NETStandard.Library": {
             "suppressParent": "All",
             "target": "Package",

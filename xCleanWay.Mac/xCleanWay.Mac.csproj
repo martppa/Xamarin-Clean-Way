@@ -55,11 +55,31 @@
     </XamMacArch>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Common.Logging, Version=3.4.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e">
+      <HintPath>..\packages\Common.Logging.3.4.1\lib\netstandard1.3\Common.Logging.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Common.Logging.Core, Version=3.4.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e">
+      <HintPath>..\packages\Common.Logging.Core.3.4.1\lib\netstandard1.0\Common.Logging.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="netstandard" />
+    <Reference Include="ReactiveUI, Version=8.7.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\packages\ReactiveUI.8.7.2\lib\xamarinmac20\ReactiveUI.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Splat, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\packages\Splat.4.0.2\lib\xamarinmac20\Splat.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Reactive, Version=4.1.0.0, Culture=neutral, PublicKeyToken=94bc3704cddfc263">
-      <HintPath>..\..\..\.nuget\packages\system.reactive\4.1.0-preview.330\lib\netstandard2.0\System.Reactive.dll</HintPath>
+    <Reference Include="System.Reactive, Version=4.0.0.0, Culture=neutral, PublicKeyToken=94bc3704cddfc263">
+      <HintPath>..\packages\System.Reactive.4.0.0\lib\netstandard2.0\System.Reactive.dll</HintPath>
+      <Private>True</Private>
     </Reference>
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51">
       <HintPath>..\..\..\..\..\usr\local\share\dotnet\sdk\NuGetFallbackFolder\system.threading.tasks.extensions\4.5.1\ref\netstandard2.0\System.Threading.Tasks.Extensions.dll</HintPath>
     </Reference>
@@ -85,6 +105,7 @@
   <ItemGroup>
     <None Include="Info.plist" />
     <None Include="Entitlements.plist" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />
@@ -98,6 +119,30 @@
     <InterfaceDefinition Include="Main.storyboard" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\xCleanWay.Core\xCleanWay.Core.csproj">
+      <Project>{f20070c5-b55f-4e23-94f8-35d0020f856b}</Project>
+      <Name>xCleanWay.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\xCleanWay.Data\xCleanWay.Data.csproj">
+      <Project>{ba820c76-c060-4e7e-8835-690c0f3a815e}</Project>
+      <Name>xCleanWay.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\xCleanWay.Di\xCleanWay.Di.csproj">
+      <Project>{de4de59c-e35c-47ff-a7d4-c4e551e1f040}</Project>
+      <Name>xCleanWay.Di</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\xCleanWay.GtkData\xCleanWay.GtkData.csproj">
+      <Project>{cfb20201-ba7a-46bb-b985-0659eff532b1}</Project>
+      <Name>xCleanWay.GtkData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\xCleanWay.Persistence\xCleanWay.Persistence.csproj">
+      <Project>{9c8113ba-d0a2-42f4-9082-c54855e9f28d}</Project>
+      <Name>xCleanWay.Persistence</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\xCleanWay.Remote\xCleanWay.Remote.csproj">
+      <Project>{f6e89504-d410-40e8-b3c4-a73ebeb27969}</Project>
+      <Name>xCleanWay.Remote</Name>
+    </ProjectReference>
     <ProjectReference Include="..\xCleanWay.Ui\xCleanWay.Ui.csproj">
       <Project>{401822f4-b6d9-4b9b-8a2b-e7b51331055b}</Project>
       <Name>xCleanWay.Ui</Name>

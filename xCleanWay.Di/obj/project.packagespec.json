@@ -26,6 +26,14 @@
   "frameworks": {
     "netstandard2.0": {
       "dependencies": {
+        "Common.Logging": {
+          "target": "Package",
+          "version": "[3.4.1, )"
+        },
+        "Common.Logging.Core": {
+          "target": "Package",
+          "version": "[3.4.1, )"
+        },
         "NETStandard.Library": {
           "suppressParent": "All",
           "target": "Package",
