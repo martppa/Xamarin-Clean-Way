@@ -34,6 +34,10 @@
           "target": "Package",
           "version": "[3.4.1, )"
         },
+        "Microsoft.Extensions.DependencyInjection": {
+          "target": "Package",
+          "version": "[2.1.1, )"
+        },
         "NETStandard.Library": {
           "suppressParent": "All",
           "target": "Package",

@@ -4,7 +4,7 @@ using xCleanWay.Core.Threading;
 
 namespace xCleanWay.Ui.Threading
 {
-    public class UiThread : IExecutionThread
+    public class UiThread : IUiThread
     {
         public IScheduler GetScheduler()
         {

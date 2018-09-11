@@ -1,6 +1,5 @@
 ﻿using System.Collections.ObjectModel;
 using Android.App;
-using Android.Widget;
 using Android.OS;
 using xCleanWay.Di;
 using xCleanWay.Di.Factory;

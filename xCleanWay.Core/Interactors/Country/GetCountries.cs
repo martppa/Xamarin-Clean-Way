@@ -10,7 +10,7 @@ namespace xCleanWay.Core.Interactors.Country
     {
         private readonly ICountryRepository countryRepository;
         
-        public GetCountries(IExecutionThread uiThread, IExecutionThread workerThread, 
+        public GetCountries(IUiThread uiThread, IDataThread workerThread, 
             ICountryRepository countryRepository) : base(uiThread, workerThread)
         {
             this.countryRepository = countryRepository;
