@@ -1,5 +1,4 @@
 ﻿using System.Collections.ObjectModel;
-using System.Globalization;
 using xCleanWay.Data.Entities;
 
 namespace xCleanWay.Remote.RawModels.Mappers
@@ -8,7 +7,7 @@ namespace xCleanWay.Remote.RawModels.Mappers
     {
         public CountryEntity Transform(RawCountry rawCountry)
         {
-            return new CountryEntity(rawCountry.GetName(), rawCountry.GetIsoCode());
+            return new CountryEntity(rawCountry.GetName(), rawCountry.GetIsoCode(), rawCountry.GetFlagUrl());
         }
 
         public Collection<CountryEntity> Transform(Collection<RawCountry> rawCountries)

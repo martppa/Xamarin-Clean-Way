@@ -18,6 +18,7 @@ using xCleanWay.Remote.Net;
 using xCleanWay.Remote.Providers.Rest;
 using xCleanWay.Remote.Providers.Rest.Country;
 using xCleanWay.Remote.Providers.Rest.Hosts.GroupKt;
+using xCleanWay.Remote.Providers.Rest.Hosts.RestCountries;
 using xCleanWay.Remote.RawModels.Mappers;
 using xCleanWay.Ui.Models.Mapper;
 using xCleanWay.Ui.Presenters;
@@ -58,7 +59,7 @@ namespace xCleanWay.Gtk.Di
         private void AddRemoteServices()
         {
             serviceCollection.AddTransient<RawCountryMapper>();
-            serviceCollection.AddTransient<ICountryRestApi, CountryGroupKtRestApi>();
+            serviceCollection.AddTransient<ICountryRestApi, RestCountriesCountryRestApi>();
             serviceCollection.AddTransient<ICountryProvider, CountryRestProvider>();
         }
 

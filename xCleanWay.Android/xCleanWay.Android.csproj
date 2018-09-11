@@ -94,10 +94,6 @@
       <Project>{ba820c76-c060-4e7e-8835-690c0f3a815e}</Project>
       <Name>xCleanWay.Data</Name>
     </ProjectReference>
-    <ProjectReference Include="..\xCleanWay.Di\xCleanWay.Di.csproj">
-      <Project>{de4de59c-e35c-47ff-a7d4-c4e551e1f040}</Project>
-      <Name>xCleanWay.Di</Name>
-    </ProjectReference>
     <ProjectReference Include="..\xCleanWay.Persistence\xCleanWay.Persistence.csproj">
       <Project>{9c8113ba-d0a2-42f4-9082-c54855e9f28d}</Project>
       <Name>xCleanWay.Persistence</Name>

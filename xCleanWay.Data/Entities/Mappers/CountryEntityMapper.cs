@@ -7,7 +7,7 @@ namespace xCleanWay.Data.Entities.Mappers
     {
         public Country transform(CountryEntity countryEntity)
         {
-            return new Country(countryEntity.Name, countryEntity.IsoCode);
+            return new Country(countryEntity.Name, countryEntity.IsoCode, countryEntity.FlagUrl);
         }
 
         public Collection<Country> transform(Collection<CountryEntity> countryEntities)

@@ -107,6 +107,14 @@ class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
 		/* We need to ensure that "xCleanWay.Android.dll" comes first in this list. */
 		"xCleanWay.Android.dll",
+		"ReactiveUI.dll",
+		"Splat.dll",
+		"System.Reactive.dll",
+		"xCleanWay.Core.dll",
+		"xCleanWay.Data.dll",
+		"xCleanWay.Persistence.dll",
+		"xCleanWay.Remote.dll",
+		"xCleanWay.Ui.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};

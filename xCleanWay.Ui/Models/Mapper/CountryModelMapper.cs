@@ -7,7 +7,7 @@ namespace xCleanWay.Ui.Models.Mapper
     {
         public CountryModel Transform(Country country)
         {
-            return new CountryModel(country.Name, country.IsoCode);
+            return new CountryModel(country.Name, country.IsoCode, country.FlagUrl);
         }
 
         public Collection<CountryModel> Transform(Collection<Country> countries)

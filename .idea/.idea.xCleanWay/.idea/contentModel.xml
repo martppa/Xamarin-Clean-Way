@@ -282,14 +282,14 @@
             </e>
             <e p="Hosts" t="Include">
               <e p="GroupKt" t="Include">
-                <e p="CountryGroupKtRestApi.cs" t="Include" />
                 <e p="GroupKtCountryModel.cs" t="Include" />
+                <e p="GroupKtCountryRestApi.cs" t="Include" />
                 <e p="GroupKtResponseAdapter.cs" t="Include" />
                 <e p="GroupKtRestResponse.cs" t="Include" />
               </e>
               <e p="RestCountries" t="Include">
-                <e p="CountryRestCountriesRestApi.cs" t="Include" />
                 <e p="RestCountriesCountryModel.cs" t="Include" />
+                <e p="RestCountriesCountryRestApi.cs" t="Include" />
                 <e p="RestCountriesResponse.cs" t="Include" />
                 <e p="RestCountriesResponseAdapter.cs" t="Include" />
               </e>

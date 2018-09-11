@@ -1,8 +1,6 @@
 ﻿using System.Collections.ObjectModel;
 using Android.App;
 using Android.OS;
-using xCleanWay.Di;
-using xCleanWay.Di.Factory;
 using xCleanWay.Ui.Models;
 using xCleanWay.Ui.Presenters;
 using xCleanWay.Ui.Views;
@@ -12,16 +10,11 @@ namespace xCleanWay.Android
     [Activity(Label = "xCleanWay.Android", MainLauncher = true, Icon = "@drawable/icon")]
     public class MainActivity : Activity, ICountryListView
     {
-        private Injector injector;
         private ICountryListPresenter countryListPresenter;
         
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
-
-            injector = InjectorFactory
-                .Create(InjectorFactory
-                    .InjectorConfiguration.ANDROID_INJECTOR_CONFIG).Build();
             
             InjectPresenter();
             InitPresenter();
@@ -33,7 +26,7 @@ namespace xCleanWay.Android
 
         private void InjectPresenter()
         {
-            injector.Inject(out countryListPresenter);
+            
         }
 
         private void InitPresenter()

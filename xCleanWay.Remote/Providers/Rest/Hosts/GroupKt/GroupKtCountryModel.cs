@@ -35,5 +35,6 @@ namespace xCleanWay.Remote.Providers.Rest.Hosts.GroupKt
 
         public override string GetName() => Name;
         public override string GetIsoCode() => Alfa2Code;
+        public override string GetFlagUrl() => string.Empty;
     }
 }

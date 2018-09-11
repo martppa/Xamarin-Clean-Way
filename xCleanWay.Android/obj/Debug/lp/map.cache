@@ -1,11 +1,9 @@
-System.Runtime
-xCleanWay.Core
-xCleanWay.Data
-xCleanWay.Di
-xCleanWay.Persistence
-xCleanWay.Remote
-xCleanWay.Ui
-netstandard
 ReactiveUI
 Splat
 System.Reactive
+System.Runtime
+xCleanWay.Core
+xCleanWay.Data
+xCleanWay.Persistence
+xCleanWay.Remote
+xCleanWay.Ui
