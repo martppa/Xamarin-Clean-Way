@@ -575,7 +575,7 @@
       "projectName": "xCleanWay.CommonRemote",
       "projectPath": "/Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.CommonRemote/xCleanWay.CommonRemote.csproj",
       "packagesPath": "/Users/dieppa/.nuget/packages/",
-      "outputPath": "/Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.CommonRemote/obj/",
+      "outputPath": "/Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.CommonRemote/obj",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -607,15 +607,15 @@
     "frameworks": {
       "netstandard2.0": {
         "dependencies": {
+          "RestSharp": {
+            "target": "Package",
+            "version": "106.3.1"
+          },
           "NETStandard.Library": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "[2.0.3, )",
+            "version": "2.0.3",
             "autoReferenced": true
-          },
-          "RestSharp": {
-            "target": "Package",
-            "version": "[106.3.1, )"
           }
         },
         "imports": [
