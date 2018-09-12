@@ -26,6 +26,8 @@ namespace xCleanWay.Android
 		
 		public static void UpdateIdValues()
 		{
+			global::xCleanWay.AndroidData.Resource.String.ApplicationName = global::xCleanWay.Android.Resource.String.ApplicationName;
+			global::xCleanWay.AndroidData.Resource.String.Hello = global::xCleanWay.Android.Resource.String.Hello;
 		}
 		
 		public partial class Attribute
@@ -57,11 +59,36 @@ namespace xCleanWay.Android
 			}
 		}
 		
+		public partial class Id
+		{
+			
+			// aapt resource value: 0x7f050002
+			public const int CountriesListView = 2131034114;
+			
+			// aapt resource value: 0x7f050001
+			public const int CountryIsoTextView = 2131034113;
+			
+			// aapt resource value: 0x7f050000
+			public const int CountryNameTextView = 2131034112;
+			
+			static Id()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Id()
+			{
+			}
+		}
+		
 		public partial class Layout
 		{
 			
 			// aapt resource value: 0x7f030000
-			public const int Main = 2130903040;
+			public const int CountryLayout = 2130903040;
+			
+			// aapt resource value: 0x7f030001
+			public const int Main = 2130903041;
 			
 			static Layout()
 			{

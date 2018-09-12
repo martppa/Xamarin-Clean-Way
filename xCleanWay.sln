@@ -37,6 +37,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xCleanWay.iOS", "xCleanWay.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xCleanWay.Gtk", "xCleanWay.Gtk\xCleanWay.Gtk.csproj", "{F23F0E1B-FFC1-4DFA-BC77-0C3F5CFA6B74}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xCleanWay.AndroidData", "xCleanWay.AndroidData\xCleanWay.AndroidData.csproj", "{3F2913E6-FBBE-4C89-AE6A-BCF41F7E4B4B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -179,6 +181,18 @@ Global
 		{F23F0E1B-FFC1-4DFA-BC77-0C3F5CFA6B74}.Release|iPhone.Build.0 = Release|Any CPU
 		{F23F0E1B-FFC1-4DFA-BC77-0C3F5CFA6B74}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{F23F0E1B-FFC1-4DFA-BC77-0C3F5CFA6B74}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{3F2913E6-FBBE-4C89-AE6A-BCF41F7E4B4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F2913E6-FBBE-4C89-AE6A-BCF41F7E4B4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F2913E6-FBBE-4C89-AE6A-BCF41F7E4B4B}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{3F2913E6-FBBE-4C89-AE6A-BCF41F7E4B4B}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{3F2913E6-FBBE-4C89-AE6A-BCF41F7E4B4B}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{3F2913E6-FBBE-4C89-AE6A-BCF41F7E4B4B}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{3F2913E6-FBBE-4C89-AE6A-BCF41F7E4B4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F2913E6-FBBE-4C89-AE6A-BCF41F7E4B4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F2913E6-FBBE-4C89-AE6A-BCF41F7E4B4B}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{3F2913E6-FBBE-4C89-AE6A-BCF41F7E4B4B}.Release|iPhone.Build.0 = Release|Any CPU
+		{3F2913E6-FBBE-4C89-AE6A-BCF41F7E4B4B}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{3F2913E6-FBBE-4C89-AE6A-BCF41F7E4B4B}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{F20070C5-B55F-4E23-94F8-35D0020F856B} = {7BBA4317-414F-4DC3-835A-43E23F7C991A}
@@ -196,5 +210,6 @@ Global
 		{AA8920B2-81AF-442E-A34B-285E6D98C307} = {EB0E8415-5038-4585-ADA0-EF0884538E05}
 		{8D3EFA76-03DA-4C64-9989-9811960BB29E} = {A88D2758-03EF-476A-9B61-96FEF7028E62}
 		{F23F0E1B-FFC1-4DFA-BC77-0C3F5CFA6B74} = {196E7B61-C50A-4649-A262-1DA192ED5ABB}
+		{3F2913E6-FBBE-4C89-AE6A-BCF41F7E4B4B} = {EB0E8415-5038-4585-ADA0-EF0884538E05}
 	EndGlobalSection
 EndGlobal

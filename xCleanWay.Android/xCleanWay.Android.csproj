@@ -45,6 +45,14 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Java.Interop" />
+    <Reference Include="Microsoft.Extensions.DependencyInjection, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.2.1.1\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.2.1.1\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Mono.Android" />
     <Reference Include="mscorlib" />
     <Reference Include="ReactiveUI, Version=8.7.0.0, Culture=neutral, PublicKeyToken=null">
@@ -66,7 +74,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CountryAdapter.cs" />
+    <Compile Include="Di\Injector.cs" />
     <Compile Include="MainActivity.cs" />
+    <Compile Include="Persistence\Preferences\SettingsPreference.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -74,6 +85,7 @@
     <AndroidResource Include="Resources\layout\Main.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
+    <AndroidResource Include="Resources\layout\CountryLayout.axml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\Strings.xml" />
@@ -86,6 +98,10 @@
     <None Include="Properties\AndroidManifest.xml" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\xCleanWay.AndroidData\xCleanWay.AndroidData.csproj">
+      <Project>{3f2913e6-fbbe-4c89-ae6a-bcf41f7e4b4b}</Project>
+      <Name>xCleanWay.AndroidData</Name>
+    </ProjectReference>
     <ProjectReference Include="..\xCleanWay.Core\xCleanWay.Core.csproj">
       <Project>{f20070c5-b55f-4e23-94f8-35d0020f856b}</Project>
       <Name>xCleanWay.Core</Name>
