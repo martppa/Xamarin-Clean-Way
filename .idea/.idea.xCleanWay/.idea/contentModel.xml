@@ -234,6 +234,9 @@
       <e p="xCleanWay.iOS" t="IncludeRecursive">
         <e p="AppDelegate.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
+        <e p="CountryListViewController.cs" t="Include" />
+        <e p="CountryListViewController.designer.cs" t="Include" />
+        <e p="CountryListViewController.xib" t="Include" />
         <e p="Di" t="Include">
           <e p="Injector.cs" t="Include" />
         </e>
@@ -247,6 +250,7 @@
         </e>
         <e p="Resources" t="Include">
           <e p="LaunchScreen.xib" t="Include" />
+          <e p="Main.storyboard" t="Include" />
         </e>
         <e p="xCleanWay.iOS.csproj" t="IncludeRecursive" />
       </e>
