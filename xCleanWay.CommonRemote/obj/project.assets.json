@@ -35,6 +35,15 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
+      "RestSharp/106.3.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/RestSharp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/RestSharp.dll": {}
+        }
+      },
       "System.Reactive/4.1.0": {
         "type": "package",
         "dependencies": {
@@ -102,6 +111,34 @@
         },
         "runtime": {
           "bin/placeholder/xCleanWay.Core.dll": {}
+        }
+      },
+      "xCleanWay.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "System.Reactive": "4.1.0",
+          "xCleanWay.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/xCleanWay.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/xCleanWay.Data.dll": {}
+        }
+      },
+      "xCleanWay.Remote/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "RestSharp": "106.3.1",
+          "xCleanWay.Data": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/xCleanWay.Remote.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/xCleanWay.Remote.dll": {}
         }
       }
     }
@@ -258,6 +295,17 @@
         "lib/netstandard1.0/_._",
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
+      ]
+    },
+    "RestSharp/106.3.1": {
+      "sha512": "TmlN7SXjK52zzpQDTuzw7IH3XQ2Svtss/4zvQBKIgf74QIVxvlxoAqQYu1EhNQ1bMSBIQ4aK120BO7W+v8/kiQ==",
+      "type": "package",
+      "path": "restsharp/106.3.1",
+      "files": [
+        "lib/net452/RestSharp.dll",
+        "lib/netstandard2.0/RestSharp.dll",
+        "restsharp.106.3.1.nupkg.sha512",
+        "restsharp.nuspec"
       ]
     },
     "System.Reactive/4.1.0": {
@@ -497,13 +545,23 @@
       "type": "project",
       "path": "../xCleanWay.Core/xCleanWay.Core.csproj",
       "msbuildProject": "../xCleanWay.Core/xCleanWay.Core.csproj"
+    },
+    "xCleanWay.Data/1.0.0": {
+      "type": "project",
+      "path": "../xCleanWay.Data/xCleanWay.Data.csproj",
+      "msbuildProject": "../xCleanWay.Data/xCleanWay.Data.csproj"
+    },
+    "xCleanWay.Remote/1.0.0": {
+      "type": "project",
+      "path": "../xCleanWay.Remote/xCleanWay.Remote.csproj",
+      "msbuildProject": "../xCleanWay.Remote/xCleanWay.Remote.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
       "NETStandard.Library >= 2.0.3",
-      "System.Reactive >= 4.1.0",
-      "xCleanWay.Core >= 1.0.0"
+      "RestSharp >= 106.3.1",
+      "xCleanWay.Remote >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -513,11 +571,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Data/xCleanWay.Data.csproj",
-      "projectName": "xCleanWay.Data",
-      "projectPath": "/Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Data/xCleanWay.Data.csproj",
+      "projectUniqueName": "/Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.CommonRemote/xCleanWay.CommonRemote.csproj",
+      "projectName": "xCleanWay.CommonRemote",
+      "projectPath": "/Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.CommonRemote/xCleanWay.CommonRemote.csproj",
       "packagesPath": "/Users/dieppa/.nuget/packages/",
-      "outputPath": "/Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Data/obj/",
+      "outputPath": "/Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.CommonRemote/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -534,8 +592,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "/Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Core/xCleanWay.Core.csproj": {
-              "projectPath": "/Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Core/xCleanWay.Core.csproj"
+            "/Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Remote/xCleanWay.Remote.csproj": {
+              "projectPath": "/Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Remote/xCleanWay.Remote.csproj"
             }
           }
         }
@@ -555,9 +613,9 @@
             "version": "[2.0.3, )",
             "autoReferenced": true
           },
-          "System.Reactive": {
+          "RestSharp": {
             "target": "Package",
-            "version": "[4.1.0, )"
+            "version": "[106.3.1, )"
           }
         },
         "imports": [

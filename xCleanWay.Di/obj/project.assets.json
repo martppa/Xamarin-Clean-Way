@@ -2210,7 +2210,7 @@
       "projectName": "xCleanWay.Di",
       "projectPath": "/Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Di/xCleanWay.Di.csproj",
       "packagesPath": "/Users/dieppa/.nuget/packages/",
-      "outputPath": "/Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Di/obj",
+      "outputPath": "/Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Di/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -2240,25 +2240,25 @@
         "dependencies": {
           "Common.Logging": {
             "target": "Package",
-            "version": "3.4.1"
+            "version": "[3.4.1, )"
           },
           "Common.Logging.Core": {
             "target": "Package",
-            "version": "3.4.1"
+            "version": "[3.4.1, )"
           },
           "Microsoft.Extensions.DependencyInjection": {
             "target": "Package",
-            "version": "2.1.1"
-          },
-          "Spring.Core": {
-            "target": "Package",
-            "version": "2.0.1"
+            "version": "[2.1.1, )"
           },
           "NETStandard.Library": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "2.0.3",
+            "version": "[2.0.3, )",
             "autoReferenced": true
+          },
+          "Spring.Core": {
+            "target": "Package",
+            "version": "[2.0.1, )"
           }
         },
         "imports": [

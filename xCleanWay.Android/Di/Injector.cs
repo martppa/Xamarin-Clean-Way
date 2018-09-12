@@ -1,6 +1,6 @@
 using Microsoft.Extensions.DependencyInjection;
-using xCleanWay.Android.Persistence.Preferences;
-using xCleanWay.AndroidData.Remote.RestSharp;
+using xCleanWay.AndroidData.Persistence.Preferences;
+using xCleanWay.CommonRemote.RestSharp;
 using xCleanWay.Core.Interactors.Country;
 using xCleanWay.Core.Repositories;
 using xCleanWay.Core.Threading;

@@ -133,6 +133,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\xCleanWay.CommonRemote\xCleanWay.CommonRemote.csproj">
+      <Project>{881905ed-c59c-4c76-b320-c3161d36fc81}</Project>
+      <Name>xCleanWay.CommonRemote</Name>
+    </ProjectReference>
     <ProjectReference Include="..\xCleanWay.Core\xCleanWay.Core.csproj">
       <Project>{f20070c5-b55f-4e23-94f8-35d0020f856b}</Project>
       <Name>xCleanWay.Core</Name>

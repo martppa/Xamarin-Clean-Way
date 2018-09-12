@@ -13,6 +13,7 @@
 /Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Android/obj/Debug/android/assets/System.Xml.dll
 /Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Android/obj/Debug/android/assets/System.Xml.Linq.dll
 /Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Android/obj/Debug/android/assets/xCleanWay.AndroidData.dll
+/Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Android/obj/Debug/android/assets/xCleanWay.CommonRemote.dll
 /Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Android/obj/Debug/android/assets/xCleanWay.Core.dll
 /Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Android/obj/Debug/android/assets/xCleanWay.Data.dll
 /Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Android/obj/Debug/android/assets/xCleanWay.Persistence.dll

@@ -1,8 +1,8 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using RestSharp;
 using xCleanWay.Remote.Providers.Rest;
 
-namespace xCleanWay.AndroidData.Remote.RestSharp
+namespace xCleanWay.CommonRemote.RestSharp
 {
     public class RestSharpFramework : IRestFramework
     {

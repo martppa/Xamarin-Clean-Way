@@ -113,6 +113,7 @@ class MonoPackageManager_Resources {
 		"Splat.dll",
 		"System.Reactive.dll",
 		"xCleanWay.AndroidData.dll",
+		"xCleanWay.CommonRemote.dll",
 		"xCleanWay.Core.dll",
 		"xCleanWay.Data.dll",
 		"xCleanWay.Persistence.dll",

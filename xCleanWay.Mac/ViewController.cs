@@ -2,8 +2,6 @@
 using System.Collections.ObjectModel;
 using AppKit;
 using Foundation;
-using xCleanWay.Di;
-using xCleanWay.Di.Factory;
 using xCleanWay.Ui.Models;
 using xCleanWay.Ui.Presenters;
 using xCleanWay.Ui.Views;
@@ -12,14 +10,12 @@ namespace xCleanWay.Mac
 {
     public partial class ViewController : NSViewController, ICountryListView
     {
-        private readonly Injector injector;
+        
         private ICountryListPresenter countryListPresenter;
         
         public ViewController(IntPtr handle) : base(handle)
         {
-            injector = InjectorFactory
-                .Create(InjectorFactory
-                    .InjectorConfiguration.MAC_INJECTOR_CONFIG).Build();
+            
         }
 
         public override void ViewDidLoad()
@@ -32,7 +28,7 @@ namespace xCleanWay.Mac
 
         private void InjectPresenter()
         {
-            injector.Inject(out countryListPresenter);
+            
         }
 
         private void InitPresenter()

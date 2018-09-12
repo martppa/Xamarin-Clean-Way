@@ -1,7 +1,7 @@
 using xCleanWay.Persistence.Disk.Serialization;
 using xCleanWay.Persistence.RawModels;
 
-namespace xCleanWay.Android.Persistence.Preferences
+namespace xCleanWay.AndroidData.Persistence.Preferences
 {
     public class SettingsPreference : ISettingsSerializer
     {

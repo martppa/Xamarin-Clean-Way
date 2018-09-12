@@ -45,7 +45,6 @@
   <ItemGroup>
     <Compile Include="Persistence\Serialization\Binary\SettingsBinarySerializer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Remote\RestSharp\RestSharpFramework.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\xCleanWay.Persistence\xCleanWay.Persistence.csproj">

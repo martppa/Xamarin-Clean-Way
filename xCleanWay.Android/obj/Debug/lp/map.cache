@@ -11,3 +11,4 @@ Microsoft.Extensions.DependencyInjection.Abstractions
 Microsoft.Extensions.DependencyInjection
 xCleanWay.AndroidData
 RestSharp
+xCleanWay.CommonRemote

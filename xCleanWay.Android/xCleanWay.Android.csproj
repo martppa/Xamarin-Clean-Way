@@ -77,7 +77,6 @@
     <Compile Include="CountryAdapter.cs" />
     <Compile Include="Di\Injector.cs" />
     <Compile Include="MainActivity.cs" />
-    <Compile Include="Persistence\Preferences\SettingsPreference.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -101,6 +100,10 @@
     <ProjectReference Include="..\xCleanWay.AndroidData\xCleanWay.AndroidData.csproj">
       <Project>{3f2913e6-fbbe-4c89-ae6a-bcf41f7e4b4b}</Project>
       <Name>xCleanWay.AndroidData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\xCleanWay.CommonRemote\xCleanWay.CommonRemote.csproj">
+      <Project>{881905ed-c59c-4c76-b320-c3161d36fc81}</Project>
+      <Name>xCleanWay.CommonRemote</Name>
     </ProjectReference>
     <ProjectReference Include="..\xCleanWay.Core\xCleanWay.Core.csproj">
       <Project>{f20070c5-b55f-4e23-94f8-35d0020f856b}</Project>
