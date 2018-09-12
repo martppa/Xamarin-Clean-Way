@@ -265,7 +265,9 @@
           <e p="Contents.json" t="Include" />
         </e>
         <e p="bin" t="ExcludeRecursive" />
-        <e p="Di" t="Include" />
+        <e p="Di" t="Include">
+          <e p="Injector.cs" t="Include" />
+        </e>
         <e p="Entitlements.plist" t="Include" />
         <e p="Info.plist" t="Include" />
         <e p="Main.cs" t="Include" />
