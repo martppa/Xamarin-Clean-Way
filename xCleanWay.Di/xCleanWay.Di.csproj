@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Common.Logging" Version="3.4.1" />
+    <PackageReference Include="Common.Logging.Core" Version="3.4.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.1.1" />
+    <PackageReference Include="Spring.Core" Version="2.0.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Configuration\BusinessConfiguration.xml" />
+    <EmbeddedResource Include="Configuration\BusinessConfiguration.xml" />
+    <None Remove="Configuration\CoreConfiguration.xml" />
+    <EmbeddedResource Include="Configuration\CoreConfiguration.xml" />
+    <None Remove="Configuration\DataConfiguration.xml" />
+    <EmbeddedResource Include="Configuration\DataConfiguration.xml" />
+    <None Remove="Configuration\GtkConfiguration.xml" />
+    <EmbeddedResource Include="Configuration\GtkConfiguration.xml" />
+    <None Remove="Configuration\UiConfiguration.xml" />
+    <EmbeddedResource Include="Configuration\UiConfiguration.xml" />
+    <None Remove="Configuration\RemoteConfiguration.xml" />
+    <EmbeddedResource Include="Configuration\RemoteConfiguration.xml" />
+    <None Remove="Configuration\PersistenceConfiguration.xml" />
+    <EmbeddedResource Include="Configuration\PersistenceConfiguration.xml" />
+  </ItemGroup>
+</Project>

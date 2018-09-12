@@ -1,0 +1,14 @@
+ReactiveUI
+Splat
+System.Reactive
+System.Runtime
+xCleanWay.Core
+xCleanWay.Data
+xCleanWay.Persistence
+xCleanWay.Remote
+xCleanWay.Ui
+Microsoft.Extensions.DependencyInjection.Abstractions
+Microsoft.Extensions.DependencyInjection
+xCleanWay.AndroidData
+RestSharp
+xCleanWay.CommonRemote

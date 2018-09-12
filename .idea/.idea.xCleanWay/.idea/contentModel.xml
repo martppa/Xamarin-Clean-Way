@@ -2,38 +2,23 @@
 <project version="4">
   <component name="ContentModelStore">
     <e p="$PROJECT_DIR$" t="IncludeFlat">
-      <e p="packages" t="ExcludeRecursive">
-        <e p="Xamarin.Android.Support.Animated.Vector.Drawable.25.4.0.2/proguard" t="Include">
-          <e p="proguard.txt" t="Include" />
-        </e>
-        <e p="Xamarin.Android.Support.Core.UI.25.4.0.2/proguard" t="Include">
-          <e p="proguard.txt" t="Include" />
-        </e>
-        <e p="Xamarin.Android.Support.Design.25.4.0.2/proguard" t="Include">
-          <e p="proguard.txt" t="Include" />
-        </e>
-        <e p="Xamarin.Android.Support.v7.RecyclerView.25.4.0.2/proguard" t="Include">
-          <e p="proguard.txt" t="Include" />
-        </e>
+      <e p="Business" t="Include" />
+      <e p="Common" t="Include" />
+      <e p="Desktop" t="Include">
+        <e p="Gtk" t="Include" />
+        <e p="MacOS" t="Include" />
       </e>
-      <e p="xCleanWay/xCleanWay" t="IncludeRecursive">
-        <e p="App.xaml" t="Include" />
-        <e p="App.xaml.cs" t="Include" />
-        <e p="bin" t="ExcludeRecursive" />
-        <e p="obj" t="ExcludeRecursive" />
-        <e p="packages.config" t="Include" />
-        <e p="Properties" t="Include">
-          <e p="AssemblyInfo.cs" t="Include" />
-        </e>
-        <e p="xCleanWay.csproj" t="IncludeRecursive" />
-        <e p="xCleanWayPage.xaml" t="Include" />
-        <e p="xCleanWayPage.xaml.cs" t="Include" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Phone" t="Include">
+        <e p="android" t="Include" />
+        <e p="iOS" t="Include" />
       </e>
-      <e p="xCleanWay/xCleanWay.Droid" t="IncludeRecursive">
-        <e p="Assets" t="Include">
-          <e p="AboutAssets.txt" t="Include" />
-        </e>
+      <e p="xCleanWay.Android" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
+        <e p="CountryAdapter.cs" t="Include" />
+        <e p="Di" t="Include">
+          <e p="Injector.cs" t="Include" />
+        </e>
         <e p="MainActivity.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive" />
         <e p="packages.config" t="Include" />
@@ -42,50 +27,364 @@
           <e p="AssemblyInfo.cs" t="Include" />
         </e>
         <e p="Resources" t="Include">
-          <e p="AboutResources.txt" t="Include" />
           <e p="drawable" t="Include">
-            <e p="icon.png" t="Include" />
-          </e>
-          <e p="drawable-hdpi" t="Include">
-            <e p="icon.png" t="Include" />
-          </e>
-          <e p="drawable-xhdpi" t="Include">
-            <e p="icon.png" t="Include" />
-          </e>
-          <e p="drawable-xxhdpi" t="Include">
-            <e p="icon.png" t="Include" />
+            <e p="Icon.png" t="Include" />
           </e>
           <e p="layout" t="Include">
-            <e p="Tabbar.axml" t="Include" />
-            <e p="Toolbar.axml" t="Include" />
+            <e p="CountryLayout.axml" t="Include" />
+            <e p="Main.axml" t="Include" />
           </e>
-          <e p="Resource.designer.cs" t="Include" />
+          <e p="Resource.Designer.cs" t="Include" />
           <e p="values" t="Include">
-            <e p="styles.xml" t="Include" />
+            <e p="Strings.xml" t="Include" />
           </e>
         </e>
-        <e p="xCleanWay.Droid.csproj" t="IncludeRecursive" />
+        <e p="xCleanWay.Android.csproj" t="IncludeRecursive" />
       </e>
-      <e p="xCleanWay/xCleanWay.iOS" t="IncludeRecursive">
+      <e p="xCleanWay.AndroidData" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
+        <e p="Persistence" t="Include">
+          <e p="Preferences" t="Include">
+            <e p="SettingsPreference.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="Resources" t="Include">
+          <e p="Resource.Designer.cs" t="Include" />
+          <e p="values" t="Include">
+            <e p="Strings.xml" t="Include" />
+          </e>
+        </e>
+        <e p="xCleanWay.AndroidData.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="xCleanWay.CommonRemote" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netstandard2.0" t="Include">
+              <e p="xCleanWay.CommonRemote.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="restsharp" t="Include">
+          <e p="RestSharpFramework.cs" t="Include" />
+        </e>
+        <e p="xCleanWay.CommonRemote.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="xCleanWay.Core" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Interactors" t="Include">
+          <e p="CompletableUseCase.cs" t="Include" />
+          <e p="Country" t="Include">
+            <e p="GetCountries.cs" t="Include" />
+          </e>
+          <e p="ObservableUseCase.cs" t="Include" />
+          <e p="Settings" t="Include">
+            <e p="GetSettings.cs" t="Include" />
+            <e p="SetCountryCacheLifeTime.cs" t="Include" />
+          </e>
+          <e p="UseCase.cs" t="Include" />
+        </e>
+        <e p="Models" t="Include">
+          <e p="Country.cs" t="Include" />
+          <e p="Settings.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netstandard2.0" t="Include">
+              <e p="xCleanWay.Core.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Repositories" t="Include">
+          <e p="ICountryRepository.cs" t="Include" />
+          <e p="ISettingsRepository.cs" t="Include" />
+        </e>
+        <e p="Threading" t="Include">
+          <e p="IDataThread.cs" t="Include" />
+          <e p="IExecutionThread.cs" t="Include" />
+          <e p="IUiThread.cs" t="Include" />
+        </e>
+        <e p="Utils" t="Include">
+          <e p="None.cs" t="Include" />
+        </e>
+        <e p="xCleanWay.Core.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="xCleanWay.Data" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Entities" t="Include">
+          <e p="CountryEntity.cs" t="Include" />
+          <e p="Mappers" t="Include">
+            <e p="CountryEntityMapper.cs" t="Include" />
+            <e p="SettingsEntityMapper.cs" t="Include" />
+          </e>
+          <e p="SettingsEntity.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netstandard2.0" t="Include">
+              <e p="xCleanWay.Data.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Repositories" t="Include">
+          <e p="CountryRepository.cs" t="Include" />
+          <e p="DataSources" t="Include">
+            <e p="ICountryDataSource.cs" t="Include" />
+            <e p="Network" t="Include">
+              <e p="CountryNetworkDataSource.cs" t="Include" />
+            </e>
+            <e p="Suppliers" t="Include">
+              <e p="CountryDataSourceSupplier.cs" t="Include" />
+              <e p="ICountryDataSourcesSupplier.cs" t="Include" />
+            </e>
+          </e>
+          <e p="DataStores" t="Include">
+            <e p="DIsk" t="Include">
+              <e p="SettingsDiskDataStore.cs" t="Include" />
+            </e>
+            <e p="ISettingsDataStore.cs" t="Include" />
+            <e p="Supplier" t="Include">
+              <e p="ISimpleSettingsDataStoreSupplier.cs" t="Include" />
+              <e p="SimpleDataStoreSupplier.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Providers" t="Include">
+            <e p="ICountryProvider.cs" t="Include" />
+            <e p="ISettingsProvider.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Threading" t="Include">
+          <e p="DataThread.cs" t="Include" />
+        </e>
+        <e p="xCleanWay.Data.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="xCleanWay.Di" t="IncludeRecursive">
+        <e p="AndroidInjector.cs" t="Include" />
+        <e p="BaseInjector.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Configuration" t="Include">
+          <e p="AndroidConfiguration.xml" t="Include" />
+          <e p="BusinessConfiguration.xml" t="Include" />
+          <e p="CoreConfiguration.xml" t="Include" />
+          <e p="DataConfiguration.xml" t="Include" />
+          <e p="GtkConfiguration.xml" t="Include" />
+          <e p="MacConfiguration.xml" t="Include" />
+          <e p="PersistenceConfiguration.xml" t="Include" />
+          <e p="RemoteConfiguration.xml" t="Include" />
+          <e p="UiConfiguration.xml" t="Include" />
+        </e>
+        <e p="Factory" t="Include">
+          <e p="AndroidInjectorFactory.cs" t="Include" />
+          <e p="GtkInjectorFactory.cs" t="Include" />
+          <e p="InjectorFactory.cs" t="Include" />
+          <e p="MacInjectorFactory.cs" t="Include" />
+        </e>
+        <e p="GtkInjector.cs" t="Include" />
+        <e p="Injector.cs" t="Include" />
+        <e p="MacInjector.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netstandard2.0" t="Include">
+              <e p="xCleanWay.Di.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="xCleanWay.Di.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="xCleanWay.Gtk" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Di" t="Include">
+          <e p="Injector.cs" t="Include" />
+        </e>
+        <e p="gtk-gui" t="Include">
+          <e p="generated.cs" t="Include" />
+          <e p="gui.stetic" t="Include" />
+          <e p="MainWindow.cs" t="Include" />
+        </e>
+        <e p="MainWindow.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="xCleanWay.Gtk.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="xCleanWay.GtkData" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
+        <e p="Persistence" t="Include">
+          <e p="Serialization" t="Include">
+            <e p="Binary" t="Include">
+              <e p="SettingsBinarySerializer.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="xCleanWay.GtkData.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="xCleanWay.iOS" t="IncludeRecursive">
+        <e p="AppDelegate.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Entitlements.plist" t="Include" />
+        <e p="Info.plist" t="Include" />
+        <e p="Main.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="Resources" t="Include">
+          <e p="LaunchScreen.xib" t="Include" />
+        </e>
+        <e p="xCleanWay.iOS.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="xCleanWay.Mac" t="IncludeRecursive">
         <e p="AppDelegate.cs" t="Include" />
         <e p="Assets.xcassets" t="Include">
           <e p="AppIcon.appiconset" t="Include">
+            <e p="AppIcon-128.png" t="Include" />
+            <e p="AppIcon-128@2x.png" t="Include" />
+            <e p="AppIcon-16.png" t="Include" />
+            <e p="AppIcon-16@2x.png" t="Include" />
+            <e p="AppIcon-256.png" t="Include" />
+            <e p="AppIcon-256@2x.png" t="Include" />
+            <e p="AppIcon-32.png" t="Include" />
+            <e p="AppIcon-32@2x.png" t="Include" />
+            <e p="AppIcon-512.png" t="Include" />
+            <e p="AppIcon-512@2x.png" t="Include" />
             <e p="Contents.json" t="Include" />
           </e>
           <e p="Contents.json" t="Include" />
         </e>
         <e p="bin" t="ExcludeRecursive" />
+        <e p="Di" t="Include" />
         <e p="Entitlements.plist" t="Include" />
         <e p="Info.plist" t="Include" />
-        <e p="LaunchScreen.storyboard" t="Include" />
         <e p="Main.cs" t="Include" />
+        <e p="Main.storyboard" t="Include" />
         <e p="obj" t="ExcludeRecursive" />
         <e p="packages.config" t="Include" />
         <e p="Resources" t="Include" />
-        <e p="xCleanWay.iOS.csproj" t="IncludeRecursive" />
+        <e p="ViewController.cs" t="Include" />
+        <e p="ViewController.designer.cs" t="Include" />
+        <e p="xCleanWay.Mac.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="xCleanWay.Persistence" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netstandard2.0" t="Include">
+              <e p="xCleanWay.Persistence.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Providers" t="Include">
+          <e p="Serialization" t="Include">
+            <e p="ISettingsSerializer.cs" t="Include" />
+          </e>
+          <e p="SettingsDiskProvider.cs" t="Include" />
+        </e>
+        <e p="RawModels" t="Include">
+          <e p="Mappers" t="Include">
+            <e p="RawSettingsMapper.cs" t="Include" />
+          </e>
+          <e p="RawSettings.cs" t="Include" />
+        </e>
+        <e p="xCleanWay.Persistence.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="xCleanWay.Remote" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netstandard2.0" t="Include">
+              <e p="xCleanWay.Remote.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Providers" t="Include">
+          <e p="Rest" t="Include">
+            <e p="Country" t="Include">
+              <e p="CountryRestApi.cs" t="Include" />
+              <e p="CountryRestProvider.cs" t="Include" />
+              <e p="ICountryRestApi.cs" t="Include" />
+            </e>
+            <e p="Hosts" t="Include">
+              <e p="GroupKt" t="Include">
+                <e p="GroupKtCountryModel.cs" t="Include" />
+                <e p="GroupKtCountryRestApi.cs" t="Include" />
+                <e p="GroupKtResponseAdapter.cs" t="Include" />
+                <e p="GroupKtRestResponse.cs" t="Include" />
+              </e>
+              <e p="RestCountries" t="Include">
+                <e p="RestCountriesCountryModel.cs" t="Include" />
+                <e p="RestCountriesCountryRestApi.cs" t="Include" />
+                <e p="RestCountriesResponse.cs" t="Include" />
+                <e p="RestCountriesResponseAdapter.cs" t="Include" />
+              </e>
+            </e>
+            <e p="IRestFramework.cs" t="Include" />
+            <e p="Response" t="Include">
+              <e p="IResponseAdapter.cs" t="Include" />
+              <e p="RestResponseAdapter.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="RawModels" t="Include">
+          <e p="Mappers" t="Include">
+            <e p="RawCountryMapper.cs" t="Include" />
+          </e>
+          <e p="RawCountry.cs" t="Include" />
+        </e>
+        <e p="xCleanWay.Remote.csproj" t="IncludeRecursive" />
       </e>
       <e p="xCleanWay.sln" t="IncludeFlat" />
+      <e p="xCleanWay.Ui" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Models" t="Include">
+          <e p="CountryModel.cs" t="Include" />
+          <e p="Mapper" t="Include">
+            <e p="CountryModelMapper.cs" t="Include" />
+          </e>
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netstandard2.0" t="Include">
+              <e p="xCleanWay.Ui.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Presenters" t="Include">
+          <e p="Country" t="Include">
+            <e p="CountryListPresenter.cs" t="Include" />
+            <e p="ICountryListPresenter.cs" t="Include" />
+          </e>
+          <e p="IPresenter.cs" t="Include" />
+          <e p="Settings" t="Include">
+            <e p="ISettingsPresenter.cs" t="Include" />
+            <e p="SettingsPresenter.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Threading" t="Include">
+          <e p="UiThread.cs" t="Include" />
+        </e>
+        <e p="Views" t="Include">
+          <e p="ICountryListView.cs" t="Include" />
+          <e p="ISettingsView.cs" t="Include" />
+          <e p="IView.cs" t="Include" />
+        </e>
+        <e p="xCleanWay.Ui.csproj" t="IncludeRecursive" />
+      </e>
     </e>
-    <e p="$USER_HOME$/Library/Caches/Rider2018.1/resharper-host/local/Transient/ReSharperHost/v12/SolutionCaches/_xCleanWay.-65548482.00" t="ExcludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2018.2/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2018.2/resharper-host/local/Transient/ReSharperHost/v182/SolutionCaches/_xCleanWay.1775246424.00" t="ExcludeRecursive" />
+    <e p="$APPLICATION_CONFIG_DIR$/extensions" t="IncludeRecursive" />
   </component>
 </project>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F23F0E1B-FFC1-4DFA-BC77-0C3F5CFA6B74}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>xCleanWay.Gtk</RootNamespace>
+    <AssemblyName>xCleanWay.Gtk</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AtkSharp, Version=3.22.24.36, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\packages\AtkSharp.3.22.24.36\lib\netstandard2.0\AtkSharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CairoSharp, Version=3.22.24.36, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\packages\CairoSharp.3.22.24.36\lib\netstandard2.0\CairoSharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="GdkSharp, Version=3.22.24.36, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\packages\GdkSharp.3.22.24.36\lib\netstandard2.0\GdkSharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="GioSharp, Version=3.22.24.36, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\packages\GioSharp.3.22.24.36\lib\netstandard2.0\GioSharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="GLibSharp, Version=3.22.24.36, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\packages\GLibSharp.3.22.24.36\lib\netstandard2.0\GLibSharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.2.1.1\lib\net461\Microsoft.Extensions.DependencyInjection.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.2.1.1\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="mscorlib" />
+    <Reference Include="PangoSharp, Version=3.22.24.36, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\packages\PangoSharp.3.22.24.36\lib\netstandard2.0\PangoSharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ReactiveUI, Version=8.7.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\packages\ReactiveUI.8.7.2\lib\net461\ReactiveUI.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Splat, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\packages\Splat.4.0.2\lib\net461\Splat.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="gtk-sharp, Version=2.4.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="gdk-sharp, Version=2.4.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="glib-sharp, Version=2.4.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="glade-sharp, Version=2.4.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="pango-sharp, Version=2.4.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="atk-sharp, Version=2.4.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Mono.Posix" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <HintPath>..\packages\System.Drawing.Primitives.4.3.0\lib\net45\System.Drawing.Primitives.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Reactive, Version=4.1.0.0, Culture=neutral, PublicKeyToken=94bc3704cddfc263">
+      <HintPath>..\packages\System.Reactive.4.1.0\lib\net46\System.Reactive.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Reactive.Core, Version=3.0.3000.0, Culture=neutral, PublicKeyToken=94bc3704cddfc263">
+      <HintPath>..\packages\System.Reactive.Core.4.1.0\lib\net46\System.Reactive.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.1\lib\netstandard2.0\System.Threading.Tasks.Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="gtk-gui\gui.stetic">
+      <LogicalName>gui.stetic</LogicalName>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Di\Injector.cs" />
+    <Compile Include="gtk-gui\generated.cs" />
+    <Compile Include="MainWindow.cs" />
+    <Compile Include="gtk-gui\MainWindow.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\xCleanWay.CommonRemote\xCleanWay.CommonRemote.csproj">
+      <Project>{881905ed-c59c-4c76-b320-c3161d36fc81}</Project>
+      <Name>xCleanWay.CommonRemote</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\xCleanWay.Core\xCleanWay.Core.csproj">
+      <Project>{f20070c5-b55f-4e23-94f8-35d0020f856b}</Project>
+      <Name>xCleanWay.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\xCleanWay.Data\xCleanWay.Data.csproj">
+      <Project>{ba820c76-c060-4e7e-8835-690c0f3a815e}</Project>
+      <Name>xCleanWay.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\xCleanWay.Di\xCleanWay.Di.csproj">
+      <Project>{de4de59c-e35c-47ff-a7d4-c4e551e1f040}</Project>
+      <Name>xCleanWay.Di</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\xCleanWay.GtkData\xCleanWay.GtkData.csproj">
+      <Project>{cfb20201-ba7a-46bb-b985-0659eff532b1}</Project>
+      <Name>xCleanWay.GtkData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\xCleanWay.Persistence\xCleanWay.Persistence.csproj">
+      <Project>{9c8113ba-d0a2-42f4-9082-c54855e9f28d}</Project>
+      <Name>xCleanWay.Persistence</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\xCleanWay.Remote\xCleanWay.Remote.csproj">
+      <Project>{f6e89504-d410-40e8-b3c4-a73ebeb27969}</Project>
+      <Name>xCleanWay.Remote</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\xCleanWay.Ui\xCleanWay.Ui.csproj">
+      <Project>{401822f4-b6d9-4b9b-8a2b-e7b51331055b}</Project>
+      <Name>xCleanWay.Ui</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
