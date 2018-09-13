@@ -7,8 +7,8 @@
     <ProjectGuid>{CFB20201-BA7A-46BB-B985-0659EFF532B1}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>xCleanWay.GtkData</RootNamespace>
-    <AssemblyName>xCleanWay.GtkData</AssemblyName>
+    <RootNamespace>xCleanWay.Gtk.Data</RootNamespace>
+    <AssemblyName>xCleanWay.Gtk.Data</AssemblyName>
     <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

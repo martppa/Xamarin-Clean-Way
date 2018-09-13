@@ -5,7 +5,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 using xCleanWay.Persistence.Disk.Serialization;
 using xCleanWay.Persistence.RawModels;
 
-namespace xCleanWay.GtkData.Persistence.Serialization.Binary
+namespace xCleanWay.Gtk.Data.Persistence.Serialization.Binary
 {
     public class SettingsBinarySerializer : ISettingsSerializer
     {

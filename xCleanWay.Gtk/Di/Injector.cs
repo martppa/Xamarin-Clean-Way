@@ -8,7 +8,7 @@ using xCleanWay.Data.Repositories.DataSources;
 using xCleanWay.Data.Repositories.DataSources.Suppliers;
 using xCleanWay.Data.Repositories.DataStores.Providers;
 using xCleanWay.Data.Threading;
-using xCleanWay.GtkData.Persistence.Serialization.Binary;
+using xCleanWay.Gtk.Data.Persistence.Serialization.Binary;
 using xCleanWay.Persistence.Disk.Serialization;
 using xCleanWay.Persistence.Providers;
 using xCleanWay.Persistence.RawModels.Mappers;

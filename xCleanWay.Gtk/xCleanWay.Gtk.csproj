@@ -151,7 +151,7 @@
     </ProjectReference>
     <ProjectReference Include="..\xCleanWay.GtkData\xCleanWay.GtkData.csproj">
       <Project>{cfb20201-ba7a-46bb-b985-0659eff532b1}</Project>
-      <Name>xCleanWay.GtkData</Name>
+      <Name>xCleanWay.Gtk.Data</Name>
     </ProjectReference>
     <ProjectReference Include="..\xCleanWay.Persistence\xCleanWay.Persistence.csproj">
       <Project>{9c8113ba-d0a2-42f4-9082-c54855e9f28d}</Project>
