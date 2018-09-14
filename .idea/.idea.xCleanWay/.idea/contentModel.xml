@@ -220,29 +220,8 @@
         <e p="xCleanWay.Desktop.Data.csproj" t="IncludeRecursive" />
       </e>
       <e p="xCleanWay.Di" t="IncludeRecursive">
-        <e p="AndroidInjector.cs" t="Include" />
-        <e p="BaseInjector.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
-        <e p="Configuration" t="Include">
-          <e p="AndroidConfiguration.xml" t="Include" />
-          <e p="BusinessConfiguration.xml" t="Include" />
-          <e p="CoreConfiguration.xml" t="Include" />
-          <e p="DataConfiguration.xml" t="Include" />
-          <e p="GtkConfiguration.xml" t="Include" />
-          <e p="MacConfiguration.xml" t="Include" />
-          <e p="PersistenceConfiguration.xml" t="Include" />
-          <e p="RemoteConfiguration.xml" t="Include" />
-          <e p="UiConfiguration.xml" t="Include" />
-        </e>
-        <e p="Factory" t="Include">
-          <e p="AndroidInjectorFactory.cs" t="Include" />
-          <e p="GtkInjectorFactory.cs" t="Include" />
-          <e p="InjectorFactory.cs" t="Include" />
-          <e p="MacInjectorFactory.cs" t="Include" />
-        </e>
-        <e p="GtkInjector.cs" t="Include" />
-        <e p="Injector.cs" t="Include" />
-        <e p="MacInjector.cs" t="Include" />
+        <e p="BusinessInjector.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netstandard2.0" t="Include">

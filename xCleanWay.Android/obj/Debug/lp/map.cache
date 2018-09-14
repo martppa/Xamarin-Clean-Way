@@ -4,10 +4,10 @@ ReactiveUI
 Splat
 System.Reactive
 System.Runtime
+System.Web
 xCleanWay.AndroidData
 xCleanWay.Core
 xCleanWay.Data
-xCleanWay.Ui
+xCleanWay.Di
 xCleanWay.Remote
-RestSharp
-System.Web
+xCleanWay.Ui

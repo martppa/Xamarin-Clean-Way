@@ -132,6 +132,10 @@
       <Project>{752b3f9b-68ad-49ca-ae88-755a46ceb540}</Project>
       <Name>xCleanWay.Desktop.Data</Name>
     </ProjectReference>
+    <ProjectReference Include="..\xCleanWay.Di\xCleanWay.Di.csproj">
+      <Project>{de4de59c-e35c-47ff-a7d4-c4e551e1f040}</Project>
+      <Name>xCleanWay.Di</Name>
+    </ProjectReference>
     <ProjectReference Include="..\xCleanWay.Remote\xCleanWay.Remote.csproj">
       <Project>{385533bd-7ce2-471f-ac87-5f6ff8267dc2}</Project>
       <Name>xCleanWay.Remote</Name>

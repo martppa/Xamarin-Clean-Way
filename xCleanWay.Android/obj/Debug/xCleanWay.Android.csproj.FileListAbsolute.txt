@@ -32,7 +32,6 @@
 /Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Android/bin/Debug/Microsoft.Extensions.DependencyInjection.Abstractions.dll
 /Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Android/bin/Debug/Microsoft.Extensions.DependencyInjection.dll
 /Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Android/bin/Debug/xCleanWay.AndroidData.dll
-/Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Android/bin/Debug/RestSharp.dll
 /Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Android/bin/Debug/xCleanWay.AndroidData.pdb
 /Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Android/bin/Debug/Microsoft.Extensions.DependencyInjection.xml
 /Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Android/bin/Debug/Microsoft.Extensions.DependencyInjection.Abstractions.xml
@@ -46,6 +45,8 @@
 /Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Android/bin/Debug/System.Data.dll
 /Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Android/bin/Debug/System.Web.Services.dll
 /Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Android/bin/Debug/System.Transactions.dll
+/Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Android/bin/Debug/xCleanWay.Di.dll
+/Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Android/bin/Debug/xCleanWay.Di.pdb
 /Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Android/bin/Debug/Mono.Android.pdb
 /Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Android/obj/Debug/linksrc/xCleanWay.Android.pdb
 /Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Android/obj/Debug/linksrc/Mono.Android.pdb
@@ -53,5 +54,6 @@
 /Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Android/obj/Debug/linksrc/xCleanWay.AndroidData.pdb
 /Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Android/obj/Debug/linksrc/xCleanWay.Core.pdb
 /Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Android/obj/Debug/linksrc/xCleanWay.Data.pdb
+/Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Android/obj/Debug/linksrc/xCleanWay.Di.pdb
 /Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Android/obj/Debug/linksrc/xCleanWay.Remote.pdb
 /Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Android/obj/Debug/linksrc/xCleanWay.Ui.pdb

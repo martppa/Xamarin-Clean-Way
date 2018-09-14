@@ -15,6 +15,7 @@
 /Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Android/obj/Debug/android/assets/xCleanWay.AndroidData.dll
 /Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Android/obj/Debug/android/assets/xCleanWay.Core.dll
 /Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Android/obj/Debug/android/assets/xCleanWay.Data.dll
+/Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Android/obj/Debug/android/assets/xCleanWay.Di.dll
 /Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Android/obj/Debug/android/assets/xCleanWay.Remote.dll
 /Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Android/obj/Debug/android/assets/xCleanWay.Ui.dll
 /Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Android/obj/Debug/android/assets/System.Runtime.dll
@@ -51,9 +52,3 @@
 /Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Android/obj/Debug/android/assets/System.Runtime.InteropServices.WindowsRuntime.dll
 /Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Android/obj/Debug/android/assets/System.ServiceModel.Internals.dll
 /Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Android/obj/Debug/android/assets/RestSharp.dll
-/Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Android/obj/Debug/android/assets/System.Web.dll
-/Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Android/obj/Debug/android/assets/System.Drawing.dll
-/Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Android/obj/Debug/android/assets/System.Configuration.dll
-/Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Android/obj/Debug/android/assets/System.EnterpriseServices.dll
-/Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Android/obj/Debug/android/assets/System.Web.ApplicationServices.dll
-/Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Android/obj/Debug/android/assets/System.ComponentModel.DataAnnotations.dll

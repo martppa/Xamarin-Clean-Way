@@ -115,13 +115,10 @@ class MonoPackageManager_Resources {
 		"xCleanWay.AndroidData.dll",
 		"xCleanWay.Core.dll",
 		"xCleanWay.Data.dll",
+		"xCleanWay.Di.dll",
 		"xCleanWay.Remote.dll",
 		"xCleanWay.Ui.dll",
 		"RestSharp.dll",
-		"System.Web.dll",
-		"System.Drawing.dll",
-		"System.Configuration.dll",
-		"System.Web.ApplicationServices.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};
