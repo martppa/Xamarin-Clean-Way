@@ -18,6 +18,7 @@
         <e p="android" t="Include" />
         <e p="iOS" t="Include" />
       </e>
+      <e p="Web" t="Include" />
       <e p="xCleanWay.Android" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
         <e p="CountryAdapter.cs" t="Include" />
@@ -65,6 +66,23 @@
           </e>
         </e>
         <e p="xCleanWay.AndroidData.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="xCleanWay.ASP" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.1" t="Include">
+              <e p="xCleanWay.ASP.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="Startup.cs" t="Include" />
+        <e p="wwwroot" t="Include" />
+        <e p="xCleanWay.ASP.csproj" t="IncludeRecursive" />
       </e>
       <e p="xCleanWay.Core" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
