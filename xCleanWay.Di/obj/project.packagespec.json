@@ -14,7 +14,17 @@
     ],
     "frameworks": {
       "netstandard2.0": {
-        "projectReferences": {}
+        "projectReferences": {
+          "/Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Core/xCleanWay.Core.csproj": {
+            "projectPath": "/Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Core/xCleanWay.Core.csproj"
+          },
+          "/Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Data/xCleanWay.Data.csproj": {
+            "projectPath": "/Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Data/xCleanWay.Data.csproj"
+          },
+          "/Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Ui/xCleanWay.Ui.csproj": {
+            "projectPath": "/Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Ui/xCleanWay.Ui.csproj"
+          }
+        }
       }
     },
     "warningProperties": {
@@ -26,14 +36,6 @@
   "frameworks": {
     "netstandard2.0": {
       "dependencies": {
-        "Common.Logging": {
-          "target": "Package",
-          "version": "[3.4.1, )"
-        },
-        "Common.Logging.Core": {
-          "target": "Package",
-          "version": "[3.4.1, )"
-        },
         "Microsoft.Extensions.DependencyInjection": {
           "target": "Package",
           "version": "[2.1.1, )"
@@ -43,10 +45,6 @@
           "target": "Package",
           "version": "[2.0.3, )",
           "autoReferenced": true
-        },
-        "Spring.Core": {
-          "target": "Package",
-          "version": "[2.0.1, )"
         }
       },
       "imports": [

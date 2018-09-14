@@ -7,8 +7,8 @@ namespace xCleanWay.Core.Interactors
 {
     public abstract class CompletableUseCase<Parameters> : UseCase
     {
-        private IExecutionThread uiThread;
-        private IExecutionThread workerThread;
+        private readonly IExecutionThread uiThread;
+        private readonly IExecutionThread workerThread;
 
         public CompletableUseCase(IExecutionThread uiThread, IExecutionThread workerThread)
         {

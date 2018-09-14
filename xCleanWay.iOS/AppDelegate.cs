@@ -15,10 +15,10 @@ namespace xCleanWay.iOS
         public override bool FinishedLaunching(UIApplication application, NSDictionary launchOptions)
         {
             // create a new window instance based on the screen size
-            Window = new UIWindow(UIScreen.MainScreen.Bounds);
-
-            // If you have defined a root view controller, set it here:
-            // Window.RootViewController = myViewController;
+            Window = new UIWindow(UIScreen.MainScreen.Bounds)
+            {
+                RootViewController = new CountryListViewController()
+            };
 
             // make the window visible
             Window.MakeKeyAndVisible();

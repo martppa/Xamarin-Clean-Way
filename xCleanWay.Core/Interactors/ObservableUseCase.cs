@@ -6,8 +6,8 @@ namespace xCleanWay.Core.Interactors
 {
     public abstract class ObservableUseCase<T, Parameters> : UseCase
     {
-        private IExecutionThread uiThread;
-        private IExecutionThread workerThread;
+        private readonly IExecutionThread uiThread;
+        private readonly IExecutionThread workerThread;
 
         public ObservableUseCase(IExecutionThread uiThread, IExecutionThread workerThread)
         {
