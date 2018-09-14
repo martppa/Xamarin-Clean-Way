@@ -4,7 +4,6 @@ using Android.App;
 using Android.OS;
 using Android.Widget;
 using xCleanWay.Android.Di;
-using xCleanWay.Remote.Providers.Rest.Hosts.RestCountries;
 using xCleanWay.Ui.Models;
 using xCleanWay.Ui.Presenters;
 using xCleanWay.Ui.Views;

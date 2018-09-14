@@ -24,7 +24,7 @@ namespace xCleanWay.Data.Entities
         public string IsoCode
         {
             get => isoCode;
-            set => IsoCode = value;
+            set => isoCode = value;
         }
 
         public string FlagUrl
@@ -34,3 +34,15 @@ namespace xCleanWay.Data.Entities
         }
     }
 }
+
+/* 
+namespace xCleanWay.Data.Entities
+{
+    public interface ICountryEntity
+    {
+        string Name { get; }
+        string IsoCode { get; }
+        string FlagUrl { get; }
+    }
+}
+*/

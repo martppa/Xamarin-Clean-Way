@@ -2,10 +2,9 @@
 using System.Collections.ObjectModel;
 using System.Reactive.Linq;
 using xCleanWay.Data.Entities;
-using xCleanWay.Data.Repositories.DataSources;
-using xCleanWay.Remote.Net;
+using xCleanWay.Data.Repositories.Providers.Country;
 
-namespace xCleanWay.Remote.DataSources
+namespace xCleanWay.Data.Repositories.DataSources.Network
 {
     public class CountryNetworkDataSource : ICountryDataSource
     {

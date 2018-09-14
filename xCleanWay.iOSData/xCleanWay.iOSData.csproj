@@ -44,9 +44,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\xCleanWay.Persistence\xCleanWay.Persistence.csproj">
-      <Project>{9c8113ba-d0a2-42f4-9082-c54855e9f28d}</Project>
-      <Name>xCleanWay.Persistence</Name>
+    <ProjectReference Include="..\xCleanWay.Data\xCleanWay.Data.csproj">
+      <Project>{ba820c76-c060-4e7e-8835-690c0f3a815e}</Project>
+      <Name>xCleanWay.Data</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

@@ -43,21 +43,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Persistence\Serialization\Binary\SettingsBinarySerializer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\xCleanWay.Persistence\xCleanWay.Persistence.csproj">
-      <Project>{9c8113ba-d0a2-42f4-9082-c54855e9f28d}</Project>
-      <Name>xCleanWay.Persistence</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\xCleanWay.Remote\xCleanWay.Remote.csproj">
-      <Project>{f6e89504-d410-40e8-b3c4-a73ebeb27969}</Project>
-      <Name>xCleanWay.Remote</Name>
-    </ProjectReference>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <ProjectReference Include="..\xCleanWay.Data\xCleanWay.Data.csproj">
+      <Project>{ba820c76-c060-4e7e-8835-690c0f3a815e}</Project>
+      <Name>xCleanWay.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

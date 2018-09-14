@@ -1,5 +1,5 @@
-using xCleanWay.Persistence.Disk.Serialization;
-using xCleanWay.Persistence.RawModels;
+using xCleanWay.Data.Repositories.Providers.RawModels;
+using xCleanWay.Data.Repositories.Providers.Settings.Serialization;
 
 namespace xCleanWay.AndroidData.Persistence.Preferences
 {

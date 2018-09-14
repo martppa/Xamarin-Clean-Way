@@ -8,17 +8,17 @@ using xCleanWay.Data.Repositories.DataSources;
 using xCleanWay.Data.Repositories.DataSources.Suppliers;
 using xCleanWay.Data.Repositories.DataStores.Providers;
 using xCleanWay.Data.Threading;
-using xCleanWay.Gtk.Data.Persistence.Serialization.Binary;
-using xCleanWay.Persistence.Disk.Serialization;
-using xCleanWay.Persistence.Providers;
-using xCleanWay.Persistence.RawModels.Mappers;
-using xCleanWay.Remote.DataSources;
-using xCleanWay.Remote.Net;
-using xCleanWay.Remote.Providers.Rest;
 using xCleanWay.Remote.Providers.Rest.Country;
-using xCleanWay.Remote.Providers.Rest.Hosts.RestCountries;
-using xCleanWay.Remote.RawModels.Mappers;
-using xCleanWay.CommonRemote.RestSharp;
+using xCleanWay.Data.Repositories.DataSources.Factory;
+using xCleanWay.Data.Repositories.DataSources.Network;
+using xCleanWay.Data.Repositories.Providers.Country;
+using xCleanWay.Data.Repositories.Providers.Country.Rest.Host.RestCountries;
+using xCleanWay.Data.Repositories.Providers.RawModels.Mappers;
+using xCleanWay.Data.Repositories.Providers.Rest;
+using xCleanWay.Data.Repositories.Providers.Settings;
+using xCleanWay.Data.Repositories.Providers.Settings.Serialization;
+using xCleanWay.Desktop.Data.Persistence.Serialization.Binary;
+using xCleanWay.Remote.RestSharp.xCleanWay.Remote.RestSharp;
 using xCleanWay.Ui.Models.Mapper;
 using xCleanWay.Ui.Presenters;
 using xCleanWay.Ui.Presenters.Country;
@@ -72,7 +72,7 @@ namespace xCleanWay.Gtk.Di
         {
             serviceCollection.AddTransient<IDataThread, DataThread>();
             serviceCollection.AddTransient<ICountryDataSource, CountryNetworkDataSource>();
-            serviceCollection.AddTransient<ICountryDataSourcesSupplier, CountryDataSourceSupplier>();
+            serviceCollection.AddTransient<ICountryDataSourceSimpleFactory, CountryDataSourceSimpleFactory>();
             serviceCollection.AddTransient<CountryEntityMapper>();
             serviceCollection.AddTransient<ICountryRepository, CountryRepository>();
         }

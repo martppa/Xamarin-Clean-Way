@@ -26,6 +26,8 @@ namespace xCleanWay.Android
 		
 		public static void UpdateIdValues()
 		{
+			global::xCleanWay.AndroidData.Resource.String.ApplicationName = global::xCleanWay.Android.Resource.String.ApplicationName;
+			global::xCleanWay.AndroidData.Resource.String.Hello = global::xCleanWay.Android.Resource.String.Hello;
 		}
 		
 		public partial class Attribute

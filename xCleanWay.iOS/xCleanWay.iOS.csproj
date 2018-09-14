@@ -129,10 +129,6 @@
     <Content Include="Entitlements.plist" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\xCleanWay.CommonRemote\xCleanWay.CommonRemote.csproj">
-      <Project>{881905ed-c59c-4c76-b320-c3161d36fc81}</Project>
-      <Name>xCleanWay.CommonRemote</Name>
-    </ProjectReference>
     <ProjectReference Include="..\xCleanWay.Core\xCleanWay.Core.csproj">
       <Project>{f20070c5-b55f-4e23-94f8-35d0020f856b}</Project>
       <Name>xCleanWay.Core</Name>
@@ -145,12 +141,8 @@
       <Project>{69380a0c-903f-4772-93ad-a9a054f81a10}</Project>
       <Name>xCleanWay.iOSData</Name>
     </ProjectReference>
-    <ProjectReference Include="..\xCleanWay.Persistence\xCleanWay.Persistence.csproj">
-      <Project>{9c8113ba-d0a2-42f4-9082-c54855e9f28d}</Project>
-      <Name>xCleanWay.Persistence</Name>
-    </ProjectReference>
     <ProjectReference Include="..\xCleanWay.Remote\xCleanWay.Remote.csproj">
-      <Project>{f6e89504-d410-40e8-b3c4-a73ebeb27969}</Project>
+      <Project>{385533bd-7ce2-471f-ac87-5f6ff8267dc2}</Project>
       <Name>xCleanWay.Remote</Name>
     </ProjectReference>
     <ProjectReference Include="..\xCleanWay.Ui\xCleanWay.Ui.csproj">
