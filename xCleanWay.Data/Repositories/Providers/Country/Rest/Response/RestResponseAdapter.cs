@@ -1,12 +1,16 @@
 ﻿namespace xCleanWay.Remote.Providers.Rest.Response
 {
-    public class RestResponseAdapter<Content, Response>
+    public abstract class RestResponseAdapter<Content, Response> : IResponseAdapter<Content>
     {
-        private Response response;
+        protected readonly Response response;
 
-        public RestResponseAdapter(Response response)
+        protected RestResponseAdapter(Response response)
         {
             this.response = response;
         }
+
+        public abstract ResponseStatus GetStatus();
+        public abstract string GetErrorMessage();
+        public abstract Content GetContent();
     }
 }
