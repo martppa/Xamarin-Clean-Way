@@ -16,11 +16,11 @@ namespace xCleanWay.Data.Repositories.Providers.Country.Rest.Host.GroupKt
         public GroupKtCountryRestApi(IRestFramework restFramework, RawCountryMapper rawCountryMapper) 
             : base(restFramework, rawCountryMapper) {}
 
-        protected override IResponseAdapter<Collection<GroupKtCountryModel>> RequestCountries()
+        protected override IResponseAdapter<List<GroupKtCountryModel>> RequestCountries()
         {
             var respose = restFramework
-                .ExecuteGet<GroupKtRestResponse<Collection<GroupKtCountryModel>>>(BASE_URL, COUNTRY_ROUTE, NoParameters());
-            return new GroupKtResponseAdapter<Collection<GroupKtCountryModel>>(respose);
+                .ExecuteGet<GroupKtRestResponse<List<GroupKtCountryModel>>>(BASE_URL, COUNTRY_ROUTE, NoParameters());
+            return new GroupKtResponseAdapter<List<GroupKtCountryModel>>(respose);
         }
 
         protected override IResponseAdapter<GroupKtCountryModel> RequestCountryByISOCode(string isoCode)

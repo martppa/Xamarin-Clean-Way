@@ -16,26 +16,21 @@ namespace xCleanWay.Data.Repositories.Providers.Country.Rest.Host.RestCountries
         public RestCountriesCountryRestApi(IRestFramework restFramework, RawCountryMapper rawCountryMapper) 
             : base(restFramework, rawCountryMapper) {}
 
-        protected override IResponseAdapter<Collection<RestCountriesCountryModel>> RequestCountries()
+        protected override IResponseAdapter<List<RestCountriesCountryModel>> RequestCountries()
         {
-            RestCountriesResponse<Collection<RestCountriesCountryModel>> response;
             try
             {
-                var data = restFramework
-                    .ExecuteGet<List<RestCountriesCountryModel>>(BASE_URL,
+                var response = restFramework
+                    .ExecuteGet<RestCountriesResponse>(BASE_URL,
                         COUNTRY_ROUTE, NoParameters());
-                if (data == null)
+                if (response == null)
                     throw new Exception("No data from server");
-                var countries = new Collection<RestCountriesCountryModel>(data);
-                response = new RestCountriesResponse<Collection<RestCountriesCountryModel>>(ResponseStatus.OK, countries);
+                return new RestCountriesResponseAdapter(response);
             }
             catch (Exception exception)
             {
-                response = new RestCountriesResponse
-                    <Collection<RestCountriesCountryModel>>(ResponseStatus.ERROR, exception.Message);
+                return new RestCountriesResponseAdapter(ResponseStatus.ERROR, exception.Message);
             }
-
-            return new RestCountriesResponseAdapter<Collection<RestCountriesCountryModel>>(response);
         }
 
         protected override IResponseAdapter<RestCountriesCountryModel> RequestCountryByISOCode(string iso)

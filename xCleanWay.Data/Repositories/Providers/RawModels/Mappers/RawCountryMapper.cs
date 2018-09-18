@@ -1,4 +1,5 @@
-﻿using System.Collections.ObjectModel;
+﻿using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using xCleanWay.Data.Entities;
 
 namespace xCleanWay.Data.Repositories.Providers.RawModels.Mappers
@@ -10,7 +11,7 @@ namespace xCleanWay.Data.Repositories.Providers.RawModels.Mappers
             return new CountryEntity(rawCountry.GetName(), rawCountry.GetIsoCode(), rawCountry.GetFlagUrl());
         }
 
-        public Collection<CountryEntity> Transform(Collection<RawCountry> rawCountries)
+        public Collection<CountryEntity> Transform(IList<RawCountry> rawCountries)
         {
             var countryEntities = new Collection<CountryEntity>();
             foreach (var rawCountry in rawCountries)
@@ -21,7 +22,7 @@ namespace xCleanWay.Data.Repositories.Providers.RawModels.Mappers
             return countryEntities;
         }
 
-        public Collection<RawCountry> Transform<T>(Collection<T> collection) where T : RawCountry
+        public Collection<RawCountry> Transform<T>(IList<T> collection) where T : RawCountry
         {
             var rawCountries = new Collection<RawCountry>();
             foreach (var t in collection)

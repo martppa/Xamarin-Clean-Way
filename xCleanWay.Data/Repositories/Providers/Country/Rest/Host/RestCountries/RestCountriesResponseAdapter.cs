@@ -1,26 +1,37 @@
+using System;
 using xCleanWay.Remote.Providers.Rest;
 using xCleanWay.Remote.Providers.Rest.Response;
 
 namespace xCleanWay.Data.Repositories.Providers.Country.Rest.Host.RestCountries
 {
-    public class RestCountriesResponseAdapter<Content> : RestResponseAdapter<Content, RestCountriesResponse<Content>> where Content : class
+    public class RestCountriesResponseAdapter : RestResponseAdapter<RestCountriesResponse, RestCountriesResponse>
     {
-        public RestCountriesResponseAdapter(RestCountriesResponse<Content> restCountriesResponse)
+        private readonly ResponseStatus responseStatus;
+        private readonly string errorMessage;
+        
+        public RestCountriesResponseAdapter(RestCountriesResponse restCountriesResponse)
             : base(restCountriesResponse) {}
+
+        public RestCountriesResponseAdapter(ResponseStatus responseStatus, string errorMessage) 
+            : base(new RestCountriesResponse())
+        {
+            this.responseStatus = responseStatus;
+            this.errorMessage = errorMessage;
+        }
 
         public override ResponseStatus GetStatus()
         {
-            return response?.ResponseStatus ?? ResponseStatus.ERROR;
+            return responseStatus;
         }
 
         public override string GetErrorMessage()
         {
-            return response?.ErrorMessage ?? string.Empty;
+            return errorMessage;
         }
 
-        public override Content GetContent()
+        public override RestCountriesResponse GetContent()
         {
-            return response?.Content;
+            return response;
         }
     }
 }

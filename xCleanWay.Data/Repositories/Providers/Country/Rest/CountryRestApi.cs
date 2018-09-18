@@ -34,7 +34,7 @@ namespace xCleanWay.Data.Repositories.Providers.Country.Rest
             return responseAdapter.GetContent();
         }
 
-        protected abstract IResponseAdapter<Collection<Entity>> RequestCountries();
+        protected abstract IResponseAdapter<List<Entity>> RequestCountries();
         protected abstract IResponseAdapter<Entity> RequestCountryByISOCode(string iso);
 
         private void AssertRequestWasSuccessful<T>(IResponseAdapter<T> responseAdapter)
