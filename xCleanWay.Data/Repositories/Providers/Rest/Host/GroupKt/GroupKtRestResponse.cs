@@ -1,14 +1,16 @@
-﻿namespace xCleanWay.Data.Repositories.Providers.Rest.Host.GroupKt
+﻿using System.Collections.Generic;
+
+namespace xCleanWay.Data.Repositories.Providers.Rest.Host.GroupKt
 {
     public class GroupKtRestResponse<C>
     {
-        private string[] messages;
-        private C result;
-
-        private string errorMessage;
-
-        public C Content => result;
-
-        public string ErrorMessage => errorMessage;
+        public RestResponse<C> RestResponse { get; set; }
+        public C Content => RestResponse.result;
+    }
+    
+    public class RestResponse<C>
+    {
+        public List<string> messages { get; set; }
+        public C result { get; set; }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.IO;
 using xCleanWay.Data.Repositories.Providers.RawModels.Mappers;
 using xCleanWay.Data.Repositories.Providers.Rest.Framework;
 using xCleanWay.Data.Repositories.Providers.Rest.Response;
@@ -16,18 +17,33 @@ namespace xCleanWay.Data.Repositories.Providers.Rest.Host.GroupKt
 
         protected override IResponseAdapter<List<GroupKtCountryModel>> RequestCountries()
         {
-            var respose = restFramework
-                .ExecuteGet<GroupKtRestResponse<List<GroupKtCountryModel>>>(BASE_URL, COUNTRY_ROUTE, NoParameters());
-            return new GroupKtResponseAdapter<List<GroupKtCountryModel>>(respose);
+            try
+            {
+                var response = restFramework
+                    .ExecuteGet<GroupKtRestResponse<List<GroupKtCountryModel>>>(BASE_URL, COUNTRY_ROUTE,
+                        NoParameters());
+                return new GroupKtResponseAdapter<List<GroupKtCountryModel>>(response);
+            }
+            catch (IOException ioex)
+            {
+                return new GroupKtResponseAdapter<List<GroupKtCountryModel>>(ResponseStatus.ERROR, ioex.Message);
+            }
         }
 
         protected override IResponseAdapter<GroupKtCountryModel> RequestCountryByISOCode(string isoCode)
         {
-            Dictionary<string, string> parameters = new Dictionary<string, string> {{ISO_CODE_KEY, isoCode}};
-            var response = restFramework
-                .ExecuteGet<GroupKtRestResponse<GroupKtCountryModel>>(BASE_URL, 
-                    COUNTRY_ROUTE, parameters);
-            return new GroupKtResponseAdapter<GroupKtCountryModel>(response);
+            try
+            {
+                Dictionary<string, string> parameters = new Dictionary<string, string> {{ISO_CODE_KEY, isoCode}};
+                var response = restFramework
+                    .ExecuteGet<GroupKtRestResponse<GroupKtCountryModel>>(BASE_URL,
+                        COUNTRY_ROUTE, parameters);
+                return new GroupKtResponseAdapter<GroupKtCountryModel>(response);
+            }
+            catch (IOException ioex)
+            {
+                return new GroupKtResponseAdapter<GroupKtCountryModel>(ResponseStatus.ERROR, ioex.Message);
+            }
         }
     }
 }
