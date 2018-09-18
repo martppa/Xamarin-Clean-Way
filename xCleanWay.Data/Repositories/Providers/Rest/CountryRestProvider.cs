@@ -1,10 +1,8 @@
 ﻿using System.Collections.ObjectModel;
 using xCleanWay.Data.Entities;
-using xCleanWay.Data.Repositories.Providers.Country;
-using xCleanWay.Data.Repositories.Providers.RawModels;
 using xCleanWay.Data.Repositories.Providers.RawModels.Mappers;
 
-namespace xCleanWay.Remote.Providers.Rest.Country
+namespace xCleanWay.Data.Repositories.Providers.Rest
 {
     public class CountryRestProvider : ICountryProvider
     {

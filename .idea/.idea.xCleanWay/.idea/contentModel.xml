@@ -265,32 +265,7 @@
             <e p="ISettingsDataStore.cs" t="Include" />
           </e>
           <e p="Providers" t="Include">
-            <e p="Country" t="Include">
-              <e p="ICountryProvider.cs" t="Include" />
-              <e p="Rest" t="Include">
-                <e p="CountryRestApi.cs" t="Include" />
-                <e p="CountryRestProvider.cs" t="Include" />
-                <e p="Host" t="Include">
-                  <e p="GroupKt" t="Include">
-                    <e p="GroupKtCountryModel.cs" t="Include" />
-                    <e p="GroupKtCountryRestApi.cs" t="Include" />
-                    <e p="GroupKtResponseAdapter.cs" t="Include" />
-                    <e p="GroupKtRestResponse.cs" t="Include" />
-                  </e>
-                  <e p="RestCountries" t="Include">
-                    <e p="RestCountriesCountryModel.cs" t="Include" />
-                    <e p="RestCountriesCountryRestApi.cs" t="Include" />
-                    <e p="RestCountriesResponse.cs" t="Include" />
-                    <e p="RestCountriesResponseAdapter.cs" t="Include" />
-                  </e>
-                </e>
-                <e p="ICountryRestApi.cs" t="Include" />
-                <e p="Response" t="Include">
-                  <e p="IResponseAdapter.cs" t="Include" />
-                  <e p="RestResponseAdapter.cs" t="Include" />
-                </e>
-              </e>
-            </e>
+            <e p="ICountryProvider.cs" t="Include" />
             <e p="ISettingsProvider.cs" t="Include" />
             <e p="RawModels" t="Include">
               <e p="Mappers" t="Include">
@@ -301,7 +276,30 @@
               <e p="RawSettings.cs" t="Include" />
             </e>
             <e p="Rest" t="Include">
-              <e p="IRestFramework.cs" t="Include" />
+              <e p="CountryRestApi.cs" t="Include" />
+              <e p="CountryRestProvider.cs" t="Include" />
+              <e p="Framework" t="Include">
+                <e p="IRestFramework.cs" t="Include" />
+              </e>
+              <e p="Host" t="Include">
+                <e p="GroupKt" t="Include">
+                  <e p="GroupKtCountryModel.cs" t="Include" />
+                  <e p="GroupKtCountryRestApi.cs" t="Include" />
+                  <e p="GroupKtResponseAdapter.cs" t="Include" />
+                  <e p="GroupKtRestResponse.cs" t="Include" />
+                </e>
+                <e p="RestCountries" t="Include">
+                  <e p="RestCountriesCountryModel.cs" t="Include" />
+                  <e p="RestCountriesCountryRestApi.cs" t="Include" />
+                  <e p="RestCountriesResponse.cs" t="Include" />
+                  <e p="RestCountriesResponseAdapter.cs" t="Include" />
+                </e>
+              </e>
+              <e p="ICountryRestApi.cs" t="Include" />
+              <e p="Response" t="Include">
+                <e p="IResponseAdapter.cs" t="Include" />
+                <e p="RestResponseAdapter.cs" t="Include" />
+              </e>
             </e>
             <e p="Settings" t="Include">
               <e p="Serialization" t="Include">

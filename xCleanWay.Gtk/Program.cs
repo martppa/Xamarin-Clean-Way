@@ -1,7 +1,6 @@
 ﻿using System;
 using Gtk;
 using xCleanWay.Gtk.Di;
-using xCleanWay.Remote.Providers.Rest.Country;
 
 namespace xCleanWay.Gtk
 {

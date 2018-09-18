@@ -1,4 +1,4 @@
-﻿namespace xCleanWay.Remote.Providers.Rest
+﻿namespace xCleanWay.Data.Repositories.Providers.Rest.Response
 {
     public interface IResponseAdapter<out Content>
     {

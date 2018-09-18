@@ -3,11 +3,10 @@ using System.Collections.ObjectModel;
 using System.IO;
 using xCleanWay.Data.Repositories.Providers.RawModels;
 using xCleanWay.Data.Repositories.Providers.RawModels.Mappers;
-using xCleanWay.Data.Repositories.Providers.Rest;
-using xCleanWay.Remote.Providers.Rest;
-using xCleanWay.Remote.Providers.Rest.Country;
+using xCleanWay.Data.Repositories.Providers.Rest.Framework;
+using xCleanWay.Data.Repositories.Providers.Rest.Response;
 
-namespace xCleanWay.Data.Repositories.Providers.Country.Rest
+namespace xCleanWay.Data.Repositories.Providers.Rest
 {
     public abstract class CountryRestApi<Entity> : ICountryRestApi where Entity : RawCountry
     {

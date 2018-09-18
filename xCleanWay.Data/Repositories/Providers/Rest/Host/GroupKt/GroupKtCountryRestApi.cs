@@ -1,11 +1,9 @@
 ﻿using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using xCleanWay.Data.Repositories.Providers.RawModels.Mappers;
-using xCleanWay.Data.Repositories.Providers.Rest;
-using xCleanWay.Remote.Providers.Rest;
-using xCleanWay.Remote.Providers.Rest.Hosts.GroupKt;
+using xCleanWay.Data.Repositories.Providers.Rest.Framework;
+using xCleanWay.Data.Repositories.Providers.Rest.Response;
 
-namespace xCleanWay.Data.Repositories.Providers.Country.Rest.Host.GroupKt
+namespace xCleanWay.Data.Repositories.Providers.Rest.Host.GroupKt
 {
     public class GroupKtCountryRestApi : CountryRestApi<GroupKtCountryModel>
     {

@@ -1,6 +1,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using xCleanWay.AndroidData.Persistence.Preferences;
 using xCleanWay.Data.Repositories.Providers.Rest;
+using xCleanWay.Data.Repositories.Providers.Rest.Framework;
 using xCleanWay.Data.Repositories.Providers.Settings.Serialization;
 using xCleanWay.Di;
 using xCleanWay.Remote.RestSharp.xCleanWay.Remote.RestSharp;

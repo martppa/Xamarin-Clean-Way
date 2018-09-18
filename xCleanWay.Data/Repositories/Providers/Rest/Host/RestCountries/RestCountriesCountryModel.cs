@@ -1,7 +1,6 @@
-using xCleanWay.Data.Entities;
 using xCleanWay.Data.Repositories.Providers.RawModels;
 
-namespace xCleanWay.Data.Repositories.Providers.Country.Rest.Host.RestCountries
+namespace xCleanWay.Data.Repositories.Providers.Rest.Host.RestCountries
 {
     public class RestCountriesCountryModel : RawCountry
     {

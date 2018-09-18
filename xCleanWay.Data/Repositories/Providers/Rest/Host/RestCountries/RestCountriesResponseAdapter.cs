@@ -1,8 +1,6 @@
-using System;
-using xCleanWay.Remote.Providers.Rest;
-using xCleanWay.Remote.Providers.Rest.Response;
+using xCleanWay.Data.Repositories.Providers.Rest.Response;
 
-namespace xCleanWay.Data.Repositories.Providers.Country.Rest.Host.RestCountries
+namespace xCleanWay.Data.Repositories.Providers.Rest.Host.RestCountries
 {
     public class RestCountriesResponseAdapter : RestResponseAdapter<RestCountriesResponse, RestCountriesResponse>
     {

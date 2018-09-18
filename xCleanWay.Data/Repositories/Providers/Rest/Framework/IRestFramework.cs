@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace xCleanWay.Data.Repositories.Providers.Rest
+namespace xCleanWay.Data.Repositories.Providers.Rest.Framework
 {
     public interface IRestFramework
     {

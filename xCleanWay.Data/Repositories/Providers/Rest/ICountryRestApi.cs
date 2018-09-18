@@ -1,7 +1,7 @@
 ﻿using System.Collections.ObjectModel;
 using xCleanWay.Data.Repositories.Providers.RawModels;
 
-namespace xCleanWay.Remote.Providers.Rest.Country
+namespace xCleanWay.Data.Repositories.Providers.Rest
 {
     public interface ICountryRestApi
     {

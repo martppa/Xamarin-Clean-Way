@@ -1,8 +1,7 @@
 ﻿using System.Collections.ObjectModel;
 using xCleanWay.Data.Entities;
-using xCleanWay.Data.Repositories.Providers.RawModels;
 
-namespace xCleanWay.Data.Repositories.Providers.Country
+namespace xCleanWay.Data.Repositories.Providers
 {
     public interface ICountryProvider
     {

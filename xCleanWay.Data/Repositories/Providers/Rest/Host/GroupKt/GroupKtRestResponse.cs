@@ -1,4 +1,4 @@
-﻿namespace xCleanWay.Remote.Providers.Rest.Hosts.GroupKt
+﻿namespace xCleanWay.Data.Repositories.Providers.Rest.Host.GroupKt
 {
     public class GroupKtRestResponse<C>
     {

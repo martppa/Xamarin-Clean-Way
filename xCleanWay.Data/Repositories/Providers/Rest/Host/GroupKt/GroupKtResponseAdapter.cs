@@ -1,4 +1,6 @@
-﻿namespace xCleanWay.Remote.Providers.Rest.Hosts.GroupKt
+﻿using xCleanWay.Data.Repositories.Providers.Rest.Response;
+
+namespace xCleanWay.Data.Repositories.Providers.Rest.Host.GroupKt
 {
     public class GroupKtResponseAdapter<Content> : IResponseAdapter<Content>
     {

@@ -1,5 +1,6 @@
 using RestSharp;
 using xCleanWay.Data.Repositories.Providers.Rest;
+using xCleanWay.Data.Repositories.Providers.Rest.Framework;
 
 namespace xCleanWay.Remote.RestSharp
 {

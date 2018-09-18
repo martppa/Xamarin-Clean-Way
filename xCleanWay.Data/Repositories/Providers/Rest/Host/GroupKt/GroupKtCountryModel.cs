@@ -1,6 +1,6 @@
 ﻿using xCleanWay.Data.Repositories.Providers.RawModels;
 
-namespace xCleanWay.Data.Repositories.Providers.Country.Rest.Host.GroupKt
+namespace xCleanWay.Data.Repositories.Providers.Rest.Host.GroupKt
 {
     public class GroupKtCountryModel : RawCountry
     {
