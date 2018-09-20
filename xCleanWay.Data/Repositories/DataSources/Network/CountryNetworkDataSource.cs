@@ -2,7 +2,7 @@
 using System.Collections.ObjectModel;
 using System.Reactive.Linq;
 using xCleanWay.Data.Entities;
-using xCleanWay.Data.Repositories.Providers.Country;
+using xCleanWay.Data.Repositories.Providers;
 
 namespace xCleanWay.Data.Repositories.DataSources.Network
 {
