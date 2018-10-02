@@ -1,7 +1,7 @@
 ﻿using System.IO;
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
-using xCleanWay.Data.Repositories.Providers.RawModels;
+using xCleanWay.Data.Repositories.Providers.Settings;
 using xCleanWay.Data.Repositories.Providers.Settings.Serialization;
 
 namespace xCleanWay.Desktop.Data.Persistence.Serialization.Binary

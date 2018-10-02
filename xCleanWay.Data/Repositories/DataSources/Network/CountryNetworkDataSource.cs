@@ -15,11 +15,11 @@ namespace xCleanWay.Data.Repositories.DataSources.Network
             this.countryProvider = countryProvider;
         }
         
-        public IObservable<Collection<CountryEntity>> GetCountries()
+        public IObservable<Collection<ICountryEntity>> GetCountries()
         {
-            return Observable.Create<Collection<CountryEntity>>(emitter =>
+            return Observable.Create<Collection<ICountryEntity>>(emitter =>
             {
-                Collection<CountryEntity> countryEntities = countryProvider.GetCountries();
+                Collection<ICountryEntity> countryEntities = countryProvider.GetCountries();
                 emitter.OnNext(countryEntities);
                 emitter.OnCompleted();
                 return () => { };
@@ -27,11 +27,11 @@ namespace xCleanWay.Data.Repositories.DataSources.Network
             });
         }
 
-        public IObservable<CountryEntity> getCountryByISOCode(string isoCode)
+        public IObservable<ICountryEntity> getCountryByISOCode(string isoCode)
         {
-            return Observable.Create<CountryEntity>(emitter =>
+            return Observable.Create<ICountryEntity>(emitter =>
             {
-                CountryEntity countryEntity = countryProvider.GetCountryByISOCode(isoCode);
+                ICountryEntity countryEntity = countryProvider.GetCountryByISOCode(isoCode);
                 emitter.OnNext(countryEntity);
                 emitter.OnCompleted();
                 return () => { };

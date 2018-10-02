@@ -1,11 +1,11 @@
 ﻿using System.Collections.ObjectModel;
-using xCleanWay.Data.Repositories.Providers.RawModels;
+using xCleanWay.Data.Entities;
 
 namespace xCleanWay.Data.Repositories.Providers.Rest
 {
     public interface ICountryRestApi
     {
-        Collection<RawCountry> GetCountries();
-        RawCountry GetCountryByISOCode(string isoCode);
+        Collection<ICountryEntity> GetCountries();
+        ICountryEntity GetCountryByISOCode(string isoCode);
     }
 }

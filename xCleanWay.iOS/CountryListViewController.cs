@@ -79,7 +79,6 @@ namespace xCleanWay.iOS
 
     class CountryTableSource : UITableViewSource
     {
-
         Collection<CountryModel> countries;
         string CellIdentifier = "TableCell";
 

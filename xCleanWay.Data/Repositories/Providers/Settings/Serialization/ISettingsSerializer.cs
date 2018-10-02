@@ -1,6 +1,4 @@
-﻿using xCleanWay.Data.Repositories.Providers.RawModels;
-
-namespace xCleanWay.Data.Repositories.Providers.Settings.Serialization
+﻿namespace xCleanWay.Data.Repositories.Providers.Settings.Serialization
 {
     public interface ISettingsSerializer
     {

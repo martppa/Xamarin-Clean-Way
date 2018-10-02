@@ -6,7 +6,7 @@ namespace xCleanWay.Data.Repositories.DataStores.Disk
 {
     public class SettingsDiskDataStore : ISettingsDataStore
     {
-        public IObservable<SettingsEntity> GetSettings()
+        public IObservable<ISettingsEntity> GetSettings()
         {
             throw new NotImplementedException();
         }

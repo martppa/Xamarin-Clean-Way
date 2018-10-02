@@ -6,7 +6,7 @@ namespace xCleanWay.Data.Repositories.DataSources
 {
     public interface ICountryDataSource
     {
-        IObservable<Collection<CountryEntity>> GetCountries();
-        IObservable<CountryEntity> getCountryByISOCode(string isoCode);
+        IObservable<Collection<ICountryEntity>> GetCountries();
+        IObservable<ICountryEntity> getCountryByISOCode(string isoCode);
     }
 }

@@ -1,32 +1,36 @@
 ﻿using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.IO;
-using xCleanWay.Data.Repositories.Providers.RawModels;
-using xCleanWay.Data.Repositories.Providers.RawModels.Mappers;
+using xCleanWay.Data.Entities;
 using xCleanWay.Data.Repositories.Providers.Rest.Framework;
 using xCleanWay.Data.Repositories.Providers.Rest.Response;
 
 namespace xCleanWay.Data.Repositories.Providers.Rest
 {
-    public abstract class CountryRestApi<Entity> : ICountryRestApi where Entity : RawCountry
+    public abstract class CountryRestApi<Entity> : ICountryRestApi where Entity : ICountryEntity
     {
         protected readonly IRestFramework restFramework;
-        private readonly RawCountryMapper rawCountryMapper;
         
-        protected CountryRestApi(IRestFramework restFramework, RawCountryMapper rawCountryMapper)
+        protected CountryRestApi(IRestFramework restFramework)
         {
             this.restFramework = restFramework;
-            this.rawCountryMapper = rawCountryMapper;
         }
         
-        public Collection<RawCountry> GetCountries()
+        public Collection<ICountryEntity> GetCountries()
         {
             var responseAdapter = RequestCountries();
             AssertRequestWasSuccessful(responseAdapter);
-            return rawCountryMapper.Transform(responseAdapter.GetContent());
+            var content = responseAdapter.GetContent();
+            var transformedCollection = new Collection<ICountryEntity>();
+            foreach (var entity in content)
+            {
+                transformedCollection.Add(entity);
+            }
+
+            return transformedCollection;
         }
 
-        public RawCountry GetCountryByISOCode(string isoCode)
+        public ICountryEntity GetCountryByISOCode(string isoCode)
         {
             var responseAdapter = RequestCountryByISOCode(isoCode);
             AssertRequestWasSuccessful(responseAdapter);

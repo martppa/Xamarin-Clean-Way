@@ -498,7 +498,7 @@
       "projectName": "xCleanWay.Core",
       "projectPath": "/Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Core/xCleanWay.Core.csproj",
       "packagesPath": "/Users/dieppa/.nuget/packages/",
-      "outputPath": "/Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Core/obj",
+      "outputPath": "/Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Core/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -526,15 +526,15 @@
     "frameworks": {
       "netstandard2.0": {
         "dependencies": {
-          "System.Reactive": {
-            "target": "Package",
-            "version": "4.1.0"
-          },
           "NETStandard.Library": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "2.0.3",
+            "version": "[2.0.3, )",
             "autoReferenced": true
+          },
+          "System.Reactive": {
+            "target": "Package",
+            "version": "[4.1.0, )"
           }
         },
         "imports": [

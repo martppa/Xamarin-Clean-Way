@@ -5,7 +5,7 @@ namespace xCleanWay.Data.Repositories.Providers
 {
     public interface ICountryProvider
     {
-        Collection<CountryEntity> GetCountries();
-        CountryEntity GetCountryByISOCode(string isoCode);
+        Collection<ICountryEntity> GetCountries();
+        ICountryEntity GetCountryByISOCode(string isoCode);
     }
 }

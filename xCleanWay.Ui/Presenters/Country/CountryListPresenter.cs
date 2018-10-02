@@ -33,7 +33,7 @@ namespace xCleanWay.Ui.Presenters.Country
 
         public void Finish()
         {
-            // Unused
+            getCountries.Dispose();
         }
 
         public void SetView(ICountryListView countryListView)

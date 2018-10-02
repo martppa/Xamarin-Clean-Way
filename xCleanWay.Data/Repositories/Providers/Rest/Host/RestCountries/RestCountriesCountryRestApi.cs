@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using xCleanWay.Data.Repositories.Providers.RawModels.Mappers;
 using xCleanWay.Data.Repositories.Providers.Rest.Framework;
 using xCleanWay.Data.Repositories.Providers.Rest.Response;
 
@@ -12,8 +11,8 @@ namespace xCleanWay.Data.Repositories.Providers.Rest.Host.RestCountries
         private readonly string COUNTRY_ROUTE = "rest/v2/all";
         private readonly string ISO_CODE_KEY = "isoCode";
         
-        public RestCountriesCountryRestApi(IRestFramework restFramework, RawCountryMapper rawCountryMapper) 
-            : base(restFramework, rawCountryMapper) {}
+        public RestCountriesCountryRestApi(IRestFramework restFramework) 
+            : base(restFramework) {}
 
         protected override IResponseAdapter<List<RestCountriesCountryModel>> RequestCountries()
         {

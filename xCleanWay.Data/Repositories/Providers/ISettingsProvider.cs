@@ -4,7 +4,7 @@ namespace xCleanWay.Data.Repositories.DataStores.Providers
 {
     public interface ISettingsProvider
     {
-        SettingsEntity GetSettings();
+        ISettingsEntity GetSettings();
 
         void SetCacheLifeTimeInMillis(long timeInMillis);
     }

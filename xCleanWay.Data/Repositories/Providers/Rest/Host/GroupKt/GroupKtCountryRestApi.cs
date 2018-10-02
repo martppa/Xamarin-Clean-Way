@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using System.IO;
-using xCleanWay.Data.Repositories.Providers.RawModels.Mappers;
 using xCleanWay.Data.Repositories.Providers.Rest.Framework;
 using xCleanWay.Data.Repositories.Providers.Rest.Response;
 
@@ -12,8 +11,8 @@ namespace xCleanWay.Data.Repositories.Providers.Rest.Host.GroupKt
         private readonly string COUNTRY_ROUTE = "country/get/all";
         private readonly string ISO_CODE_KEY = "isoCode";
             
-        public GroupKtCountryRestApi(IRestFramework restFramework, RawCountryMapper rawCountryMapper) 
-            : base(restFramework, rawCountryMapper) {}
+        public GroupKtCountryRestApi(IRestFramework restFramework) 
+            : base(restFramework) {}
 
         protected override IResponseAdapter<List<GroupKtCountryModel>> RequestCountries()
         {
