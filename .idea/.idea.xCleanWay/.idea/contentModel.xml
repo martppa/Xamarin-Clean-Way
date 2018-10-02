@@ -268,8 +268,11 @@
             <e p="ICountryProvider.cs" t="Include" />
             <e p="ISettingsProvider.cs" t="Include" />
             <e p="Rest" t="Include">
-              <e p="CountryRestApi.cs" t="Include" />
-              <e p="CountryRestProvider.cs" t="Include" />
+              <e p="Country" t="Include">
+                <e p="CountryRestApi.cs" t="Include" />
+                <e p="CountryRestProvider.cs" t="Include" />
+                <e p="ICountryRestApi.cs" t="Include" />
+              </e>
               <e p="Framework" t="Include">
                 <e p="IRestFramework.cs" t="Include" />
               </e>
@@ -287,7 +290,6 @@
                   <e p="RestCountriesResponseAdapter.cs" t="Include" />
                 </e>
               </e>
-              <e p="ICountryRestApi.cs" t="Include" />
               <e p="Response" t="Include">
                 <e p="IResponseAdapter.cs" t="Include" />
                 <e p="RestResponseAdapter.cs" t="Include" />

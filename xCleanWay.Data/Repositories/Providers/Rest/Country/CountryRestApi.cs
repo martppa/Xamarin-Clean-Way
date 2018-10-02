@@ -1,12 +1,11 @@
 ﻿using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using xCleanWay.Data.Entities;
 using xCleanWay.Data.Repositories.Providers.Rest.Framework;
 using xCleanWay.Data.Repositories.Providers.Rest.Response;
 
-namespace xCleanWay.Data.Repositories.Providers.Rest
+namespace xCleanWay.Data.Repositories.Providers.Rest.Country
 {
     public abstract class CountryRestApi<Entity> : ICountryRestApi where Entity : ICountryEntity
     {
