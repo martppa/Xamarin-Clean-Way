@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Reactive.Linq;
 using xCleanWay.Data.Entities;
@@ -15,11 +16,11 @@ namespace xCleanWay.Data.Repositories.DataSources.Network
             this.countryProvider = countryProvider;
         }
         
-        public IObservable<Collection<ICountryEntity>> GetCountries()
+        public IObservable<List<ICountryEntity>> GetCountries()
         {
-            return Observable.Create<Collection<ICountryEntity>>(emitter =>
+            return Observable.Create<List<ICountryEntity>>(emitter =>
             {
-                Collection<ICountryEntity> countryEntities = countryProvider.GetCountries();
+                List<ICountryEntity> countryEntities = countryProvider.GetCountries();
                 emitter.OnNext(countryEntities);
                 emitter.OnCompleted();
                 return () => { };

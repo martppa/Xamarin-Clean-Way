@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.IO;
+using System.Linq;
 using xCleanWay.Data.Entities;
 using xCleanWay.Data.Repositories.Providers.Rest.Framework;
 using xCleanWay.Data.Repositories.Providers.Rest.Response;
@@ -16,18 +17,12 @@ namespace xCleanWay.Data.Repositories.Providers.Rest
             this.restFramework = restFramework;
         }
         
-        public Collection<ICountryEntity> GetCountries()
+        public List<ICountryEntity> GetCountries()
         {
             var responseAdapter = RequestCountries();
             AssertRequestWasSuccessful(responseAdapter);
-            var content = responseAdapter.GetContent();
-            var transformedCollection = new Collection<ICountryEntity>();
-            foreach (var entity in content)
-            {
-                transformedCollection.Add(entity);
-            }
-
-            return transformedCollection;
+            return responseAdapter.GetContent()
+                .Select(item => (ICountryEntity) item).ToList();
         }
 
         public ICountryEntity GetCountryByISOCode(string isoCode)

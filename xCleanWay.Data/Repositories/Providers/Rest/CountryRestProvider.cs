@@ -1,4 +1,5 @@
-﻿using System.Collections.ObjectModel;
+﻿using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using xCleanWay.Data.Entities;
 
 namespace xCleanWay.Data.Repositories.Providers.Rest
@@ -12,7 +13,7 @@ namespace xCleanWay.Data.Repositories.Providers.Rest
             this.countryRestApi = countryRestApi;
         }
         
-        public Collection<ICountryEntity> GetCountries()
+        public List<ICountryEntity> GetCountries()
         {
             return countryRestApi.GetCountries();
         }

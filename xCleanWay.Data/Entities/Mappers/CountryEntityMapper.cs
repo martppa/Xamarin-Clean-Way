@@ -1,4 +1,5 @@
-﻿using System.Collections.ObjectModel;
+﻿using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using xCleanWay.Core.Models;
 
 namespace xCleanWay.Data.Entities.Mappers
@@ -10,7 +11,7 @@ namespace xCleanWay.Data.Entities.Mappers
             return new Country(countryEntity.Name, countryEntity.IsoCode, countryEntity.FlagUrl);
         }
 
-        public Collection<Country> transform(Collection<ICountryEntity> countryEntities)
+        public Collection<Country> transform(List<ICountryEntity> countryEntities)
         {
             var countries = new Collection<Country>();
             foreach (var countryEntity in countryEntities)
