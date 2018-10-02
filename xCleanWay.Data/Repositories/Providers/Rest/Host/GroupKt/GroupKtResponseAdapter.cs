@@ -2,6 +2,13 @@
 
 namespace xCleanWay.Data.Repositories.Providers.Rest.Host.GroupKt
 {
+    /// <summary>
+    ///     This class is intended to transform GroupKt host's response
+    ///     into a standard readable response
+    /// </summary>
+    /// <typeparam name="Content">
+    ///     Response's content type
+    /// </typeparam>
     public class GroupKtResponseAdapter<Content> : IResponseAdapter<Content>
     {
         private readonly GroupKtRestResponse<Content> groupKtRestResponse;

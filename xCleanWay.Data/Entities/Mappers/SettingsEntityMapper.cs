@@ -3,6 +3,10 @@ using xCleanWay.Core.Models;
 
 namespace xCleanWay.Data.Entities.Mappers
 {
+    /// <summary>
+    /// This class transforms <see cref="ISettingsEntity"/> in data layer into
+    /// <see cref="Settings"/> in core layer.
+    /// </summary>
     public class SettingsEntityMapper
     {
         public Settings Transform(ISettingsEntity settingsEntity)
@@ -12,13 +16,13 @@ namespace xCleanWay.Data.Entities.Mappers
 
         public Collection<Settings> Transform(Collection<ISettingsEntity> settingsEntities)
         {
-            var settingses = new Collection<Settings>();
+            var settingsCollection = new Collection<Settings>();
             foreach (var settingsEntity in settingsEntities)
             {
-                settingses.Add(Transform(settingsEntity));
+                settingsCollection.Add(Transform(settingsEntity));
             }
 
-            return settingses;
+            return settingsCollection;
         }
     }
 }

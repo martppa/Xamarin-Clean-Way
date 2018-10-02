@@ -1,12 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.Reactive.Linq;
 using xCleanWay.Data.Entities;
 using xCleanWay.Data.Repositories.Providers;
 
 namespace xCleanWay.Data.Repositories.DataSources.Network
 {
+    /// <summary>
+    /// Country data source to retrieve countries from the network
+    /// by using a specific country provider
+    /// </summary>
     public class CountryNetworkDataSource : ICountryDataSource
     {
         private readonly ICountryProvider countryProvider;

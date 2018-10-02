@@ -2,6 +2,10 @@ using xCleanWay.Data.Repositories.Providers.Rest.Response;
 
 namespace xCleanWay.Data.Repositories.Providers.Rest.Host.RestCountries
 {
+    /// <summary>
+    ///     This class is intended to transform RestCountries host's response
+    ///     into a standard readable response
+    /// </summary>
     public class RestCountriesResponseAdapter : RestResponseAdapter<RestCountriesResponse, RestCountriesResponse>
     {
         private readonly ResponseStatus responseStatus;

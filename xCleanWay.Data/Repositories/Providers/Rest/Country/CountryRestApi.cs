@@ -7,6 +7,15 @@ using xCleanWay.Data.Repositories.Providers.Rest.Response;
 
 namespace xCleanWay.Data.Repositories.Providers.Rest.Country
 {
+    /// <summary>
+    ///     This class is intended to provide countries via REST api
+    ///     used a direct implementation of <see cref="IRestFramework"/>
+    ///     This must be subclassed by host-oriented class.
+    /// </summary>
+    /// <typeparam name="Entity">
+    ///     The type of country objects the API returns when
+    ///     requested
+    /// </typeparam>
     public abstract class CountryRestApi<Entity> : ICountryRestApi where Entity : ICountryEntity
     {
         protected readonly IRestFramework restFramework;

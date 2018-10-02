@@ -5,16 +5,15 @@ using xCleanWay.Core.Utils;
 
 namespace xCleanWay.Core.Interactors
 {
-    public abstract class CompletableUseCase<Parameters> : UseCase
+    /// <summary>
+    /// Completable use case base class. Completable use cases are use cases where
+    /// no data is retrieved and only an action to complete is required
+    /// </summary>
+    /// <typeparam name="Parameters">Parameters to complete such an action</typeparam>
+    public abstract class CompletableUseCase<Parameters> : AsyncUseCase
     {
-        private readonly IExecutionThread uiThread;
-        private readonly IExecutionThread workerThread;
-
-        public CompletableUseCase(IExecutionThread uiThread, IExecutionThread workerThread)
-        {
-            this.uiThread = uiThread;
-            this.workerThread = workerThread;
-        }
+        protected CompletableUseCase(IUiThread uiThread, IExecutionThread workerThread) 
+            : base(uiThread, workerThread) {}
 
         protected abstract IObservable<None> BuildUseCaseObservable(Parameters parameters);
 

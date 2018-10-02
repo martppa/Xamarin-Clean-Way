@@ -1,9 +1,11 @@
 ﻿using System;
 using xCleanWay.Core.Utils;
-using xCleanWay.Data.Entities;
 
 namespace xCleanWay.Data.Repositories.DataStores.Disk
 {
+    /// <summary>
+    /// Intended to store settings parameters
+    /// </summary>
     public class SettingsDiskDataStore : ISettingsDataStore
     {
         public IObservable<None> SetCacheLifeTimeInMillis()

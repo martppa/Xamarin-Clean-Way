@@ -181,6 +181,7 @@
       <e p="xCleanWay.Core" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
         <e p="Interactors" t="Include">
+          <e p="AsyncUseCase.cs" t="Include" />
           <e p="CompletableUseCase.cs" t="Include" />
           <e p="Country" t="Include">
             <e p="GetCountries.cs" t="Include" />

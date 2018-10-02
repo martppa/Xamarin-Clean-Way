@@ -6,6 +6,9 @@ using xCleanWay.Data.Repositories.Providers.Rest.Response;
 
 namespace xCleanWay.Data.Repositories.Providers.Rest.Host.RestCountries
 {
+    /// <summary>
+    ///     This is a RestCountries host oriented class to deal with its country responses
+    /// </summary>
     public class RestCountriesCountryRestApi : CountryRestApi<RestCountriesCountryModel>
     {
         private readonly string BASE_URL = "https://restcountries.eu/";

@@ -1,5 +1,4 @@
 ﻿using xCleanWay.Data.Entities;
-using xCleanWay.Data.Repositories.DataStores.Providers;
 using xCleanWay.Data.Repositories.Providers.Settings.Serialization;
 
 namespace xCleanWay.Data.Repositories.Providers.Settings

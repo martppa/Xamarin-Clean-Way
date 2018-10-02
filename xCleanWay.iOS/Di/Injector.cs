@@ -3,10 +3,13 @@ using xCleanWay.Data.Repositories.Providers.Rest.Framework;
 using xCleanWay.Data.Repositories.Providers.Settings.Serialization;
 using xCleanWay.Di;
 using xCleanWay.iOSData.Persistence.Settings;
-using xCleanWay.Remote.RestSharp.xCleanWay.Remote.RestSharp;
+using xCleanWay.Remote.RestSharp;
 
 namespace xCleanWay.iOS.Di
 {
+    /// <summary>
+    ///     iOS project's injector
+    /// </summary>
     public class Injector : BusinessInjector
     {
         private static Injector instance;
@@ -18,7 +21,7 @@ namespace xCleanWay.iOS.Di
 
         protected override void AddExtraServices()
         {
-            serviceCollection.AddTransient<IRestFramework, RestSharpFramework>();
+            serviceCollection.AddTransient<IRestFramework, RestSharpFramework>(); // <-- Replace the implementation to swap between different REST client framework
             serviceCollection.AddTransient<ISettingsSerializer, SettingsPreference>();
         }
     }

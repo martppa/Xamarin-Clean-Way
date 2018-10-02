@@ -6,6 +6,9 @@ using xCleanWay.Data.Repositories.Providers.Rest.Response;
 
 namespace xCleanWay.Data.Repositories.Providers.Rest.Host.GroupKt
 {
+    /// <summary>
+    ///     This is a GroupKt host oriented class to deal with its country responses
+    /// </summary>
     public class GroupKtCountryRestApi : CountryRestApi<GroupKtCountryModel>
     {
         private readonly string BASE_URL = "http://services.groupkt.com/";
