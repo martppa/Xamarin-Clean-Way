@@ -1,5 +1,8 @@
 ﻿namespace xCleanWay.Core.Models
 {
+    /// <summary>
+    /// Settings model in the Core data layer
+    /// </summary>
     public class Settings
     {
         private long countryCacheInMillis;

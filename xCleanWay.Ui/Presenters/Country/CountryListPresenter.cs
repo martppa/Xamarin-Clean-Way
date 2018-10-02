@@ -4,6 +4,10 @@ using xCleanWay.Ui.Views;
 
 namespace xCleanWay.Ui.Presenters.Country
 {
+    /// <summary>
+    /// This presenter will control any view that renders a list of
+    /// countries
+    /// </summary>
     public class CountryListPresenter : ICountryListPresenter
     {
         private ICountryListView view;
@@ -33,7 +37,7 @@ namespace xCleanWay.Ui.Presenters.Country
 
         public void Finish()
         {
-            // Unused
+            getCountries.Dispose();
         }
 
         public void SetView(ICountryListView countryListView)

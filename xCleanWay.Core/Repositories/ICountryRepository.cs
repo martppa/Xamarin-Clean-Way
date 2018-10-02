@@ -4,6 +4,9 @@ using xCleanWay.Core.Models;
 
 namespace xCleanWay.Core.Repositories
 {
+    /// <summary>
+    /// Country repository access interface to be implemented in the data layer
+    /// </summary>
     public interface ICountryRepository
     {
         IObservable<Collection<Country>> GetCountries();

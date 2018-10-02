@@ -1,32 +1,39 @@
 ﻿using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.IO;
-using xCleanWay.Data.Repositories.Providers.RawModels;
-using xCleanWay.Data.Repositories.Providers.RawModels.Mappers;
+using System.Linq;
+using xCleanWay.Data.Entities;
 using xCleanWay.Data.Repositories.Providers.Rest.Framework;
 using xCleanWay.Data.Repositories.Providers.Rest.Response;
 
-namespace xCleanWay.Data.Repositories.Providers.Rest
+namespace xCleanWay.Data.Repositories.Providers.Rest.Country
 {
-    public abstract class CountryRestApi<Entity> : ICountryRestApi where Entity : RawCountry
+    /// <summary>
+    ///     This class is intended to provide countries via REST api
+    ///     used a direct implementation of <see cref="IRestFramework"/>
+    ///     This must be subclassed by host-oriented class.
+    /// </summary>
+    /// <typeparam name="Entity">
+    ///     The type of country objects the API returns when
+    ///     requested
+    /// </typeparam>
+    public abstract class CountryRestApi<Entity> : ICountryRestApi where Entity : ICountryEntity
     {
         protected readonly IRestFramework restFramework;
-        private readonly RawCountryMapper rawCountryMapper;
         
-        protected CountryRestApi(IRestFramework restFramework, RawCountryMapper rawCountryMapper)
+        protected CountryRestApi(IRestFramework restFramework)
         {
             this.restFramework = restFramework;
-            this.rawCountryMapper = rawCountryMapper;
         }
         
-        public Collection<RawCountry> GetCountries()
+        public List<ICountryEntity> GetCountries()
         {
             var responseAdapter = RequestCountries();
             AssertRequestWasSuccessful(responseAdapter);
-            return rawCountryMapper.Transform(responseAdapter.GetContent());
+            return responseAdapter.GetContent()
+                .Select(item => (ICountryEntity) item).ToList();
         }
 
-        public RawCountry GetCountryByISOCode(string isoCode)
+        public ICountryEntity GetCountryByISOCode(string isoCode)
         {
             var responseAdapter = RequestCountryByISOCode(isoCode);
             AssertRequestWasSuccessful(responseAdapter);

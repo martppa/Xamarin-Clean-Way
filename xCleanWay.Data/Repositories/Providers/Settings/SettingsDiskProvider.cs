@@ -1,30 +1,26 @@
 ﻿using xCleanWay.Data.Entities;
-using xCleanWay.Data.Repositories.DataStores.Providers;
-using xCleanWay.Data.Repositories.Providers.RawModels;
-using xCleanWay.Data.Repositories.Providers.RawModels.Mappers;
 using xCleanWay.Data.Repositories.Providers.Settings.Serialization;
 
 namespace xCleanWay.Data.Repositories.Providers.Settings
 {
     public class SettingsDiskProvider : ISettingsProvider
     {
-        private readonly RawSettingsMapper rawSettingsMapper;
+        private readonly ISettingsEntity rawSettingsMapper;
         private readonly ISettingsSerializer settingsSerializer;
 
-        public SettingsDiskProvider(ISettingsSerializer settingsSerializer, RawSettingsMapper rawSettingsMapper)
+        public SettingsDiskProvider(ISettingsSerializer settingsSerializer)
         {
-            this.rawSettingsMapper = rawSettingsMapper;
             this.settingsSerializer = settingsSerializer;
         }
         
-        public SettingsEntity GetSettings()
+        public ISettingsEntity GetSettings()
         {
-            return rawSettingsMapper.Transform(settingsSerializer.GetSettings());
+            return settingsSerializer.GetSettings();
         }
 
         public void SetCacheLifeTimeInMillis(long timeInMillis)
         {
-            RawSettings rawSettings = settingsSerializer.GetSettings();
+            var rawSettings = settingsSerializer.GetSettings();
             rawSettings.CountryCacheInMillis = timeInMillis;
             settingsSerializer.WriteSettings(rawSettings);
         }

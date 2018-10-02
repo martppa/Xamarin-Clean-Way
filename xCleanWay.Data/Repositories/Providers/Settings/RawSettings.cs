@@ -1,14 +1,15 @@
-﻿namespace xCleanWay.Data.Entities
+using xCleanWay.Data.Entities;
+
+namespace xCleanWay.Data.Repositories.Providers.Settings
 {
-    public class SettingsEntity
+    public class RawSettings : ISettingsEntity
     {
         private long countryCacheInMillis;
         
-        public SettingsEntity(long countryCacheInMillis)
+        public RawSettings(long countryCacheInMillis)
         {
             this.countryCacheInMillis = countryCacheInMillis;
         }
-
 
         public long CountryCacheInMillis
         {

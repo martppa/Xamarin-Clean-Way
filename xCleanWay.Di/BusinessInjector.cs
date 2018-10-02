@@ -7,13 +7,9 @@ using xCleanWay.Data.Repositories;
 using xCleanWay.Data.Repositories.DataSources;
 using xCleanWay.Data.Repositories.DataSources.Factory;
 using xCleanWay.Data.Repositories.DataSources.Network;
-using xCleanWay.Data.Repositories.DataSources.Suppliers;
-using xCleanWay.Data.Repositories.DataStores.Providers;
 using xCleanWay.Data.Repositories.Providers;
-using xCleanWay.Data.Repositories.Providers.RawModels.Mappers;
-using xCleanWay.Data.Repositories.Providers.Rest;
+using xCleanWay.Data.Repositories.Providers.Rest.Country;
 using xCleanWay.Data.Repositories.Providers.Rest.Host.GroupKt;
-using xCleanWay.Data.Repositories.Providers.Rest.Host.RestCountries;
 using xCleanWay.Data.Repositories.Providers.Settings;
 using xCleanWay.Data.Threading;
 using xCleanWay.Ui.Models.Mapper;
@@ -23,9 +19,11 @@ using xCleanWay.Ui.Threading;
 
 namespace xCleanWay.Di
 {
+    /// <summary>
+    /// Core layer injector
+    /// </summary>
     public abstract class BusinessInjector
     {
-        
         protected ServiceCollection serviceCollection;
         private ServiceProvider serviceProvider;
         
@@ -46,10 +44,8 @@ namespace xCleanWay.Di
         
         private void AddDataServices()
         {
-            serviceCollection.AddTransient<RawCountryMapper>();
-            serviceCollection.AddTransient<ICountryRestApi, GroupKtCountryRestApi>();
+            serviceCollection.AddTransient<ICountryRestApi, GroupKtCountryRestApi>(); // <-- Replace the implementation to swap between different country provider hosts
             serviceCollection.AddTransient<ICountryProvider, CountryRestProvider>();
-            serviceCollection.AddTransient<RawSettingsMapper>();
             serviceCollection.AddTransient<ISettingsProvider, SettingsDiskProvider>();
             serviceCollection.AddTransient<IDataThread, DataThread>();
             serviceCollection.AddTransient<ICountryDataSource, CountryNetworkDataSource>();

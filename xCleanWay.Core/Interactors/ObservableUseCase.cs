@@ -4,16 +4,16 @@ using xCleanWay.Core.Threading;
 
 namespace xCleanWay.Core.Interactors
 {
-    public abstract class ObservableUseCase<T, Parameters> : UseCase
+    /// <summary>
+    /// Observable use case base class which is intended to perform an action
+    /// which returns one or many values.
+    /// </summary>
+    /// <typeparam name="T">Type of value to be retrieved</typeparam>
+    /// <typeparam name="Parameters">Necessary parameters to perform the action</typeparam>
+    public abstract class ObservableUseCase<T, Parameters> : AsyncUseCase
     {
-        private readonly IExecutionThread uiThread;
-        private readonly IExecutionThread workerThread;
-
-        public ObservableUseCase(IExecutionThread uiThread, IExecutionThread workerThread)
-        {
-            this.uiThread = uiThread;
-            this.workerThread = workerThread;
-        }
+        protected ObservableUseCase(IUiThread uiThread, IDataThread workerThread) 
+            : base(uiThread, workerThread) {}
 
         protected abstract IObservable<T> BuildUseCaseObservable(Parameters parameters);
 

@@ -5,7 +5,7 @@ using xCleanWay.Core.Repositories;
 using System.Collections.ObjectModel;
 using xCleanWay.Data.Entities.Mappers;
 using xCleanWay.Data.Repositories.DataSources;
-using xCleanWay.Data.Repositories.DataSources.Suppliers;
+using xCleanWay.Data.Repositories.DataSources.Factory;
 
 namespace xCleanWay.Data.Repositories
 {
@@ -25,14 +25,14 @@ namespace xCleanWay.Data.Repositories
         {
             var countryDataSource = countryDataSourceSimpleFactory.Build();
             return countryDataSource.GetCountries()
-                .Select(country => countryEntityMapper.transform(country));
+                .Select(country => countryEntityMapper.Transform(country));
         }
 
         public IObservable<Country> getCountryByISOCode(string isoCode)
         {
             var countryDataSource = countryDataSourceSimpleFactory.Build();
             return countryDataSource.getCountryByISOCode(isoCode)
-                .Select(country => countryEntityMapper.transform(country));
+                .Select(country => countryEntityMapper.Transform(country));
         }
     }
 }

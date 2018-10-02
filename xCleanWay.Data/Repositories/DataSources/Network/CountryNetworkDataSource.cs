@@ -1,11 +1,15 @@
 ﻿using System;
-using System.Collections.ObjectModel;
+using System.Collections.Generic;
 using System.Reactive.Linq;
 using xCleanWay.Data.Entities;
 using xCleanWay.Data.Repositories.Providers;
 
 namespace xCleanWay.Data.Repositories.DataSources.Network
 {
+    /// <summary>
+    /// Country data source to retrieve countries from the network
+    /// by using a specific country provider
+    /// </summary>
     public class CountryNetworkDataSource : ICountryDataSource
     {
         private readonly ICountryProvider countryProvider;
@@ -15,11 +19,11 @@ namespace xCleanWay.Data.Repositories.DataSources.Network
             this.countryProvider = countryProvider;
         }
         
-        public IObservable<Collection<CountryEntity>> GetCountries()
+        public IObservable<List<ICountryEntity>> GetCountries()
         {
-            return Observable.Create<Collection<CountryEntity>>(emitter =>
+            return Observable.Create<List<ICountryEntity>>(emitter =>
             {
-                Collection<CountryEntity> countryEntities = countryProvider.GetCountries();
+                var countryEntities = countryProvider.GetCountries();
                 emitter.OnNext(countryEntities);
                 emitter.OnCompleted();
                 return () => { };
@@ -27,11 +31,11 @@ namespace xCleanWay.Data.Repositories.DataSources.Network
             });
         }
 
-        public IObservable<CountryEntity> getCountryByISOCode(string isoCode)
+        public IObservable<ICountryEntity> getCountryByISOCode(string isoCode)
         {
-            return Observable.Create<CountryEntity>(emitter =>
+            return Observable.Create<ICountryEntity>(emitter =>
             {
-                CountryEntity countryEntity = countryProvider.GetCountryByISOCode(isoCode);
+                var countryEntity = countryProvider.GetCountryByISOCode(isoCode);
                 emitter.OnNext(countryEntity);
                 emitter.OnCompleted();
                 return () => { };

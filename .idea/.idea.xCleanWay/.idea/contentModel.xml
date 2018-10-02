@@ -181,6 +181,7 @@
       <e p="xCleanWay.Core" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
         <e p="Interactors" t="Include">
+          <e p="AsyncUseCase.cs" t="Include" />
           <e p="CompletableUseCase.cs" t="Include" />
           <e p="Country" t="Include">
             <e p="GetCountries.cs" t="Include" />
@@ -232,12 +233,12 @@
       <e p="xCleanWay.Data" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
         <e p="Entities" t="Include">
-          <e p="CountryEntity.cs" t="Include" />
+          <e p="ICountryEntity.cs" t="Include" />
+          <e p="ISettingsEntity.cs" t="Include" />
           <e p="Mappers" t="Include">
             <e p="CountryEntityMapper.cs" t="Include" />
             <e p="SettingsEntityMapper.cs" t="Include" />
           </e>
-          <e p="SettingsEntity.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
@@ -249,6 +250,9 @@
         <e p="Repositories" t="Include">
           <e p="CountryRepository.cs" t="Include" />
           <e p="DataSources" t="Include">
+            <e p="DIsk" t="Include">
+              <e p="ISettingsDataSource.cs" t="Include" />
+            </e>
             <e p="Factory" t="Include">
               <e p="CountryDataSourceSimpleFactory.cs" t="Include" />
               <e p="ICountryDataSourceSimplefactory.cs" t="Include" />
@@ -267,17 +271,12 @@
           <e p="Providers" t="Include">
             <e p="ICountryProvider.cs" t="Include" />
             <e p="ISettingsProvider.cs" t="Include" />
-            <e p="RawModels" t="Include">
-              <e p="Mappers" t="Include">
-                <e p="RawCountryMapper.cs" t="Include" />
-                <e p="RawSettingsMapper.cs" t="Include" />
-              </e>
-              <e p="RawCountry.cs" t="Include" />
-              <e p="RawSettings.cs" t="Include" />
-            </e>
             <e p="Rest" t="Include">
-              <e p="CountryRestApi.cs" t="Include" />
-              <e p="CountryRestProvider.cs" t="Include" />
+              <e p="Country" t="Include">
+                <e p="CountryRestApi.cs" t="Include" />
+                <e p="CountryRestProvider.cs" t="Include" />
+                <e p="ICountryRestApi.cs" t="Include" />
+              </e>
               <e p="Framework" t="Include">
                 <e p="IRestFramework.cs" t="Include" />
               </e>
@@ -295,13 +294,13 @@
                   <e p="RestCountriesResponseAdapter.cs" t="Include" />
                 </e>
               </e>
-              <e p="ICountryRestApi.cs" t="Include" />
               <e p="Response" t="Include">
                 <e p="IResponseAdapter.cs" t="Include" />
                 <e p="RestResponseAdapter.cs" t="Include" />
               </e>
             </e>
             <e p="Settings" t="Include">
+              <e p="RawSettings.cs" t="Include" />
               <e p="Serialization" t="Include">
                 <e p="ISettingsSerializer.cs" t="Include" />
               </e>

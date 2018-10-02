@@ -6,6 +6,10 @@ using xCleanWay.Core.Utils;
 
 namespace xCleanWay.Core.Interactors.Country
 {
+    /// <summary>
+    /// This use case is the responsible of retrieving country objects
+    /// from data layer
+    /// </summary>
     public class GetCountries : ObservableUseCase<Collection<Models.Country>, None>
     {
         private readonly ICountryRepository countryRepository;

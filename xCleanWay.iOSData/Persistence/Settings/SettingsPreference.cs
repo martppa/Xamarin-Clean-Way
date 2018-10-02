@@ -1,4 +1,4 @@
-using xCleanWay.Data.Repositories.Providers.RawModels;
+using xCleanWay.Data.Repositories.Providers.Settings;
 using xCleanWay.Data.Repositories.Providers.Settings.Serialization;
 
 namespace xCleanWay.iOSData.Persistence.Settings

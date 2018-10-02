@@ -1,4 +1,4 @@
-﻿namespace xCleanWay.Data.Repositories.DataSources.Suppliers
+﻿namespace xCleanWay.Data.Repositories.DataSources.Factory
 {
     public interface ICountryDataSourceSimpleFactory
     {

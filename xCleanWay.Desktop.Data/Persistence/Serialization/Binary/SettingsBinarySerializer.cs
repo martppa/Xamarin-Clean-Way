@@ -1,11 +1,14 @@
 ﻿using System.IO;
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
-using xCleanWay.Data.Repositories.Providers.RawModels;
+using xCleanWay.Data.Repositories.Providers.Settings;
 using xCleanWay.Data.Repositories.Providers.Settings.Serialization;
 
 namespace xCleanWay.Desktop.Data.Persistence.Serialization.Binary
 {
+    /// <summary>
+    /// Binary implementation of <see cref="ISettingsSerializer"/>
+    /// </summary>
     public class SettingsBinarySerializer : ISettingsSerializer
     {
         private readonly string SETTINGS_FILENAME = "settings.bin";
@@ -21,7 +24,7 @@ namespace xCleanWay.Desktop.Data.Persistence.Serialization.Binary
         public RawSettings GetSettings()
         {
             settingsFileStream = new FileStream(SETTINGS_FILENAME, FileMode.Open, FileAccess.Read);
-            RawSettings rawSettings = (RawSettings) formatter.Deserialize(settingsFileStream);
+            var rawSettings = (RawSettings) formatter.Deserialize(settingsFileStream);
             settingsFileStream.Close();
             return rawSettings;
         }

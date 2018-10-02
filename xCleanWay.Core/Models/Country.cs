@@ -1,5 +1,8 @@
 ﻿namespace xCleanWay.Core.Models
 {
+    /// <summary>
+    /// Country model in the Core layer
+    /// </summary>
     public class Country
     {
         private string name;

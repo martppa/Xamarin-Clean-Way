@@ -1,5 +1,8 @@
 ﻿namespace xCleanWay.Ui.Models
 {
+    /// <summary>
+    /// Country model in the UI layer
+    /// </summary>
     public class CountryModel
     {
         private string name;
