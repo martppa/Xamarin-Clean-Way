@@ -249,6 +249,9 @@
         <e p="Repositories" t="Include">
           <e p="CountryRepository.cs" t="Include" />
           <e p="DataSources" t="Include">
+            <e p="DIsk" t="Include">
+              <e p="ISettingsDataSource.cs" t="Include" />
+            </e>
             <e p="Factory" t="Include">
               <e p="CountryDataSourceSimpleFactory.cs" t="Include" />
               <e p="ICountryDataSourceSimplefactory.cs" t="Include" />

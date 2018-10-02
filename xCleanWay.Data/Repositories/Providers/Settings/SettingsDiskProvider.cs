@@ -21,7 +21,7 @@ namespace xCleanWay.Data.Repositories.Providers.Settings
 
         public void SetCacheLifeTimeInMillis(long timeInMillis)
         {
-            RawSettings rawSettings = settingsSerializer.GetSettings();
+            var rawSettings = settingsSerializer.GetSettings();
             rawSettings.CountryCacheInMillis = timeInMillis;
             settingsSerializer.WriteSettings(rawSettings);
         }

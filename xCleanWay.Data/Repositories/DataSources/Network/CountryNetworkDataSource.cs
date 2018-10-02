@@ -20,7 +20,7 @@ namespace xCleanWay.Data.Repositories.DataSources.Network
         {
             return Observable.Create<List<ICountryEntity>>(emitter =>
             {
-                List<ICountryEntity> countryEntities = countryProvider.GetCountries();
+                var countryEntities = countryProvider.GetCountries();
                 emitter.OnNext(countryEntities);
                 emitter.OnCompleted();
                 return () => { };
@@ -32,7 +32,7 @@ namespace xCleanWay.Data.Repositories.DataSources.Network
         {
             return Observable.Create<ICountryEntity>(emitter =>
             {
-                ICountryEntity countryEntity = countryProvider.GetCountryByISOCode(isoCode);
+                var countryEntity = countryProvider.GetCountryByISOCode(isoCode);
                 emitter.OnNext(countryEntity);
                 emitter.OnCompleted();
                 return () => { };

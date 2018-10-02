@@ -6,7 +6,6 @@ namespace xCleanWay.Data.Repositories.DataStores
 {
     public interface ISettingsDataStore
     {
-        IObservable<ISettingsEntity> GetSettings();
         IObservable<None> SetCacheLifeTimeInMillis();
     }
 }
