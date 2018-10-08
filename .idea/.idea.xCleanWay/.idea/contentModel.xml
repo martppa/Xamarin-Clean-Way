@@ -296,7 +296,6 @@
               </e>
               <e p="Response" t="Include">
                 <e p="IResponseAdapter.cs" t="Include" />
-                <e p="RestResponseAdapter.cs" t="Include" />
               </e>
             </e>
             <e p="Settings" t="Include">

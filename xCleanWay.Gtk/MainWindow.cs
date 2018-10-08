@@ -1,11 +1,10 @@
-﻿using System;
-using System.Collections.ObjectModel;
-using System.Windows.Forms;
+﻿using System.Collections.ObjectModel;
 using Gtk;
 using xCleanWay.Gtk.Di;
 using xCleanWay.Ui.Models;
 using xCleanWay.Ui.Presenters;
 using xCleanWay.Ui.Views;
+
 using Application = Gtk.Application;
 using TreeView = Gtk.TreeView;
 

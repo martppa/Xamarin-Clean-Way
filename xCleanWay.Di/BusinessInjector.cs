@@ -10,6 +10,7 @@ using xCleanWay.Data.Repositories.DataSources.Network;
 using xCleanWay.Data.Repositories.Providers;
 using xCleanWay.Data.Repositories.Providers.Rest.Country;
 using xCleanWay.Data.Repositories.Providers.Rest.Host.GroupKt;
+using xCleanWay.Data.Repositories.Providers.Rest.Host.RestCountries;
 using xCleanWay.Data.Repositories.Providers.Settings;
 using xCleanWay.Data.Threading;
 using xCleanWay.Ui.Models.Mapper;
@@ -44,7 +45,7 @@ namespace xCleanWay.Di
         
         private void AddDataServices()
         {
-            serviceCollection.AddTransient<ICountryRestApi, GroupKtCountryRestApi>(); // <-- Replace the implementation to swap between different country provider hosts
+            serviceCollection.AddTransient<ICountryRestApi, RestCountriesCountryRestApi>(); // <-- Replace the implementation to swap between different country provider hosts
             serviceCollection.AddTransient<ICountryProvider, CountryRestProvider>();
             serviceCollection.AddTransient<ISettingsProvider, SettingsDiskProvider>();
             serviceCollection.AddTransient<IDataThread, DataThread>();
