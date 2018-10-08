@@ -6,34 +6,36 @@ namespace xCleanWay.Data.Repositories.Providers.Rest.Host.RestCountries
     ///     This class is intended to transform RestCountries host's response
     ///     into a standard readable response
     /// </summary>
-    public class RestCountriesResponseAdapter : RestResponseAdapter<RestCountriesResponse, RestCountriesResponse>
+    public class RestCountriesResponseAdapter : IResponseAdapter<RestCountriesResponse>
     {
         private readonly ResponseStatus responseStatus;
         private readonly string errorMessage;
+        private readonly RestCountriesResponse restCountriesResponse;
         
-        public RestCountriesResponseAdapter(RestCountriesResponse restCountriesResponse)
-            : base(restCountriesResponse) {}
+        public RestCountriesResponseAdapter(RestCountriesResponse restCountriesResponse) 
+        {
+            this.restCountriesResponse = restCountriesResponse;
+        }
 
-        public RestCountriesResponseAdapter(ResponseStatus responseStatus, string errorMessage) 
-            : base(new RestCountriesResponse())
+        public RestCountriesResponseAdapter(ResponseStatus responseStatus, string errorMessage)
         {
             this.responseStatus = responseStatus;
             this.errorMessage = errorMessage;
         }
 
-        public override ResponseStatus GetStatus()
+        public ResponseStatus GetStatus()
         {
             return responseStatus;
         }
 
-        public override string GetErrorMessage()
+        public string GetErrorMessage()
         {
             return errorMessage;
         }
 
-        public override RestCountriesResponse GetContent()
+        public RestCountriesResponse GetContent()
         {
-            return response;
+            return restCountriesResponse;
         }
     }
 }
