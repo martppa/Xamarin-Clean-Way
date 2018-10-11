@@ -15,7 +15,7 @@ namespace xCleanWay.Data.Entities.Mappers
             return new Country(countryEntity.Name, countryEntity.IsoCode, countryEntity.FlagUrl);
         }
 
-        public Collection<Country> Transform(List<ICountryEntity> countryEntities)
+        public Collection<Country> Transform(IList<ICountryEntity> countryEntities)
         {
             var countries = new Collection<Country>();
             foreach (var countryEntity in countryEntities)
