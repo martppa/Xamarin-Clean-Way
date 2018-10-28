@@ -8770,7 +8770,7 @@
       ]
     },
     "System.Memory/4.5.1": {
-      "sha512": "vcG3/MbfpxznMkkkaAblJi7RHOmuP7kawQMhDgLSuA1tRpRQYsFSCTxRSINDUgn2QNn2jWeLxv8er5BXbyACkw==",
+      "sha512": "oonnLQPZAGD21qtNMG4EtVmbYOInk2jV7M+g108B6OHOb67ZOaWnA/K8P5oQ6uK9wxKzB1iEXSChQOi2scKOqA==",
       "type": "package",
       "path": "system.memory/4.5.1",
       "files": [
@@ -10943,7 +10943,7 @@
       ]
     },
     "System.Threading.Channels/4.5.0": {
-      "sha512": "Js7f30DXMo1plMo32fOpKF7AhCmuKyOKDT1fSayntGGOVfF5V/xKVu1UPI3N+/hTXuqKKgB++eACPZ120uLpGg==",
+      "sha512": "61eqqmreCig10E4OhJ0/6VaoxR5DR0s+YcerLeP4I36Ua5I9F+AH4UVFfpccUnu2QWDqZvqCPhsMvOIZGlYSZA==",
       "type": "package",
       "path": "system.threading.channels/4.5.0",
       "files": [

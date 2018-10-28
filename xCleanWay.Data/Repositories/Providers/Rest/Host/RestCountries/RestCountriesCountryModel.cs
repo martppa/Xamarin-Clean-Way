@@ -11,6 +11,8 @@ namespace xCleanWay.Data.Repositories.Providers.Rest.Host.RestCountries
         public string alpha2Code { get; set; }
         public string flag { get; set; }
 
+        public RestCountriesCountryModel() {}
+
         public RestCountriesCountryModel(string name, string alpha2Code, string flag)
         {
             this.name = name;

@@ -118,6 +118,13 @@ class MonoPackageManager_Resources {
 		"xCleanWay.Di.dll",
 		"xCleanWay.Remote.dll",
 		"xCleanWay.Ui.dll",
+		"Microsoft.Extensions.Caching.Memory.dll",
+		"Microsoft.Extensions.Caching.Abstractions.dll",
+		"Microsoft.Extensions.Primitives.dll",
+		"System.Memory.dll",
+		"System.Runtime.CompilerServices.Unsafe.dll",
+		"System.Buffers.dll",
+		"Microsoft.Extensions.Options.dll",
 		"RestSharp.dll",
 	};
 	public static final String[] Dependencies = new String[]{

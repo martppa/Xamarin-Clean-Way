@@ -25,7 +25,8 @@ public partial class MainWindow : Gtk.Window, ICountryListView
 
     private void DrawWidgets()
     {
-        SetSizeRequest(800, 600);
+        Title = "Native GTK";
+        SetSizeRequest(500, 300);
         countriesView = new TreeView();
         countriesView.Show();
         ScrolledWindow scrolledWindow = new ScrolledWindow {countriesView};

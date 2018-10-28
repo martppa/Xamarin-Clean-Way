@@ -11,3 +11,11 @@ xCleanWay.Data
 xCleanWay.Di
 xCleanWay.Remote
 xCleanWay.Ui
+System.Runtime.Caching
+Microsoft.Extensions.Caching.Memory
+Microsoft.Extensions.Options
+Microsoft.Extensions.Caching.Abstractions
+Microsoft.Extensions.Primitives
+System.Memory
+System.Runtime.CompilerServices.Unsafe
+System.Buffers
