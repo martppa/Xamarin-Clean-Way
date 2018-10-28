@@ -5,6 +5,7 @@ using xCleanWay.Core.Threading;
 using xCleanWay.Data.Entities.Mappers;
 using xCleanWay.Data.Repositories;
 using xCleanWay.Data.Repositories.DataSources;
+using xCleanWay.Data.Repositories.DataSources.Cache;
 using xCleanWay.Data.Repositories.DataSources.Factory;
 using xCleanWay.Data.Repositories.DataSources.Network;
 using xCleanWay.Data.Repositories.Providers;
@@ -49,9 +50,10 @@ namespace xCleanWay.Di
             serviceCollection.AddTransient<ICountryProvider, CountryRestProvider>();
             serviceCollection.AddTransient<ISettingsProvider, SettingsDiskProvider>();
             serviceCollection.AddTransient<IDataThread, DataThread>();
-            serviceCollection.AddTransient<ICountryDataSource, CountryNetworkDataSource>();
             serviceCollection.AddTransient<ICountryDataSourceSimpleFactory, CountryDataSourceSimpleFactory>();
             serviceCollection.AddTransient<CountryEntityMapper>();
+            serviceCollection.AddTransient<CountryNetworkDataSource>();
+            serviceCollection.AddTransient<CountryCacheDataSource>();
             serviceCollection.AddTransient<ICountryRepository, CountryRepository>();
         }
 

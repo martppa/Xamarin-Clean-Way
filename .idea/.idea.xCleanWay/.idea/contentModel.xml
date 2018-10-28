@@ -56,6 +56,11 @@
         <e p="obj" t="ExcludeRecursive" />
         <e p="packages.config" t="Include" />
         <e p="Persistence" t="Include">
+          <e p="Cache" t="Include">
+            <e p="Country" t="Include">
+              <e p="CountryCustomCache.cs" t="Include" />
+            </e>
+          </e>
           <e p="Preferences" t="Include">
             <e p="SettingsPreference.cs" t="Include" />
           </e>
@@ -252,8 +257,14 @@
           </e>
         </e>
         <e p="Repositories" t="Include">
+          <e p="Cache" t="Include">
+            <e p="ICountryCache.cs" t="Include" />
+          </e>
           <e p="CountryRepository.cs" t="Include" />
           <e p="DataSources" t="Include">
+            <e p="Cache" t="Include">
+              <e p="CountryCacheDataSource.cs" t="Include" />
+            </e>
             <e p="DIsk" t="Include">
               <e p="ISettingsDataSource.cs" t="Include" />
             </e>
@@ -332,7 +343,13 @@
       <e p="xCleanWay.Desktop.Data" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
         <e p="Persistence" t="Include">
+          <e p="Cache" t="Include">
+            <e p="Country" t="Include">
+              <e p="CountryCustomCache.cs" t="Include" />
+            </e>
+          </e>
           <e p="Serialization" t="Include">
             <e p="Binary" t="Include">
               <e p="SettingsBinarySerializer.cs" t="Include" />
@@ -401,7 +418,13 @@
       <e p="xCleanWay.iOSData" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
         <e p="Persistence" t="Include">
+          <e p="Cache" t="Include">
+            <e p="Country" t="Include">
+              <e p="CountryCustomCache.cs" t="Include" />
+            </e>
+          </e>
           <e p="Settings" t="Include">
             <e p="SettingsPreference.cs" t="Include" />
           </e>

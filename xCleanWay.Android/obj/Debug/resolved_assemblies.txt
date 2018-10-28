@@ -51,4 +51,12 @@
 /Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Android/obj/Debug/android/assets/Mono.Security.dll
 /Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Android/obj/Debug/android/assets/System.Runtime.InteropServices.WindowsRuntime.dll
 /Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Android/obj/Debug/android/assets/System.ServiceModel.Internals.dll
+/Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Android/obj/Debug/android/assets/Microsoft.Extensions.Caching.Memory.dll
+/Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Android/obj/Debug/android/assets/Microsoft.Extensions.Caching.Abstractions.dll
+/Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Android/obj/Debug/android/assets/Microsoft.Extensions.Primitives.dll
+/Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Android/obj/Debug/android/assets/System.Memory.dll
+/Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Android/obj/Debug/android/assets/System.Numerics.Vectors.dll
+/Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Android/obj/Debug/android/assets/System.Runtime.CompilerServices.Unsafe.dll
+/Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Android/obj/Debug/android/assets/System.Buffers.dll
+/Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Android/obj/Debug/android/assets/Microsoft.Extensions.Options.dll
 /Users/dieppa/Desarrollos/Xamarin-Clean-Way/xCleanWay.Android/obj/Debug/android/assets/RestSharp.dll

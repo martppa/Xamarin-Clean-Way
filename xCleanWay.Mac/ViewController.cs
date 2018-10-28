@@ -2,6 +2,7 @@
 using System.Collections.ObjectModel;
 using AppKit;
 using Foundation;
+using GameKit;
 using xCleanWay.Mac.Di;
 using xCleanWay.Ui.Models;
 using xCleanWay.Ui.Presenters;
@@ -14,7 +15,8 @@ namespace xCleanWay.Mac
         
         private ICountryListPresenter countryListPresenter;
         
-        public ViewController(IntPtr handle) : base(handle)
+        public ViewController(IntPtr handle) 
+            : base(handle)
         {
             
         }

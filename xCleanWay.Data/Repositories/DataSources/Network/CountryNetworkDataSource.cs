@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Reactive.Linq;
 using xCleanWay.Data.Entities;
+using xCleanWay.Data.Repositories.Cache;
 using xCleanWay.Data.Repositories.Providers;
 
 namespace xCleanWay.Data.Repositories.DataSources.Network
@@ -13,10 +14,12 @@ namespace xCleanWay.Data.Repositories.DataSources.Network
     public class CountryNetworkDataSource : ICountryDataSource
     {
         private readonly ICountryProvider countryProvider;
+        private readonly ICountryCache countryCache;
         
-        public CountryNetworkDataSource(ICountryProvider countryProvider)
+        public CountryNetworkDataSource(ICountryProvider countryProvider, ICountryCache countryCache)
         {
             this.countryProvider = countryProvider;
+            this.countryCache = countryCache;
         }
         
         public IObservable<List<ICountryEntity>> GetCountries()
@@ -27,7 +30,10 @@ namespace xCleanWay.Data.Repositories.DataSources.Network
                 emitter.OnNext(countryEntities);
                 emitter.OnCompleted();
                 return () => { };
-                
+
+            }).Do(countryList =>
+            {
+                countryCache.save(countryList);
             });
         }
 
